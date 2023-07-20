@@ -44,15 +44,3 @@ base.properties
 **/messages/addons
 *_bof.jar
 
-
-#Custom git ignore
-bin/
-data/
-config/
-log/
-roles/
-temp/
-
-!bin/custom
-!config/local.properties
-!config/localextension.xml
