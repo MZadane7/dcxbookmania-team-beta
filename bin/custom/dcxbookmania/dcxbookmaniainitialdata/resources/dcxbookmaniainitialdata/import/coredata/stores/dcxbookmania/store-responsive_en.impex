@@ -2,13 +2,12 @@
 # Copyright (c) 2019 SAP SE or an SAP affiliate company. All rights reserved.
 # -----------------------------------------------------------------------
 #
-# Import the Product Catalog and Classification Catalog
+# Import the Dcxbookmania BaseStore
 #
 
 # Language
 $lang=en
 
-# Create Catalog
-UPDATE Catalog;id[unique=true];name[lang=$lang]
- ;DcxbookmaniaClassification;"dcxbookmania Classification"
- ;dcxbookmaniaProductCatalog;"dcxbookmania Product Catalog"
+# Create Base Store
+UPDATE BaseStore;uid[unique=true];name[lang=$lang]
+ ;dcxbookmania;"Dcxbookmania Store"
