@@ -39,4 +39,3 @@ INSERT_UPDATE BaseStore2DeliveryModeRel;source(uid)[unique=true];target(code)[un
 ;dcxbookmania;standard-gross
 ;dcxbookmania;pickup
 ;dcxbookmania;free-standard-shipping
-
