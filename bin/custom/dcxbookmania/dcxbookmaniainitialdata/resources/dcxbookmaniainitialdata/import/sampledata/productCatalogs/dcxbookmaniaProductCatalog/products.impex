@@ -1,0 +1,20 @@
+$productCatalog=dcxbookmaniaProductCatalog
+$productCatalogName=Dcxbookmania Product Catalog
+$catalogVersion=catalogversion(catalog(id[default=$productCatalog]),version[default='Staged'])[unique=true,default=$productCatalog:Staged]
+$supercategories=supercategories(code, $catalogVersion)
+$baseProduct=baseProduct(code,$catalogVersion)
+$approved=approvalstatus(code)[default='Approved']
+$lang=en
+
+# Insert Products
+INSERT_UPDATE DcxbookmaniaProduct;code[unique=true];$supercategories;name[lang=$lang];description[lang=$lang];author;unit(code);ean;variantType(code);$catalogVersion;$approved
+;A101;A1;Dune;Dune is set in the distant future amidst a feudal interstellar society in which various noble houses control planetary fiefs.;Frank Herbert;pieces;
+;A102;A1;The Hyperion Cantos;The Hyperion universe originated when Simmons was an elementary school teacher, as an extended tale he told at intervals to his young students;Dan Simmons;pieces;
+;A103;A1;Foundation;Asimov's 'Foundation Series' is a sprawling epic that spans galaxies and centuries, yet never loses sight of the human element.;Isaac Asimov;pieces;
+;A104;A1;Red Mars;Now a group of one hundred colonists begins a mission whose ultimate goal is to transform Mars into a more Earthlike planet.;Kim Stanley Robinson;pieces;
+;A105;A1;Ender's Game;The series is set in a future where mankind is facing annihilation by an aggressive alien society,;Orson Scott Card;pieces;
+;A106;A1;A Fire Upon the Deep;It is a space opera involving superhuman intelligences, aliens, variable physics, space battles, love, betrayal, genocide, and a communication medium resembling Usenet;Vernor Vinge;pieces;
+;A107;A1;Old Man's War;Old Man's War is about military life in the future, fighting aliens over planets to colonize;John Scalzi;pieces;
+;A108;A1;The Left Hand of Darkness;The Left Hand of Darkness tells the story of a lone human emissary to Winter, an alien world whose inhabitants can change their gender.;Ursula K. Le Guin;pieces;
+;A109;A1;The Expanse;The Expanse is set in a future in which humanity has colonized much of the Solar System, but does not have interstellar travel.;James S.A. Corey;pieces;
+;A110;A1;Ancillary Justice;Ancillary Justice is a space opera set thousands of years in the future, where the principal power in human space is the expansionist Radch empire;Ann Leckie;pieces;

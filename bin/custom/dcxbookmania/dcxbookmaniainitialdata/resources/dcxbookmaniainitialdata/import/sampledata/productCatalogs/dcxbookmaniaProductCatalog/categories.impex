@@ -6,5 +6,12 @@ $categories=target(code, $catalogVersion)[unique=true]
 $lang=en
 
 INSERT_UPDATE Category;code[unique=true];name[lang=$lang];allowedPrincipals(uid)[default='customergroup'];$catalogVersion
-;c1;Fantasy
-;c2;Sci-fi
+;A;Science_Fiction_and_Fantasy
+;A1;Space_Opera
+;A2;Urban_Fantasy
+
+
+
+INSERT_UPDATE CategoryCategoryRelation;$categories;$supercategories
+;A1;A
+;A2;A

@@ -18,12 +18,13 @@ $jarResourceCms=jar:com.dcx.bookmania.initialdata.constants.DcxbookmaniaInitialD
  
 # CMS Site Settings
 UPDATE CMSSite;uid[unique=true];defaultPreviewCategory(code, $productCV);defaultPreviewProduct(code, $productCV);defaultPreviewCatalog(id)
-;dcxbookmania;575;2053367;$productCatalog
+;dcxbookmania;c1;p1;$productCatalog
+;dcxbookmania;c2;p2;$productCatalog
 
 
 # Site Logo
 INSERT_UPDATE Media;$contentCV[unique=true];code[unique=true];realfilename;@media[translator=de.hybris.platform.impex.jalo.media.MediaDataTranslator];mime[default='image/jpeg'];altText;folder(qualifier)[default='images']
-;;/images/theme/sitelogo.png;sitelogo.png;$siteResource/images/theme/sitelogo.png;image/png;hybris Accelerator;
+;;/images/theme/logo_bookmania.png;logo_bookmania.png;$siteResource/images/theme/logo_bookmania.png;image/png;hybris Accelerator;
 
 
 # Site Logo Component

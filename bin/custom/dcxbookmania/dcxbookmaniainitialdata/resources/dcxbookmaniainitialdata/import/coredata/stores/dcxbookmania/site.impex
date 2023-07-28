@@ -82,4 +82,3 @@ INSERT_UPDATE Trigger;cronJob(code)[unique=true];second;minute;hour;day;month;ye
 ;$siteUid-CartRemovalJob;0;5;4;-1;-1;-1;false;true;-1
 ;$siteUid-UncollectedOrdersJob;0;0;6;-1;-1;-1;true;false;-1
 ;$siteUid-SiteMapMediaJob;0;0;6;-1;-1;-1;true;false;-1
-
