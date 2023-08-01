@@ -17,6 +17,7 @@ public class BookDetailsPopulator implements Populator<DcxbookmaniaProductModel,
 {
 	public void populate(final DcxbookmaniaProductModel source, final ProductData target)
 	{
+		target.setCode(source.getCode());
 		target.setAuthor(source.getAuthor());
 		target.setIsbn(source.getIsbn());
 		target.setNoOfPages(source.getNoOfPages());

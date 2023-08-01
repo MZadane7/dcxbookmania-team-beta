@@ -3,12 +3,13 @@ $productCatalogName=Dcxbookmania Product Catalog
 $catalogVersion=catalogversion(catalog(id[default=$productCatalog]),version[default='Staged'])[unique=true,default=$productCatalog:Staged]
 $supercategories=supercategories(code, $catalogVersion)
 $baseProduct=baseProduct(code,$catalogVersion)
-$approved=approvalstatus(code)[default='Approved']
+$approved=approvalstatus(code)[default='approved']
 $lang=en
 
 # Insert Products
-INSERT_UPDATE DcxbookmaniaProduct;code[unique=true];$supercategories;name[lang=$lang];description[lang=$lang];author;unit(code);ean;variantType(code);$catalogVersion;$approved
-;A101;A1;Dune;Dune is set in the distant future amidst a feudal interstellar society in which various noble houses control planetary fiefs.;Frank Herbert;pieces;
+
+INSERT_UPDATE DcxbookmaniaProduct;code[unique=true];$supercategories;name[lang=$lang];description[lang=$lang];author;isbn;noOfPages;publisher;publicationDate;unit(code);ean;variantType(code);$catalogVersion;$approved
+;A101;A1;Dune;Dune is set in the distant future amidst a feudal interstellar society in which various noble houses control planetary fiefs.;Frank Herbert;978-0441172719;535;ACE Books;Feb 1, 1996 2:53:03 PM;pieces;
 ;A102;A1;The Hyperion Cantos;The Hyperion universe originated when Simmons was an elementary school teacher, as an extended tale he told at intervals to his young students;Dan Simmons;pieces;
 ;A103;A1;Foundation;Asimov's 'Foundation Series' is a sprawling epic that spans galaxies and centuries, yet never loses sight of the human element.;Isaac Asimov;pieces;
 ;A104;A1;Red Mars;Now a group of one hundred colonists begins a mission whose ultimate goal is to transform Mars into a more Earthlike planet.;Kim Stanley Robinson;pieces;

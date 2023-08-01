@@ -12,8 +12,8 @@ $siteResource=jar:de.hybris.platform.dcxbookmaniastore.constants.dcxbookmaniasto
 $lang=en
 
 # Site Logo Component
-UPDATE SimpleBannerComponent;$contentCV[unique=true];uid[unique=true];$picture[lang=$lang]
-;;SiteLogoComponent;/images/theme/logo-hybris.png
+#UPDATE SimpleBannerComponent;$contentCV[unique=true];uid[unique=true];$picture[lang=$lang]
+#;;SiteLogoComponent;/images/theme/logo-bookmania.png
 
 # CMS Link Components
 UPDATE CMSLinkComponent;$contentCV[unique=true];uid[unique=true];linkName[lang=$lang]
@@ -37,10 +37,10 @@ UPDATE CMSLinkComponent;$contentCV[unique=true];uid[unique=true];linkName[lang=$
 ;;CamerasCategoryLink;"Cameras"
 ;;CamerasFlashesCategoryLink;"Camera Flashes"
 ;;CanonBrandCategoryLink;"Canon"
-;;CloseAccountLink;"Close Account"
+#;;CloseAccountLink;"Close Account"
 ;;ColourFilmsCategoryLink;"Color Films"
 ;;ComponentsCategoryLink;"Components"
-;;ConsentManagementLink;"Consent Management"
+#;;ConsentManagementLink;"Consent Management"
 ;;ContactUsLink;"Contact Us"
 ;;DigitalCamerasCategoryLink;"Digital Cameras"
 ;;DigitalCompactsCategoryLink;"Compact Cameras"
@@ -69,11 +69,11 @@ UPDATE CMSLinkComponent;$contentCV[unique=true];uid[unique=true];linkName[lang=$
 ;;VisitSAPLink;"Visit SAP"
 
 # Lightbox Banner for Mini Cart (banner is not localizable so we must create a separate banner per language)
-INSERT_UPDATE Media;$contentCV[unique=true];code[unique=true];@media[translator=de.hybris.platform.impex.jalo.media.MediaDataTranslator];mime[default='image/jpeg'];&imageRef;folder(qualifier)[default='images'];altText
-;;Elec_358x45_HomeDeliveryBanner_EN_01.gif;$siteResource/images/banners/site/Elec_358x45_HomeDeliveryBanner_EN_01.gif;;Elec_358x45_HomeDeliveryBanner_EN_01.gif;;"Order before 6pm for next day delivery"
+#INSERT_UPDATE Media;$contentCV[unique=true];code[unique=true];@media[translator=de.hybris.platform.impex.jalo.media.MediaDataTranslator];mime[default='image/jpeg'];&imageRef;folder(qualifier)[default='images'];altText
+#;;Elec_358x45_HomeDeliveryBanner_EN_01.gif;$siteResource/images/banners/site/Elec_358x45_HomeDeliveryBanner_EN_01.gif;;Elec_358x45_HomeDeliveryBanner_EN_01.gif;;"Order before 6pm for next day delivery"
 
-UPDATE SimpleBannerComponent;$contentCV[unique=true];uid[unique=true];$picture[lang=$lang]
-;;LightboxHomeDeliveryBannerComponent;Elec_358x45_HomeDeliveryBanner_EN_01.gif
+#UPDATE SimpleBannerComponent;$contentCV[unique=true];uid[unique=true];$picture[lang=$lang]
+#;;LightboxHomeDeliveryBannerComponent;Elec_358x45_HomeDeliveryBanner_EN_01.gif
 
 # CMS Mini Cart Component
 UPDATE MiniCartComponent;$contentCV[unique=true];uid[unique=true];name;title[lang=$lang]
@@ -108,8 +108,8 @@ UPDATE CartSuggestionComponent;$contentCV[unique=true];uid[unique=true];title[la
 
 # Category Pages
 UPDATE CategoryPage;$contentCV[unique=true];uid[unique=true];title[lang=$lang]
-;;Cameras;"Cameras"
-;;DigitalCameras;"Digital Cameras"
+#;;Cameras;"Cameras"
+#;;DigitalCameras;"Digital Cameras"
 
 # CMS Navigation Nodes
 UPDATE CMSNavigationNode;$contentCV[unique=true];uid[unique=true];title[lang=$lang]
@@ -131,7 +131,7 @@ UPDATE CMSNavigationNode;$contentCV[unique=true];uid[unique=true];title[lang=$la
 ;;FollowUsNavNode;"Follow Us"
 ;;HandheldCamcordersNavNode;"Hand Held Camcorders"
 ;;PowerSuppliesNavNode;"Power Supplies"
-;;SAPCommerceNavNode;"SAP Commerce Cloud"
+#;;SAPCommerceNavNode;"SAP Commerce Cloud"
 ;;SAPCustomerExperienceNavNode;"SAP Customer Experience"
 ;;SiteRootNode;"SiteRoot"
 ;;SuppliesNavNode;"Supplies"
@@ -159,35 +159,35 @@ UPDATE CMSParagraphComponent;$contentCV[unique=true];uid[unique=true];content[la
 # dcxbookmania Homepage 
 
 # Media Content
-INSERT_UPDATE Media;$contentCV[unique=true];code[unique=true];@media[translator=de.hybris.platform.impex.jalo.media.MediaDataTranslator];mime[default='image/jpeg'];&imageRef;folder(qualifier)[default='images'];altText
-;;Elec_228x178_HomeCat_Accessories_EN_01.jpg;$siteResource/images/banners/homepage/Elec_228x178_HomeCat_Accessories_EN_01.jpg;;Elec_228x178_HomeCat_Accessories_EN_01.jpg;;"Everything you need to accessorise your camera"
-;;Elec_228x178_HomeCat_DigiCom_EN_01.jpg;$siteResource/images/banners/homepage/Elec_228x178_HomeCat_DigiCom_EN_01.jpg;;Elec_228x178_HomeCat_DigiCom_EN_01.jpg;;"Find the perfect camera to capture those special moments"
-;;Elec_228x178_HomeCat_DigiSLR_EN_01.jpg;$siteResource/images/banners/homepage/Elec_228x178_HomeCat_DigiSLR_EN_01.jpg;;Elec_228x178_HomeCat_DigiSLR_EN_01.jpg;;"See the latest DSLR technology from the leading brands"
-;;Elec_228x178_HomeCat_Memory_EN_01.jpg;$siteResource/images/banners/homepage/Elec_228x178_HomeCat_Memory_EN_01.jpg;;Elec_228x178_HomeCat_Memory_EN_01.jpg;;"Exclusive discounts on our memory cards"
-;;Elec_228x228_HomeCamcorders_EN_01.jpg;$siteResource/images/banners/homepage/Elec_228x228_HomeCamcorders_EN_01.jpg;;Elec_228x228_HomeCamcorders_EN_01.jpg;;"Camcorders. HD fun in the palm of your hand >"
-;;Elec_228x228_HomeLenses_EN_01.jpg;$siteResource/images/banners/homepage/Elec_228x228_HomeLenses_EN_01.jpg;;Elec_228x228_HomeLenses_EN_01.jpg;;"Lenses"
-;;Elec_468x418_HomeCarouselCamcorder_EN_01.jpg;$siteResource/images/banners/homepage/Elec_468x418_HomeCarouselCamcorder_EN_01.jpg;;Elec_468x418_HomeCarouselCamcorder_EN_01.jpg;;"New - Ignite your passion for film with the latest HD camcorder..."
-;;Elec_468x418_HomeCarouselCyber_EN_01.jpg;$siteResource/images/banners/homepage/Elec_468x418_HomeCarouselCyber_EN_01.jpg;;Elec_468x418_HomeCarouselCyber_EN_01.jpg;;"What colour are you? Sony Cybershot - a colour for any mood."
-;;Elec_468x418_HomeCarouselFun_EN_01.jpg;$siteResource/images/banners/homepage/Elec_468x418_HomeCarouselFun_EN_01.jpg;;Elec_468x418_HomeCarouselFun_EN_01.jpg;;"Fun on the run  - Never miss a memory!"
-;;Elec_948x60_HomeBrandsGalore_EN_01.jpg;$siteResource/images/banners/homepage/Elec_948x60_HomeBrandsGalore_EN_01.jpg;;Elec_948x60_HomeBrandsGalore_EN_01.jpg;;"Brands Galore"
-;;Elec_948x60_HomeDeliveryBanner_EN_01.jpg;$siteResource/images/banners/homepage/Elec_948x60_HomeDeliveryBanner_EN_01.jpg;;Elec_948x60_HomeDeliveryBanner_EN_01.jpg;;"Order before 6pm for next day delivery >"
+#INSERT_UPDATE Media;$contentCV[unique=true];code[unique=true];@media[translator=de.hybris.platform.impex.jalo.media.MediaDataTranslator];mime[default='image/jpeg'];&imageRef;folder(qualifier)[default='images'];altText
+#;;Elec_228x178_HomeCat_Accessories_EN_01.jpg;$siteResource/images/banners/homepage/Elec_228x178_HomeCat_Accessories_EN_01.jpg;;Elec_228x178_HomeCat_Accessories_EN_01.jpg;;"Everything you need to accessorise your camera"
+#;;Elec_228x178_HomeCat_DigiCom_EN_01.jpg;$siteResource/images/banners/homepage/Elec_228x178_HomeCat_DigiCom_EN_01.jpg;;Elec_228x178_HomeCat_DigiCom_EN_01.jpg;;"Find the perfect camera to capture those special moments"
+#;;Elec_228x178_HomeCat_DigiSLR_EN_01.jpg;$siteResource/images/banners/homepage/Elec_228x178_HomeCat_DigiSLR_EN_01.jpg;;Elec_228x178_HomeCat_DigiSLR_EN_01.jpg;;"See the latest DSLR technology from the leading brands"
+#;;Elec_228x178_HomeCat_Memory_EN_01.jpg;$siteResource/images/banners/homepage/Elec_228x178_HomeCat_Memory_EN_01.jpg;;Elec_228x178_HomeCat_Memory_EN_01.jpg;;"Exclusive discounts on our memory cards"
+#;;Elec_228x228_HomeCamcorders_EN_01.jpg;$siteResource/images/banners/homepage/Elec_228x228_HomeCamcorders_EN_01.jpg;;Elec_228x228_HomeCamcorders_EN_01.jpg;;"Camcorders. HD fun in the palm of your hand >"
+#;;Elec_228x228_HomeLenses_EN_01.jpg;$siteResource/images/banners/homepage/Elec_228x228_HomeLenses_EN_01.jpg;;Elec_228x228_HomeLenses_EN_01.jpg;;"Lenses"
+#;;Elec_468x418_HomeCarouselCamcorder_EN_01.jpg;$siteResource/images/banners/homepage/Elec_468x418_HomeCarouselCamcorder_EN_01.jpg;;Elec_468x418_HomeCarouselCamcorder_EN_01.jpg;;"New - Ignite your passion for film with the latest HD camcorder..."
+#;;Elec_468x418_HomeCarouselCyber_EN_01.jpg;$siteResource/images/banners/homepage/Elec_468x418_HomeCarouselCyber_EN_01.jpg;;Elec_468x418_HomeCarouselCyber_EN_01.jpg;;"What colour are you? Sony Cybershot - a colour for any mood."
+#;;Elec_468x418_HomeCarouselFun_EN_01.jpg;$siteResource/images/banners/homepage/Elec_468x418_HomeCarouselFun_EN_01.jpg;;Elec_468x418_HomeCarouselFun_EN_01.jpg;;"Fun on the run  - Never miss a memory!"
+#;;Elec_948x60_HomeBrandsGalore_EN_01.jpg;$siteResource/images/banners/homepage/Elec_948x60_HomeBrandsGalore_EN_01.jpg;;Elec_948x60_HomeBrandsGalore_EN_01.jpg;;"Brands Galore"
+#;;Elec_948x60_HomeDeliveryBanner_EN_01.jpg;$siteResource/images/banners/homepage/Elec_948x60_HomeDeliveryBanner_EN_01.jpg;;Elec_948x60_HomeDeliveryBanner_EN_01.jpg;;"Order before 6pm for next day delivery >"
 
-UPDATE SimpleBannerComponent;$contentCV[unique=true];uid[unique=true];$picture[lang=$lang]
-;;BrandsGaloreBanner;Elec_948x60_HomeBrandsGalore_EN_01.jpg
-;;CamcordersBanner;Elec_228x228_HomeCamcorders_EN_01.jpg
-;;LensesBanner;Elec_228x228_HomeLenses_EN_01.jpg
-;;NextDayDeliveryBanner;Elec_948x60_HomeDeliveryBanner_EN_01.jpg
+#UPDATE SimpleBannerComponent;$contentCV[unique=true];uid[unique=true];$picture[lang=$lang]
+#;;BrandsGaloreBanner;Elec_948x60_HomeBrandsGalore_EN_01.jpg
+#;;CamcordersBanner;Elec_228x228_HomeCamcorders_EN_01.jpg
+#;;LensesBanner;Elec_228x228_HomeLenses_EN_01.jpg
+#;;NextDayDeliveryBanner;Elec_948x60_HomeDeliveryBanner_EN_01.jpg
 
 UPDATE BannerComponent;$contentCV[unique=true];uid[unique=true];headline[lang=$lang];$picture[lang=$lang];content[lang=$lang]
-;;AccessoriesBannerComponent;Camera Accessories and Supplies;Elec_228x178_HomeCat_Accessories_EN_01.jpg;"Everything you need to accessorise your camera"
+#;;AccessoriesBannerComponent;Camera Accessories and Supplies;Elec_228x178_HomeCat_Accessories_EN_01.jpg;"Everything you need to accessorise your camera"
 ;;CanonPowershotBannerComponent;Canon PowerShot A480;1934793_1719.jpg;"Affordable, intuitive and fun!"
-;;CarouselCamcorderBanner;New - Ignite your passion for film with the latest HD camcorder...;Elec_468x418_HomeCarouselCamcorder_EN_01.jpg;""
-;;CarouselCyberBanner;What colour are you? Sony Cybershot - a colour for any mood.;Elec_468x418_HomeCarouselCyber_EN_01.jpg;""
-;;CarouselFunBanner;Fun on the run  - Never miss a memory!;Elec_468x418_HomeCarouselFun_EN_01.jpg;""
-;;DigitalCompactCamerasBannerComponent;Digital Compact Cameras;Elec_228x178_HomeCat_DigiCom_EN_01.jpg;"Find the perfect camera to capture those special moments"
-;;DigitalSLRCamerasBannerComponent;Digital SLR Cameras;Elec_228x178_HomeCat_DigiSLR_EN_01.jpg;"See the latest DSLR technology from the leading brands"
+#;;CarouselCamcorderBanner;New - Ignite your passion for film with the latest HD camcorder...;Elec_468x418_HomeCarouselCamcorder_EN_01.jpg;""
+#;;CarouselCyberBanner;What colour are you? Sony Cybershot - a colour for any mood.;Elec_468x418_HomeCarouselCyber_EN_01.jpg;""
+#;;CarouselFunBanner;Fun on the run  - Never miss a memory!;Elec_468x418_HomeCarouselFun_EN_01.jpg;""
+#;;DigitalCompactCamerasBannerComponent;Digital Compact Cameras;Elec_228x178_HomeCat_DigiCom_EN_01.jpg;"Find the perfect camera to capture those special moments"
+#;;DigitalSLRCamerasBannerComponent;Digital SLR Cameras;Elec_228x178_HomeCat_DigiSLR_EN_01.jpg;"See the latest DSLR technology from the leading brands"
 ;;KodakEasyshareBannerComponent;Kodak EASYSHARE V1253;1320808-1767.jpg;"Seize the moment with 12 megapixel photos!"
-;;MemoryBannerComponent;Camera and Camcorder Memory;Elec_228x178_HomeCat_Memory_EN_01.jpg;"Exclusive discounts on our memory cards"
+#;;MemoryBannerComponent;Camera and Camcorder Memory;Elec_228x178_HomeCat_Memory_EN_01.jpg;"Exclusive discounts on our memory cards"
 ;;SonyCybershotBannerComponent;Sony Cybershot DSC-S930;1992695-Sony-DSC-S930P-11441.jpg;"Compact, easy to use and amazingly affordable."
 ;;SonyDSCBannerComponent;Sony DSC-H20;1978440-Sony-DSC-H20-114081.jpg;"Perfect for serious performance in a compact design."
 
@@ -196,40 +196,40 @@ UPDATE ProductCarouselComponent;$contentCV[unique=true];uid[unique=true];title[l
 
 # dcxbookmania Camera Accessories and Supplies Category Landing Page
 
-UPDATE CategoryPage;$contentCV[unique=true];uid[unique=true];title[lang=$lang]
-;;CamerasAccessoriesAndSuppliesCategoryPage;Cameras Accessories & Supplies
+#UPDATE CategoryPage;$contentCV[unique=true];uid[unique=true];title[lang=$lang]
+#;;CamerasAccessoriesAndSuppliesCategoryPage;Cameras Accessories & Supplies
 
 # Media Content
-INSERT_UPDATE Media;$contentCV[unique=true];code[unique=true];@media[translator=de.hybris.platform.impex.jalo.media.MediaDataTranslator];mime[default='image/jpeg'];folder(qualifier)[default='images'];altText
-;;Elec_788x120_Save_EN_01.jpg;$siteResource/images/banners/homepage/Elec_788x120_Save_EN_01.jpg;;;"Buy online & save. Look out for huge savings across our store"
-;;Elec_96x96_CatBWFilm_EN_01.jpg;$siteResource/images/banners/homepage/Elec_96x96_CatBWFilm_EN_01.jpg;;;""
-;;Elec_96x96_CatColFilm_EN_01.jpg;$siteResource/images/banners/homepage/Elec_96x96_CatColFilm_EN_01.jpg;;;""
-;;Elec_96x96_CatFlash_EN_01.jpg;$siteResource/images/banners/homepage/Elec_96x96_CatFlash_EN_01.jpg;;;""
-;;Elec_96x96_CatLenses_EN_01.jpg;$siteResource/images/banners/homepage/Elec_96x96_CatLenses_EN_01.jpg;;;""
-;;Elec_96x96_CatTripod_EN_01.jpg;$siteResource/images/banners/homepage/Elec_96x96_CatTripod_EN_01.jpg;;;""
-;;Elec_96x96_CatVTapes_EN_01.jpg;$siteResource/images/banners/homepage/Elec_96x96_CatVTapes_EN_01.jpg;;;""
+#INSERT_UPDATE Media;$contentCV[unique=true];code[unique=true];@media[translator=de.hybris.platform.impex.jalo.media.MediaDataTranslator];mime[default='image/jpeg'];folder(qualifier)[default='images'];altText
+#;;Elec_788x120_Save_EN_01.jpg;$siteResource/images/banners/homepage/Elec_788x120_Save_EN_01.jpg;;;"Buy online & save. Look out for huge savings across our store"
+#;;Elec_96x96_CatBWFilm_EN_01.jpg;$siteResource/images/banners/homepage/Elec_96x96_CatBWFilm_EN_01.jpg;;;""
+#;;Elec_96x96_CatColFilm_EN_01.jpg;$siteResource/images/banners/homepage/Elec_96x96_CatColFilm_EN_01.jpg;;;""
+#;;Elec_96x96_CatFlash_EN_01.jpg;$siteResource/images/banners/homepage/Elec_96x96_CatFlash_EN_01.jpg;;;""
+#;;Elec_96x96_CatLenses_EN_01.jpg;$siteResource/images/banners/homepage/Elec_96x96_CatLenses_EN_01.jpg;;;""
+#;;Elec_96x96_CatTripod_EN_01.jpg;$siteResource/images/banners/homepage/Elec_96x96_CatTripod_EN_01.jpg;;;""
+#;;Elec_96x96_CatVTapes_EN_01.jpg;$siteResource/images/banners/homepage/Elec_96x96_CatVTapes_EN_01.jpg;;;""
 
-UPDATE CategoryFeatureComponent;$contentCV[unique=true];uid[unique=true];title[lang=$lang];$picture[lang=$lang];description[lang=$lang]
-;;BlackAndWhiteFilmsFeatureComponent;Black & White Films;Elec_96x96_CatBWFilm_EN_01.jpg;"Find the right film for authentic photo art"
-;;BlankVideoTapesFeatureComponent;Blank Video Tapes;Elec_96x96_CatVTapes_EN_01.jpg;"High quality VHS and 8mm Camcorder Tapes"
-;;CameraFlashesFeatureComponent;Camera Flashes;Elec_96x96_CatFlash_EN_01.jpg;"Bring extra quality to your pictures with a Flashgun..."
-;;CameraLensesFeatureComponent;Camera Lenses;Elec_96x96_CatLenses_EN_01.jpg;"Change lenses to suit a huge range of scenes & situations"
-;;ColourFilmsFeatureComponent;Colour Films;Elec_96x96_CatColFilm_EN_01.jpg;"Colour film to make you feel like a true photo hero"
-;;TripodFeatureComponent;Tripods;Elec_96x96_CatTripod_EN_01.jpg;"The photo and film enthusiasts 3-legged friend"
+#UPDATE CategoryFeatureComponent;$contentCV[unique=true];uid[unique=true];title[lang=$lang];$picture[lang=$lang];description[lang=$lang]
+#;;BlackAndWhiteFilmsFeatureComponent;Black & White Films;Elec_96x96_CatBWFilm_EN_01.jpg;"Find the right film for authentic photo art"
+#;;BlankVideoTapesFeatureComponent;Blank Video Tapes;Elec_96x96_CatVTapes_EN_01.jpg;"High quality VHS and 8mm Camcorder Tapes"
+#;;CameraFlashesFeatureComponent;Camera Flashes;Elec_96x96_CatFlash_EN_01.jpg;"Bring extra quality to your pictures with a Flashgun..."
+#;;CameraLensesFeatureComponent;Camera Lenses;Elec_96x96_CatLenses_EN_01.jpg;"Change lenses to suit a huge range of scenes & situations"
+#;;ColourFilmsFeatureComponent;Colour Films;Elec_96x96_CatColFilm_EN_01.jpg;"Colour film to make you feel like a true photo hero"
+#;;TripodFeatureComponent;Tripods;Elec_96x96_CatTripod_EN_01.jpg;"The photo and film enthusiasts 3-legged friend"
 
-UPDATE SimpleBannerComponent;$contentCV[unique=true];uid[unique=true];$picture[lang=$lang]
-;;BuyOnlineBanner;Elec_788x120_Save_EN_01.jpg
+#UPDATE SimpleBannerComponent;$contentCV[unique=true];uid[unique=true];$picture[lang=$lang]
+#;;BuyOnlineBanner;Elec_788x120_Save_EN_01.jpg
 
 # dcxbookmania Search Results Page
 
 # Media Content
-INSERT_UPDATE Media;$contentCV[unique=true];code[unique=true];@media[translator=de.hybris.platform.impex.jalo.media.MediaDataTranslator];mime[default='image/jpeg'];folder(qualifier)[default='images'];altText
-;;Elec_148x300_Sec4_LensesBanner_EN_01.jpg;$siteResource/images/banners/site/Elec_148x300_Sec4_LensesBanner_EN_01.jpg;;;"SLR Lenses - Professional lenses for all occasions"
-;;Elec_788x120_DigiSLR_EN_01.jpg;$siteResource/images/banners/site/Elec_788x120_DigiSLR_EN_01.jpg;;;"Get the perfect picture everytime with a digital SLR camera"
+#INSERT_UPDATE Media;$contentCV[unique=true];code[unique=true];@media[translator=de.hybris.platform.impex.jalo.media.MediaDataTranslator];mime[default='image/jpeg'];folder(qualifier)[default='images'];altText
+#;;Elec_148x300_Sec4_LensesBanner_EN_01.jpg;$siteResource/images/banners/site/Elec_148x300_Sec4_LensesBanner_EN_01.jpg;;;"SLR Lenses - Professional lenses for all occasions"
+#;;Elec_788x120_DigiSLR_EN_01.jpg;$siteResource/images/banners/site/Elec_788x120_DigiSLR_EN_01.jpg;;;"Get the perfect picture everytime with a digital SLR camera"
 
-UPDATE SimpleBannerComponent;$contentCV[unique=true];uid[unique=true];$picture[lang=$lang]
-;;PerfectPictureBanner;Elec_788x120_DigiSLR_EN_01.jpg
-;;SLRLensesBanner;Elec_148x300_Sec4_LensesBanner_EN_01.jpg
+#UPDATE SimpleBannerComponent;$contentCV[unique=true];uid[unique=true];$picture[lang=$lang]
+#;;PerfectPictureBanner;Elec_788x120_DigiSLR_EN_01.jpg
+#;;SLRLensesBanner;Elec_148x300_Sec4_LensesBanner_EN_01.jpg
 
 UPDATE CMSParagraphComponent;$contentCV[unique=true];uid[unique=true];content[lang=$lang]
 ;;EmptyCartParagraphComponent;"<h2>Your shopping cart is empty</h2><p>Suggestions</p><ul><li>Browse our products by selecting a category above</li></ul>"
@@ -238,13 +238,13 @@ UPDATE CMSParagraphComponent;$contentCV[unique=true];uid[unique=true];content[la
 # dcxbookmania Cart Page 
 
 # Media Content
-INSERT_UPDATE Media;$contentCV[unique=true];code[unique=true];@media[translator=de.hybris.platform.impex.jalo.media.MediaDataTranslator];mime[default='image/jpeg'];folder(qualifier)[default='images'];altText
-;;Elec_148x300_HelpBanner_EN_01.jpg;$siteResource/images/banners/site/Elec_148x300_HelpBanner_EN_01.jpg;;;"Need Help? Click here for help with checking out"
-;;Elec_788x120_HomeDeliveryBanner_EN_01.jpg;$siteResource/images/banners/site/Elec_788x120_HomeDeliveryBanner_EN_01.jpg;;;"Order before 6pm for next day delivery"
+#INSERT_UPDATE Media;$contentCV[unique=true];code[unique=true];@media[translator=de.hybris.platform.impex.jalo.media.MediaDataTranslator];mime[default='image/jpeg'];folder(qualifier)[default='images'];altText
+#;;Elec_148x300_HelpBanner_EN_01.jpg;$siteResource/images/banners/site/Elec_148x300_HelpBanner_EN_01.jpg;;;"Need Help? Click here for help with checking out"
+#;;Elec_788x120_HomeDeliveryBanner_EN_01.jpg;$siteResource/images/banners/site/Elec_788x120_HomeDeliveryBanner_EN_01.jpg;;;"Order before 6pm for next day delivery"
 
-UPDATE SimpleBannerComponent;$contentCV[unique=true];uid[unique=true];$picture[lang=$lang]
-;;HelpBanner;Elec_148x300_HelpBanner_EN_01.jpg
-;;NextDayDeliveryBanner120;Elec_788x120_HomeDeliveryBanner_EN_01.jpg
+#UPDATE SimpleBannerComponent;$contentCV[unique=true];uid[unique=true];$picture[lang=$lang]
+#;;HelpBanner;Elec_148x300_HelpBanner_EN_01.jpg
+#;;NextDayDeliveryBanner120;Elec_788x120_HomeDeliveryBanner_EN_01.jpg
 
 UPDATE CMSParagraphComponent;$contentCV[unique=true];uid[unique=true];content[lang=$lang]
 ;;EmptyCartParagraphComponent;"<h2>Your shopping cart is empty</h2><p>Suggestions</p><ul><li>Browse our products by selecting a category above</li></ul>"
