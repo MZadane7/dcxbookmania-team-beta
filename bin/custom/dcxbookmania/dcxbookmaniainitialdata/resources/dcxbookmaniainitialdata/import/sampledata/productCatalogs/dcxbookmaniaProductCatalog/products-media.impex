@@ -4,7 +4,7 @@
 # ImPex for Importing Product Media
 
 # Macros / Replacement Parameter definitions
-$productCatalog=__PRODUCT_CATALOG_NAME__
+$productCatalog=dcxbookmaniaProductCatalog
 
 $catalogVersion=catalogversion(catalog(id[default=$productCatalog]),version[default='Staged'])[unique=true,default=$productCatalog]
 $media=@media[translator=de.hybris.platform.impex.jalo.media.MediaDataTranslator]
@@ -21,9 +21,15 @@ $siteResource=jar:com.dcx.bookmania.initialdata.setup.InitialDataSystemSetup&/dc
 
 # Create Media
 INSERT_UPDATE Media;mediaFormat(qualifier);code[unique=true];$media;mime[default='image/jpeg'];$catalogVersion;folder(qualifier)
-
+;1200Wx1200H;/1200Wx1200H/meluha.jpg;$siteResource/images/1200Wx1200H/meluha.jpg;;;images
+;515Wx515H;/515Wx515H/meluha.jpg;$siteResource/images/515Wx515H/meluha.jpg;;;images
+;300Wx300H;/300Wx300H/meluha.jpg;$siteResource/images/300Wx300H/meluha.jpg;;;images
+;96Wx96H;/96Wx96H/meluha.jpg;$siteResource/images/96Wx96H/meluha.jpg;;;images
+;65Wx65H;/65Wx65H/meluha.jpg;$siteResource/images/65Wx65H/meluha.jpg;;;images
+;30Wx30H;/30Wx30H/meluha.jpg;$siteResource/images/30Wx30H/meluha.jpg;;;images
 # Create Media Containers
 INSERT_UPDATE MediaContainer;qualifier[unique=true];$medias;$catalogVersion
-
+;meluha;/1200Wx1200H/meluha.jpg,/515Wx515H/meluha.jpg,/300Wx300H/meluha.jpg,/96Wx96H/meluha.jpg,/65Wx65H/meluha.jpg,/30Wx30H/meluha.jpg;
 # Update Products with Media and Media Containers
 UPDATE Product;code[unique=true];$picture;$thumbnail;$detail;$others;$normal;$thumbnails;$galleryImages;$catalogVersion
+;A101;/300Wx300H/meluha.jpg;/96Wx96H/meluha.jpg;/1200Wx1200H/meluha.jpg;/515Wx515H/meluha.jpg,/65Wx65H/meluha.jpg,/30Wx30H/meluha.jpg;/300Wx300H/meluha.jpg;/96Wx96H/meluha.jpg;meluha;

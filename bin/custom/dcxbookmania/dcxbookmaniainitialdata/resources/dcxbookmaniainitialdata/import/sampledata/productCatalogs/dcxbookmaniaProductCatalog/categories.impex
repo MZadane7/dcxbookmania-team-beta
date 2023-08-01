@@ -10,8 +10,35 @@ INSERT_UPDATE Category;code[unique=true];name[lang=$lang];allowedPrincipals(uid)
 ;A1;Space_Opera
 ;A2;Urban_Fantasy
 
+;B;Mystery and Thriller
+;B1;Psychological Thrillers
+;B2;Cozy Mysteries
+
+;C;Romance
+;C1;Historical Romance
+;C2;Paranormal Romance
+
+;D;Literature and Literary Studies
+;D1;Classic Literature
+;D2;Modern Fiction
+
+;E;Self-Help and Personal Growth
+;E1;Mindfulness and Meditation
+;E2;Motivation and Inspiration
 
 
 INSERT_UPDATE CategoryCategoryRelation;$categories;$supercategories
 ;A1;A
 ;A2;A
+
+;B1;B
+;B2;B
+
+;C1;C
+;C2;C
+
+;D1;D
+;D2;D
+
+;E1;E
+;E2;E
