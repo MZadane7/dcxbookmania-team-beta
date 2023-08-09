@@ -4,12 +4,44 @@
 # ImpEx for Importing Prices
 
 # Macros / Replacement Parameter definitions
-$productCatalog=__PRODUCT_CATALOG_NAME__
+#$productCatalog=__PRODUCT_CATALOG_NAME__
 
+#$catalogVersion=catalogversion(catalog(id[default=$productCatalog]),version[default='Staged'])[unique=true,default='$productCatalog:Staged']
+#$prices=Europe1prices[translator=de.hybris.platform.europe1.jalo.impex.Europe1PricesTranslator]
+
+# Set product approval status to Approved only for those products that have prices.
+#$approved=approvalstatus(code)[default='approved']
+
+#UPDATE Product;code[unique=true];$prices;$approved;$catalogVersion;Europe1PriceFactory_PTG(code)
+
+
+$productCatalog=dcxbookmaniaProductCatalog
 $catalogVersion=catalogversion(catalog(id[default=$productCatalog]),version[default='Staged'])[unique=true,default='$productCatalog:Staged']
-$prices=Europe1prices[translator=de.hybris.platform.europe1.jalo.impex.Europe1PricesTranslator]
+$taxGroup=Europe1PriceFactory_PTG(code)[default=jp-vat-full]
 
 # Set product approval status to Approved only for those products that have prices.
 $approved=approvalstatus(code)[default='approved']
 
-UPDATE Product;code[unique=true];$prices;$approved;$catalogVersion;Europe1PriceFactory_PTG(code)
+
+INSERT_UPDATE PriceRow;productId[unique=true];unit(code[unique=true,default=pieces]);currency(isocode)[unique=true];price;minqtd;unitFactor;net
+;A101;pieces;USD;179,93;1;1;false
+;A102;pieces;USD;15330;1;1;false
+;A103;pieces;USD;693;1;1;false
+;A104;pieces;USD;693;1;1;false
+;A105;pieces;USD;693;1;1;false
+;A106;pieces;USD;693;1;1;false
+;A107;pieces;USD;693;1;1;false
+;A108;pieces;USD;693;1;1;false
+;A109;pieces;USD;693;1;1;false
+;A110;pieces;USD;693;1;1;false
+
+;A201;pieces;USD;179,93;1;1;false
+;A202;pieces;USD;15330;1;1;false
+;A203;pieces;USD;8686;1;1;false
+;A204;pieces;USD;7400;1;1;false
+;A205;pieces;USD;693;1;1;false
+;A206;pieces;USD;686;1;1;false
+;A207;pieces;USD;886;1;1;false
+;A208;pieces;USD;1686;1;1;false
+;A209;pieces;USD;8186;1;1;false
+;A210;pieces;USD;8086;1;1;false

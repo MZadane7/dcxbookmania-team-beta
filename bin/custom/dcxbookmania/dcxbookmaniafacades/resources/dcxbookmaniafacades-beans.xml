@@ -12,9 +12,23 @@
 		<property name="noOfPages" type="String" />
 		<property name="languages" type="String" />
 		<property name="publisher" type="String" />
-		<property name="publicationDate" type="java.util.Date" />
-	</bean>
+		<property name="publicationDate" type="String" />
+		<property name="noOfChapters" type="String"/>
+		<property name="copyRegDate" type="String"/>
+		<property name="bookWeight" type="String"/>
+		<property name="font" type="String"/>
+		<property name="copyright" type="String"/>
+		<property name="awards" type="String"/>
+		<property name="ageCategory" type="String"/>
+		<property name="dimension" type="String"/>
+		<property name="pubLoc" type="String"/>
+		<property name="authorBio" type="String"/>
+		<property name="discount" type="String"/>
+		<property name="returnBook" type="String"/>
+		<property name="replace" type="String"/>
+		<property name="status" type="String"/>
 
+	</bean>
 	<bean class="com.dcx.bookmania.facades.product.data.GenderData">
 		<property name="code" type="String" />
 		<property name="name" type="String" />

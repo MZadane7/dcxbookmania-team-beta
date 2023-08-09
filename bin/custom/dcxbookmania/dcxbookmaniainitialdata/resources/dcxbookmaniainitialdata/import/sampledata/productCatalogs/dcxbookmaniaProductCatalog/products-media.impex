@@ -17,19 +17,154 @@ $others=others(code, $catalogVersion)
 $data_sheet=data_sheet(code, $catalogVersion)
 $medias=medias(code, $catalogVersion)
 $galleryImages=galleryImages(qualifier, $catalogVersion)
-$siteResource=jar:com.dcx.bookmania.initialdata.setup.InitialDataSystemSetup&/dcxbookmaniainitialdata/import/productCatalogs/$productCatalog
-
-# Create Media
+$siteResource=jar:com.dcx.bookmania.initialdata.setup.InitialDataSystemSetup&/dcxbookmaniainitialdata/import/sampledata/productCatalogs/$productCatalog
+# Create Media for A101
 INSERT_UPDATE Media;mediaFormat(qualifier);code[unique=true];$media;mime[default='image/jpeg'];$catalogVersion;folder(qualifier)
-;1200Wx1200H;/1200Wx1200H/meluha.jpg;$siteResource/images/1200Wx1200H/meluha.jpg;;;images
-;515Wx515H;/515Wx515H/meluha.jpg;$siteResource/images/515Wx515H/meluha.jpg;;;images
-;300Wx300H;/300Wx300H/meluha.jpg;$siteResource/images/300Wx300H/meluha.jpg;;;images
-;96Wx96H;/96Wx96H/meluha.jpg;$siteResource/images/96Wx96H/meluha.jpg;;;images
-;65Wx65H;/65Wx65H/meluha.jpg;$siteResource/images/65Wx65H/meluha.jpg;;;images
-;30Wx30H;/30Wx30H/meluha.jpg;$siteResource/images/30Wx30H/meluha.jpg;;;images
+;1200Wx1200H;/1200Wx1200H/dune.jpg;$siteResource/images/1200Wx1200H/dune.jpg;;;images
+;515Wx515H;/515Wx515H/dune.jpg;$siteResource/images/515Wx515H/dune.jpg;;;images
+;300Wx300H;/300Wx300H/dune.jpg;$siteResource/images/300Wx300H/dune.jpg;;;images
+;96Wx96H;/96Wx96H/dune.jpg;$siteResource/images/96Wx96H/dune.jpg;;;images
+;65Wx65H;/65Wx65H/dune.jpg;$siteResource/images/65Wx65H/dune.jpg;;;images
+;30Wx30H;/30Wx30H/dune.jpg;$siteResource/images/30Wx30H/dune.jpg;;;images
 # Create Media Containers
 INSERT_UPDATE MediaContainer;qualifier[unique=true];$medias;$catalogVersion
-;meluha;/1200Wx1200H/meluha.jpg,/515Wx515H/meluha.jpg,/300Wx300H/meluha.jpg,/96Wx96H/meluha.jpg,/65Wx65H/meluha.jpg,/30Wx30H/meluha.jpg;
+;dune;/1200Wx1200H/dune.jpg,/515Wx515H/dune.jpg,/300Wx300H/dune.jpg,/96Wx96H/dune.jpg,/65Wx65H/dune.jpg,/30Wx30H/dune.jpg;
 # Update Products with Media and Media Containers
-UPDATE Product;code[unique=true];$picture;$thumbnail;$detail;$others;$normal;$thumbnails;$galleryImages;$catalogVersion
-;A101;/300Wx300H/meluha.jpg;/96Wx96H/meluha.jpg;/1200Wx1200H/meluha.jpg;/515Wx515H/meluha.jpg,/65Wx65H/meluha.jpg,/30Wx30H/meluha.jpg;/300Wx300H/meluha.jpg;/96Wx96H/meluha.jpg;meluha;
+UPDATE DcxbookmaniaProduct;code[unique=true];$picture;$thumbnail;$detail;$others;$normal;$thumbnails;$galleryImages;$catalogVersion
+;A101;/300Wx300H/dune.jpg;/96Wx96H/dune.jpg;/1200Wx1200H/dune.jpg;/515Wx515H/dune.jpg,/65Wx65H/dune.jpg,/30Wx30H/dune.jpg;/300Wx300H/dune.jpg;/96Wx96H/dune.jpg;dune;
+
+# Create Media for A102
+INSERT_UPDATE Media;mediaFormat(qualifier);code[unique=true];$media;mime[default='image/jpeg'];$catalogVersion;folder(qualifier)
+;1200Wx1200H;/1200Wx1200H/thc.jpg;$siteResource/images/1200Wx1200H/thc.jpg;;;images
+;515Wx515H;/515Wx515H/thc.jpg;$siteResource/images/515Wx515H/thc.jpg;;;images
+;300Wx300H;/300Wx300H/thc.jpg;$siteResource/images/300Wx300H/thc.jpg;;;images
+;96Wx96H;/96Wx96H/thc.jpg;$siteResource/images/96Wx96H/thc.jpg;;;images
+;65Wx65H;/65Wx65H/thc.jpg;$siteResource/images/65Wx65H/thc.jpg;;;images
+;30Wx30H;/30Wx30H/thc.jpg;$siteResource/images/30Wx30H/thc.jpg;;;images
+# Create Media Containers
+INSERT_UPDATE MediaContainer;qualifier[unique=true];$medias;$catalogVersion
+;thc;/1200Wx1200H/thc.jpg,/515Wx515H/thc.jpg,/300Wx300H/thc.jpg,/96Wx96H/thc.jpg,/65Wx65H/thc.jpg,/30Wx30H/thc.jpg;
+# Update Products with Media and Media Containers
+UPDATE DcxbookmaniaProduct;code[unique=true];$picture;$thumbnail;$detail;$others;$normal;$thumbnails;$galleryImages;$catalogVersion
+;A102;/300Wx300H/thc.jpg;/96Wx96H/thc.jpg;/1200Wx1200H/thc.jpg;/515Wx515H/thc.jpg,/65Wx65H/thc.jpg,/30Wx30H/thc.jpg;/300Wx300H/thc.jpg;/96Wx96H/thc.jpg;thc;
+
+
+# Create Media for A103
+INSERT_UPDATE Media;mediaFormat(qualifier);code[unique=true];$media;mime[default='image/jpeg'];$catalogVersion;folder(qualifier)
+;1200Wx1200H;/1200Wx1200H/foundation.jpg;$siteResource/images/1200Wx1200H/foundation.jpg;;;images
+;515Wx515H;/515Wx515H/foundation.jpg;$siteResource/images/515Wx515H/foundation.jpg;;;images
+;300Wx300H;/300Wx300H/foundation.jpg;$siteResource/images/300Wx300H/foundation.jpg;;;images
+;96Wx96H;/96Wx96H/foundation.jpg;$siteResource/images/96Wx96H/foundation.jpg;;;images
+;65Wx65H;/65Wx65H/foundation.jpg;$siteResource/images/65Wx65H/foundation.jpg;;;images
+;30Wx30H;/30Wx30H/foundation.jpg;$siteResource/images/30Wx30H/foundation.jpg;;;images
+# Create Media Containers
+INSERT_UPDATE MediaContainer;qualifier[unique=true];$medias;$catalogVersion
+;foundation;/1200Wx1200H/foundation.jpg,/515Wx515H/foundation.jpg,/300Wx300H/foundation.jpg,/96Wx96H/foundation.jpg,/65Wx65H/foundation.jpg,/30Wx30H/foundation.jpg;
+# Update Products with Media and Media Containers
+UPDATE DcxbookmaniaProduct;code[unique=true];$picture;$thumbnail;$detail;$others;$normal;$thumbnails;$galleryImages;$catalogVersion
+;A103;/300Wx300H/foundation.jpg;/96Wx96H/foundation.jpg;/1200Wx1200H/foundation.jpg;/515Wx515H/foundation.jpg,/65Wx65H/foundation.jpg,/30Wx30H/foundation.jpg;/300Wx300H/foundation.jpg;/96Wx96H/foundation.jpg;foundation;
+
+# Create Media for A104
+INSERT_UPDATE Media;mediaFormat(qualifier);code[unique=true];$media;mime[default='image/jpeg'];$catalogVersion;folder(qualifier)
+;1200Wx1200H;/1200Wx1200H/Redmars.jpg;$siteResource/images/1200Wx1200H/Redmars.jpg;;;images
+;515Wx515H;/515Wx515H/Redmars.jpg;$siteResource/images/515Wx515H/Redmars.jpg;;;images
+;300Wx300H;/300Wx300H/Redmars.jpg;$siteResource/images/300Wx300H/Redmars.jpg;;;images
+;96Wx96H;/96Wx96H/Redmars.jpg;$siteResource/images/96Wx96H/Redmars.jpg;;;images
+;65Wx65H;/65Wx65H/Redmars.jpg;$siteResource/images/65Wx65H/Redmars.jpg;;;images
+;30Wx30H;/30Wx30H/Redmars.jpg;$siteResource/images/30Wx30H/Redmars.jpg;;;images
+# Create Media Containers
+INSERT_UPDATE MediaContainer;qualifier[unique=true];$medias;$catalogVersion
+;Redmars;/1200Wx1200H/Redmars.jpg,/515Wx515H/Redmars.jpg,/300Wx300H/Redmars.jpg,/96Wx96H/Redmars.jpg,/65Wx65H/Redmars.jpg,/30Wx30H/Redmars.jpg;
+# Update Products with Media and Media Containers
+UPDATE DcxbookmaniaProduct;code[unique=true];$picture;$thumbnail;$detail;$others;$normal;$thumbnails;$galleryImages;$catalogVersion
+;A104;/300Wx300H/Redmars.jpg;/96Wx96H/Redmars.jpg;/1200Wx1200H/Redmars.jpg;/515Wx515H/Redmars.jpg,/65Wx65H/Redmars.jpg,/30Wx30H/Redmars.jpg;/300Wx300H/Redmars.jpg;/96Wx96H/Redmars.jpg;Redmars;
+
+# Create Media for A105
+INSERT_UPDATE Media;mediaFormat(qualifier);code[unique=true];$media;mime[default='image/jpeg'];$catalogVersion;folder(qualifier)
+;1200Wx1200H;/1200Wx1200H/Enders.jpg;$siteResource/images/1200Wx1200H/Enders.jpg;;;images
+;515Wx515H;/515Wx515H/Enders.jpg;$siteResource/images/515Wx515H/Enders.jpg;;;images
+;300Wx300H;/300Wx300H/Enders.jpg;$siteResource/images/300Wx300H/Enders.jpg;;;images
+;96Wx96H;/96Wx96H/Enders.jpg;$siteResource/images/96Wx96H/Enders.jpg;;;images
+;65Wx65H;/65Wx65H/Enders.jpg;$siteResource/images/65Wx65H/Enders.jpg;;;images
+;30Wx30H;/30Wx30H/Enders.jpg;$siteResource/images/30Wx30H/Enders.jpg;;;images
+# Create Media Containers
+INSERT_UPDATE MediaContainer;qualifier[unique=true];$medias;$catalogVersion
+;Enders;/1200Wx1200H/Enders.jpg,/515Wx515H/Enders.jpg,/300Wx300H/Enders.jpg,/96Wx96H/Enders.jpg,/65Wx65H/Enders.jpg,/30Wx30H/Enders.jpg;
+# Update Products with Media and Media Containers
+UPDATE DcxbookmaniaProduct;code[unique=true];$picture;$thumbnail;$detail;$others;$normal;$thumbnails;$galleryImages;$catalogVersion
+;A105;/300Wx300H/Enders.jpg;/96Wx96H/Enders.jpg;/1200Wx1200H/Enders.jpg;/515Wx515H/Enders.jpg,/65Wx65H/Enders.jpg,/30Wx30H/Enders.jpg;/300Wx300H/Enders.jpg;/96Wx96H/Enders.jpg;Enders;
+
+# Create Media for A106
+INSERT_UPDATE Media;mediaFormat(qualifier);code[unique=true];$media;mime[default='image/jpeg'];$catalogVersion;folder(qualifier)
+;1200Wx1200H;/1200Wx1200H/afutd.jpg;$siteResource/images/1200Wx1200H/afutd.jpg;;;images
+;515Wx515H;/515Wx515H/afutd.jpg;$siteResource/images/515Wx515H/afutd.jpg;;;images
+;300Wx300H;/300Wx300H/afutd.jpg;$siteResource/images/300Wx300H/afutd.jpg;;;images
+;96Wx96H;/96Wx96H/afutd.jpg;$siteResource/images/96Wx96H/afutd.jpg;;;images
+;65Wx65H;/65Wx65H/afutd.jpg;$siteResource/images/65Wx65H/afutd.jpg;;;images
+;30Wx30H;/30Wx30H/afutd.jpg;$siteResource/images/30Wx30H/afutd.jpg;;;images
+# Create Media Containers
+INSERT_UPDATE MediaContainer;qualifier[unique=true];$medias;$catalogVersion
+;afutd;/1200Wx1200H/afutd.jpg,/515Wx515H/afutd.jpg,/300Wx300H/afutd.jpg,/96Wx96H/afutd.jpg,/65Wx65H/afutd.jpg,/30Wx30H/afutd.jpg;
+# Update Products with Media and Media Containers
+UPDATE DcxbookmaniaProduct;code[unique=true];$picture;$thumbnail;$detail;$others;$normal;$thumbnails;$galleryImages;$catalogVersion
+;A106;/300Wx300H/afutd.jpg;/96Wx96H/afutd.jpg;/1200Wx1200H/afutd.jpg;/515Wx515H/afutd.jpg,/65Wx65H/afutd.jpg,/30Wx30H/afutd.jpg;/300Wx300H/afutd.jpg;/96Wx96H/afutd.jpg;afutd;
+
+# Create Media for A107
+INSERT_UPDATE Media;mediaFormat(qualifier);code[unique=true];$media;mime[default='image/jpeg'];$catalogVersion;folder(qualifier)
+;1200Wx1200H;/1200Wx1200H/oldman.jpg;$siteResource/images/1200Wx1200H/oldman.jpg;;;images
+;515Wx515H;/515Wx515H/oldman.jpg;$siteResource/images/515Wx515H/oldman.jpg;;;images
+;300Wx300H;/300Wx300H/oldman.jpg;$siteResource/images/300Wx300H/oldman.jpg;;;images
+;96Wx96H;/96Wx96H/oldman.jpg;$siteResource/images/96Wx96H/oldman.jpg;;;images
+;65Wx65H;/65Wx65H/oldman.jpg;$siteResource/images/65Wx65H/oldman.jpg;;;images
+;30Wx30H;/30Wx30H/oldman.jpg;$siteResource/images/30Wx30H/oldman.jpg;;;images
+# Create Media Containers
+INSERT_UPDATE MediaContainer;qualifier[unique=true];$medias;$catalogVersion
+;oldman;/1200Wx1200H/oldman.jpg,/515Wx515H/oldman.jpg,/300Wx300H/oldman.jpg,/96Wx96H/oldman.jpg,/65Wx65H/oldman.jpg,/30Wx30H/oldman.jpg;
+# Update Products with Media and Media Containers
+UPDATE DcxbookmaniaProduct;code[unique=true];$picture;$thumbnail;$detail;$others;$normal;$thumbnails;$galleryImages;$catalogVersion
+;A107;/300Wx300H/oldman.jpg;/96Wx96H/oldman.jpg;/1200Wx1200H/oldman.jpg;/515Wx515H/oldman.jpg,/65Wx65H/oldman.jpg,/30Wx30H/oldman.jpg;/300Wx300H/oldman.jpg;/96Wx96H/oldman.jpg;oldman;
+
+# Create Media for A108
+INSERT_UPDATE Media;mediaFormat(qualifier);code[unique=true];$media;mime[default='image/jpeg'];$catalogVersion;folder(qualifier)
+;1200Wx1200H;/1200Wx1200H/LeftHand.jpg;$siteResource/images/1200Wx1200H/LeftHand.jpg;;;images
+;515Wx515H;/515Wx515H/LeftHand.jpg;$siteResource/images/515Wx515H/LeftHand.jpg;;;images
+;300Wx300H;/300Wx300H/LeftHand.jpg;$siteResource/images/300Wx300H/LeftHand.jpg;;;images
+;96Wx96H;/96Wx96H/LeftHand.jpg;$siteResource/images/96Wx96H/LeftHand.jpg;;;images
+;65Wx65H;/65Wx65H/LeftHand.jpg;$siteResource/images/65Wx65H/LeftHand.jpg;;;images
+;30Wx30H;/30Wx30H/LeftHand.jpg;$siteResource/images/30Wx30H/LeftHand.jpg;;;images
+# Create Media Containers
+INSERT_UPDATE MediaContainer;qualifier[unique=true];$medias;$catalogVersion
+;LeftHand;/1200Wx1200H/LeftHand.jpg,/515Wx515H/LeftHand.jpg,/300Wx300H/LeftHand.jpg,/96Wx96H/LeftHand.jpg,/65Wx65H/LeftHand.jpg,/30Wx30H/LeftHand.jpg;
+# Update Products with Media and Media Containers
+UPDATE DcxbookmaniaProduct;code[unique=true];$picture;$thumbnail;$detail;$others;$normal;$thumbnails;$galleryImages;$catalogVersion
+;A108;/300Wx300H/LeftHand.jpg;/96Wx96H/LeftHand.jpg;/1200Wx1200H/LeftHand.jpg;/515Wx515H/LeftHand.jpg,/65Wx65H/LeftHand.jpg,/30Wx30H/LeftHand.jpg;/300Wx300H/LeftHand.jpg;/96Wx96H/LeftHand.jpg;LeftHand;
+
+# Create Media for A109
+INSERT_UPDATE Media;mediaFormat(qualifier);code[unique=true];$media;mime[default='image/jpeg'];$catalogVersion;folder(qualifier)
+;1200Wx1200H;/1200Wx1200H/Expanse.jpg;$siteResource/images/1200Wx1200H/Expanse.jpg;;;images
+;515Wx515H;/515Wx515H/Expanse.jpg;$siteResource/images/515Wx515H/Expanse.jpg;;;images
+;300Wx300H;/300Wx300H/Expanse.jpg;$siteResource/images/300Wx300H/Expanse.jpg;;;images
+;96Wx96H;/96Wx96H/Expanse.jpg;$siteResource/images/96Wx96H/Expanse.jpg;;;images
+;65Wx65H;/65Wx65H/Expanse.jpg;$siteResource/images/65Wx65H/Expanse.jpg;;;images
+;30Wx30H;/30Wx30H/Expanse.jpg;$siteResource/images/30Wx30H/Expanse.jpg;;;images
+# Create Media Containers
+INSERT_UPDATE MediaContainer;qualifier[unique=true];$medias;$catalogVersion
+;Expanse;/1200Wx1200H/Expanse.jpg,/515Wx515H/Expanse.jpg,/300Wx300H/Expanse.jpg,/96Wx96H/Expanse.jpg,/65Wx65H/Expanse.jpg,/30Wx30H/Expanse.jpg;
+# Update Products with Media and Media Containers
+UPDATE DcxbookmaniaProduct;code[unique=true];$picture;$thumbnail;$detail;$others;$normal;$thumbnails;$galleryImages;$catalogVersion
+;A109;/300Wx300H/Expanse.jpg;/96Wx96H/Expanse.jpg;/1200Wx1200H/Expanse.jpg;/515Wx515H/Expanse.jpg,/65Wx65H/Expanse.jpg,/30Wx30H/Expanse.jpg;/300Wx300H/Expanse.jpg;/96Wx96H/Expanse.jpg;Expanse;
+
+# Create Media for A110
+INSERT_UPDATE Media;mediaFormat(qualifier);code[unique=true];$media;mime[default='image/jpeg'];$catalogVersion;folder(qualifier)
+;1200Wx1200H;/1200Wx1200H/Ancillaryjustice.jpg;$siteResource/images/1200Wx1200H/Ancillaryjustice.jpg;;;images
+;515Wx515H;/515Wx515H/Ancillaryjustice.jpg;$siteResource/images/515Wx515H/Ancillaryjustice.jpg;;;images
+;300Wx300H;/300Wx300H/Ancillaryjustice.jpg;$siteResource/images/300Wx300H/Ancillaryjustice.jpg;;;images
+;96Wx96H;/96Wx96H/Ancillaryjustice.jpg;$siteResource/images/96Wx96H/Ancillaryjustice.jpg;;;images
+;65Wx65H;/65Wx65H/Ancillaryjustice.jpg;$siteResource/images/65Wx65H/Ancillaryjustice.jpg;;;images
+;30Wx30H;/30Wx30H/Ancillaryjustice.jpg;$siteResource/images/30Wx30H/Ancillaryjustice.jpg;;;images
+# Create Media Containers
+INSERT_UPDATE MediaContainer;qualifier[unique=true];$medias;$catalogVersion
+;Ancillaryjustice;/1200Wx1200H/Ancillaryjustice.jpg,/515Wx515H/Ancillaryjustice.jpg,/300Wx300H/Ancillaryjustice.jpg,/96Wx96H/Ancillaryjustice.jpg,/65Wx65H/Ancillaryjustice.jpg,/30Wx30H/Ancillaryjustice.jpg;
+# Update Products with Media and Media Containers
+UPDATE DcxbookmaniaProduct;code[unique=true];$picture;$thumbnail;$detail;$others;$normal;$thumbnails;$galleryImages;$catalogVersion
+;A110;/300Wx300H/Ancillaryjustice.jpg;/96Wx96H/Ancillaryjustice.jpg;/1200Wx1200H/Ancillaryjustice.jpg;/515Wx515H/Ancillaryjustice.jpg,/65Wx65H/Ancillaryjustice.jpg,/30Wx30H/Ancillaryjustice.jpg;/300Wx300H/Ancillaryjustice.jpg;/96Wx96H/Ancillaryjustice.jpg;Ancillaryjustice;

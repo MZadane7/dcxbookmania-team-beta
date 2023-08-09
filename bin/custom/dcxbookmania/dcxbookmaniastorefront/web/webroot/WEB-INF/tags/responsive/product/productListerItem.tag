@@ -45,7 +45,7 @@
 		<c:if test="${not empty product.summary}">
 			<div class="product__listing--description">${ycommerce:sanitizeHTML(product.summary)}</div>
 		</c:if>
-
+		<h5>Author : ${product.author}</h5>
 
 
 		<c:set var="product" value="${product}" scope="request"/>
