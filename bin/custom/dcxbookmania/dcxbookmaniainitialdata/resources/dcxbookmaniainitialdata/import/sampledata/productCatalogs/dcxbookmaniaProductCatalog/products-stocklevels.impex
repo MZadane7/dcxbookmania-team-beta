@@ -4,18 +4,67 @@
 # ImpEx for Importing Products Stock Levels and Warehouses
 
 # Macros / Replacement Parameter definitions
-$productCatalog=__PRODUCT_CATALOG_NAME__
-$productCatalogName=__PRODUCT_CATALOG_FULL_NAME__
-$vendor=__VENDOR_NAME__
 
+
+$productCatalog=dcxbookmaniaProductCatalog
+$productCatalogName=Dcxbookmania Product Catalog
 $catalogVersion=catalogversion(catalog(id[default=$productCatalog]),version[default='Staged'])[unique=true,default=$productCatalog:Staged]
+INSERT_UPDATE Warehouse;code[unique=true];vendor(code);default[default=true]
+;warehouse_s;Warehouse South;Warehouse South
+INSERT_UPDATE StockLevel;available;warehouse(code)[unique=true];inStockStatus(code);maxPreOrder;maxStockLevelHistoryCount;overSelling;preOrder;productCode[unique=true];reserved
+;10;warehouse_s;forceInStock;0;0;0;0;A101;1
+;10;warehouse_s;forceInStock;0;0;0;0;A102;1
+;10;warehouse_s;forceInStock;0;0;0;0;A103;1
+;10;warehouse_s;forceInStock;0;0;0;0;A104;1
+;10;warehouse_s;forceInStock;0;0;0;0;A105;1
+;10;warehouse_s;forceInStock;0;0;0;0;A106;1
+;10;warehouse_s;forceInStock;0;0;0;0;A107;1
+;10;warehouse_s;forceInStock;0;0;0;0;A108;1
+;10;warehouse_s;forceInStock;0;0;0;0;A109;1
+;10;warehouse_s;forceInStock;0;0;0;0;A110;1
+
+;10;warehouse_s;forceInStock;0;0;0;0;A201;1
+;10;warehouse_s;forceInStock;0;0;0;0;A202;1
+;10;warehouse_s;forceInStock;0;0;0;0;A203;1
+;10;warehouse_s;forceInStock;0;0;0;0;A204;1
+;10;warehouse_s;forceInStock;0;0;0;0;A205;1
+;10;warehouse_s;forceInStock;0;0;0;0;A206;1
+;10;warehouse_s;forceInStock;0;0;0;0;A207;1
+;10;warehouse_s;forceInStock;0;0;0;0;A208;1
+;10;warehouse_s;forceInStock;0;0;0;0;A209;1
+;10;warehouse_s;forceInStock;0;0;0;0;A210;1
+UPDATE DcxbookmaniaProduct;code[unique=true];$catalogVersion;stockLevels(productCode,warehouse(code));vendors(code)
+;A101;;A101:warehouse_s;
+;A102;;A102:warehouse_s;
+;A103;;A103:warehouse_s;
+;A104;;A104:warehouse_s;
+;A105;;A105:warehouse_s;
+;A106;;A106:warehouse_s;
+;A107;;A107:warehouse_s;
+;A108;;A108:warehouse_s;
+;A109;;A109:warehouse_s;
+;A110;;A110:warehouse_s;
+
+;A201;;A201:warehouse_s;
+;A202;;A202:warehouse_s;
+;A203;;A203:warehouse_s;
+;A204;;A204:warehouse_s;
+;A205;;A205:warehouse_s;
+;A206;;A206:warehouse_s;
+;A207;;A207:warehouse_s;
+;A208;;A208:warehouse_s;
+;A209;;A209:warehouse_s;
+;A210;;A210:warehouse_s;
 
 
-INSERT_UPDATE Vendor;code[unique=true]
+
+
+
+#INSERT_UPDATE Vendor;code[unique=true]
 #;$vendor
 
-INSERT_UPDATE Warehouse;code[unique=true];vendor(code);default[default=true]
+#INSERT_UPDATE Warehouse;code[unique=true];vendor(code);default[default=true]
 
-INSERT_UPDATE StockLevel;available;warehouse(code)[unique=true];inStockStatus(code);maxPreOrder;maxStockLevelHistoryCount;overSelling;preOrder;productCode[unique=true];reserved
+#INSERT_UPDATE StockLevel;available;warehouse(code)[unique=true];inStockStatus(code);maxPreOrder;maxStockLevelHistoryCount;overSelling;preOrder;productCode[unique=true];reserved
 
-UPDATE Product;code[unique=true];$catalogVersion;stockLevels(productCode,warehouse(code));vendors(code)
+#UPDATE Product;code[unique=true];$catalogVersion;stockLevels(productCode,warehouse(code));vendors(code)

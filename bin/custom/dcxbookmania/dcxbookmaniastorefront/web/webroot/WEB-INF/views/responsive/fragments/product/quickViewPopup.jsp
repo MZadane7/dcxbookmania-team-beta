@@ -100,7 +100,7 @@
 					</button>
 				</c:when>
 				<c:otherwise>
-					<button id="addToCartButton" type="${buttonType}" class="btn btn-primary btn-block js-add-to-cart js-enable-btn btn-icon glyphicon-shopping-cart" disabled="disabled">
+					<button id="addToCartButton" type="${buttonType}" class="btn btn-primary btn-block js-add-to-cart js-enable-btn btn-icon glyphicon-shopping-cart" style="color:blue" disabled="disabled">
 						<spring:theme code="basket.add.to.basket"/>
 					</button>
 				</c:otherwise>

@@ -41,8 +41,23 @@
 		</enumtype>
 	</enumtypes>
 
-	<itemtypes>
 
+	<!-- relations>
+		<relation code="AuthorRelation" generate="true"
+			localized="false" autocreate="true">
+			<sourceElement type="DcxbookmaniaProduct"
+				cardinality="one" qualifier="author">
+				<modifiers read="true" write="true" search="true"
+					optional="false" />
+			</sourceElement>
+			<targetElement type="DcxbookmaniaPublish"
+				cardinality="many" qualifier="publisher" ordered="true">
+				<modifiers read="true" write="true" search="true"
+					optional="true" partof="true" />
+			</targetElement>
+		</relation>
+	</relations-->
+	<itemtypes>
 		<!-- Add your item definitions here -->
 
 
@@ -126,7 +141,7 @@
 				jaloclass="com.dcx.bookmania.core.jalo.DcxbookmaniaProduct">
 				<description>Base Dcxbookmania product extension that contains additional attributes.
 				</description>
-				<!--deployment table="dcxbookmaniaproduct" typecode="20001" /-->
+				<!-- deployment table="dcxbookmaniaproduct" typecode="20001" /-->
 				<attributes>
 					<attribute qualifier="author" type="java.lang.String">
 						<persistence type="property" qualifier="" />
@@ -149,14 +164,72 @@
 						<modifiers read="true" write="true" search="true" />
 					</attribute>
 					<attribute qualifier="publicationDate"
-						type="java.util.Date">
+						type="java.lang.String">
 						<persistence type="property" qualifier="" />
 						<modifiers read="true" write="true" search="true" />
 					</attribute>
-				</attributes>
-
+					<attribute qualifier="noOfChapters"
+						type="java.lang.String">
+						<modifiers read="true" write="true" search="true" />
+						<persistence type="property" />
+					</attribute>
+					<attribute qualifier="copyRegDate"
+						type="java.lang.String">
+						<modifiers read="true" write="true" search="true" />
+						<persistence type="property" />
+					</attribute>
+					<attribute qualifier="bookWeight"
+						type="java.lang.String">
+						<modifiers read="true" write="true" search="true" />
+						<persistence type="property" />
+					</attribute>
+					<attribute qualifier="font" type="java.lang.String">
+						<modifiers read="true" write="true" search="true" />
+						<persistence type="property" />
+					</attribute>
+					<attribute qualifier="copyright" type="java.lang.String">
+						<modifiers read="true" write="true" search="true" />
+						<persistence type="property" />
+					</attribute>
+					<attribute qualifier="awards" type="java.lang.String">
+						<modifiers read="true" write="true" search="true" />
+						<persistence type="property" />
+					</attribute>
+					<attribute qualifier="ageCategory"
+						type="java.lang.String">
+						<modifiers read="true" write="true" search="true" />
+						<persistence type="property" />
+					</attribute>
+					<attribute qualifier="dimension" type="java.lang.String">
+						<modifiers read="true" write="true" search="true" />
+						<persistence type="property" />
+					</attribute>
+					<attribute qualifier="publoc" type="java.lang.String">
+						<modifiers read="true" write="true" search="true" />
+						<persistence type="property" />
+					</attribute>
+					<attribute qualifier="authorBio" type="java.lang.String">
+						<modifiers read="true" write="true" search="true" />
+						<persistence type="property" />
+					</attribute>
+					<attribute qualifier="discount" type="java.lang.String">
+						<modifiers read="true" write="true" search="true" />
+						<persistence type="property" />
+					</attribute>
+					<attribute qualifier="returnBook" type="java.lang.String">
+						<modifiers read="true" write="true" search="true" />
+						<persistence type="property" />
+					</attribute>
+					<attribute qualifier="replace" type="java.lang.String">
+						<modifiers read="true" write="true" search="true" />
+						<persistence type="property" />
+					</attribute>
+					<attribute qualifier="status" type="java.lang.String">
+						<modifiers read="true" write="true" search="true" />
+						<persistence type="property" />
+					</attribute>
+ 				</attributes>
 			</itemtype>
-
 			<itemtype code="DcxbookmaniaEditionVariantProduct"
 				extends="VariantProduct" autocreate="true" generate="true"
 				jaloclass="com.dcx.bookmania.core.jalo.DcxbookmaniaStyleVariantProduct">

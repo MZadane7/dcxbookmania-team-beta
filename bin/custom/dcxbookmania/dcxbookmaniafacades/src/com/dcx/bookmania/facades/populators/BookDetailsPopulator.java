@@ -24,5 +24,19 @@ public class BookDetailsPopulator implements Populator<DcxbookmaniaProductModel,
 		target.setLanguages(source.getLanguages());
 		target.setPublisher(source.getPublisher());
 		target.setPublicationDate(source.getPublicationDate());
+		target.setNoOfChapters(source.getNoOfChapters());
+		target.setCopyRegDate(source.getCopyRegDate());
+		target.setBookWeight(source.getBookWeight());
+		target.setFont(source.getFont());
+		target.setCopyright(source.getCopyright());
+		target.setAwards(source.getAwards());
+		target.setAgeCategory(source.getAgeCategory());
+		target.setDimension(source.getDimension());
+		target.setPubLoc(source.getPubloc());
+		target.setAuthorBio(source.getAuthorBio());
+		target.setDiscount(source.getDiscount());
+		target.setReturnBook(source.getReturnBook());
+		target.setReplace(source.getReplace());
+		target.setStatus(source.getStatus());
 	}
 }
