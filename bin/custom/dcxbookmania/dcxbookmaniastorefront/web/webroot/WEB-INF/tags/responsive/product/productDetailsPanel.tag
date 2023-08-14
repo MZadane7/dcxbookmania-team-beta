@@ -74,7 +74,7 @@ body {
 <style>
 .product-details {
 	font-family: "Dosis", "Courier New", monospace;
-	color: green;
+	color: red;
 }
 
 table {
@@ -194,7 +194,7 @@ table td {
 	<tr>
 		<td>No Of Chapters: ${product.noOfChapters}</td>
 		<td>Copyright Registration :${product.copyRegDate}</td>
-		<td>No Of Pages:${product.bookWeight}</td>
+		<td>Weight:${product.bookWeight}</td>
 	</tr>
 	<tr>
 		<td>Font: ${product.font}</td>

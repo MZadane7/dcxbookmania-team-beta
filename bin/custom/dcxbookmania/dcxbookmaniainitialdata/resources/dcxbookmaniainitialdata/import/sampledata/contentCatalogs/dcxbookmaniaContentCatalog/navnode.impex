@@ -1,0 +1,157 @@
+#nav bar from cms-responsive-content
+
+$contentCatalog=dcxbookmaniaContentCatalog
+$contentCatalogName=Dcxbookmania Content Catalog
+$contentCV=catalogVersion(CatalogVersion.catalog(Catalog.id[default=$contentCatalog]),CatalogVersion.version[default=Staged])[default=$contentCatalog:Staged]
+$productCatalog=dcxbookmaniaProductCatalog
+$productCatalogName=Dcxbookmania Product Catalog
+$productCV=catalogVersion(catalog(id[default=$productCatalog]),version[default='Staged'])[unique=true,default=$productCatalog:Staged]
+$medias=medias(code, $contentCV);
+$mediaContainer=media(qualifier, $contentCV);
+$product=product(code, $productCV)
+$category=category(code, $productCV)
+$media=media(code, $contentCV);
+$siteResource=jar:com.dcx.bookmania.initialdata.constants.DcxbookmaniaInitialDataConstants&/dcxbookmaniainitialdata/import/sampledata/contentCatalogs/$contentCatalog
+$productResource=jar:com.dcx.bookmania.initialdata.constants.DcxbookmaniaInitialDataConstants&/dcxbookmaniainitialdata/import/sampledata/productCatalogs/$productCatalog
+$jarResourceCms=jar:com.dcx.bookmania.initialdata.constants.DcxbookmaniaInitialDataConstants&/dcxbookmaniainitialdata/import/sampledata/cockpits/cmscockpit
+
+# CMS Link Components
+INSERT_UPDATE CMSLinkComponent;$contentCV[unique=true];uid[unique=true];name;url;&linkRef;&componentRef;target(code)[default='sameWindow'];$category;$product;
+;;HomepageNavLink;Home Page Nav Link;/;HomepageNavLink;HomepageNavLink;;;;
+;;StoreFinderLink;Store Finder Link;/store-finder;StoreFinderLink;StoreFinderLink;;;;
+;;LoginLink;Login Link;/login;LoginLink;LoginLink;;;;
+;;ScienceFictionFantasyCategoryLink;Science Fiction Fantasy Category Link;/Science-Fiction-and-Fantasy/c/A;ScienceFictionFantasyCategoryLink;ScienceFictionFantasyCategoryLink;;A;;
+;;MysteryThrillerCategoryLink;Mystery Thriller Category Link;Mystery-and-Thriller/c/B;MysteryThrillerCategoryLink;MysteryThrillerCategoryLink;;B;;
+;;RomanceCategoryLink;Romance Category Link;Romance/c/C;RomanceCategoryLink;RomanceCategoryLink;;C;;
+;;LiteratureLiteraryStudiesCategoryLink;Literature Literary Studies Category Link;Literature-and-Literary-Studies/c/D;LiteratureLiteraryStudiesCategoryLink;LiteratureLiteraryStudiesCategoryLink;;D;;
+;;SelfHelpCategoryLink;Self Help Category Link;Self-Help-and-Personal-Growth/c/E;SelfHelpCategoryLink;SelfHelpCategoryLink;;E;;
+;;SpaceOperaCategoryLink;Space Opera Category Link;Science-Fiction-and-Fantasy/Space-Opera/c/A1;SpaceOperaCategoryLink;SpaceOperaCategoryLink;;A1;;
+;;UrbanFantasyCategoryLink;Urban Fantasy Category Link;Science-Fiction-and-Fantasy/Urban-Fantasy/c/A2;UrbanFantasyCategoryLink;UrbanFantasyCategoryLink;;A2;;
+;;PsychologicalThrillersCategoryLink;Psychological Thrillers Category Link;Mystery-and-Thriller/Psychological-Thrillers/c/B1;PsychologicalThrillersCategoryLink;PsychologicalThrillersCategoryLink;;B1;;
+;;CozyMysteriesCategoryLink;Mystery Thriller Category Link;Mystery-and-Thriller/Cozy-Mysteries/c/B2;CozyMysteriesCategoryLink;CozyMysteriesCategoryLink;;B2;;
+;;HistoricalRomanceCategoryLink;Historical Romance Category Link;Romance/Historical-Romance/c/C1;HistoricalRomanceCategoryLink;HistoricalRomanceCategoryLink;;C1;;
+;;ParanormalRomanceCategoryLink;Paranormal Romance Category Link;Romance/Paranormal-Romance/c/C2;ParanormalRomanceCategoryLink;ParanormalRomanceCategoryLink;;C2;;
+;;ClassicLiteratureCategoryLink;Classic Literature Category Link;Literature-and-Literary-Studies/Classic-Literature/c/D1;ClassicLiteratureCategoryLink;ClassicLiteratureCategoryLink;;D1;;
+;;ModernFictionCategoryLink;Modern Fiction Category Link;Literature-and-Literary-Studies/Modern-Fiction/c/D2;ModernFictionCategoryLink;ModernFictionCategoryLink;;D2;;
+;;MindfulnessMeditationCategoryLink;Mindfulness Meditation Category Link;Self-Help-and-Personal-Growth/Mindfulness-and-Meditation/c/E1;MindfulnessMeditationCategoryLink;MindfulnessMeditationCategoryLink;;E1;;
+;;MotivationInspirationCategoryLink;Motivation Inspiration Category Link;Self-Help-and-Personal-Growth/Motivation-and-Inspiration/c/E2;MotivationInspirationCategoryLink;MotivationInspirationCategoryLink;;E2;;
+# CMS Navigation Nodes #
+INSERT_UPDATE CMSNavigationNode;uid[unique=true];$contentCV[unique=true];name;children(uid,$contentCV)[mode=append]
+;root;;root;;
+
+# CMS Navigation Nodes
+INSERT_UPDATE CMSNavigationNode;uid[unique=true];$contentCV[unique=true];name;parent(uid, $contentCV);links(&linkRef);&nodeRef
+;SiteRootNode;;SiteRootNode;root;;SiteRootNode
+;DcxbookmaniaNavNode;;Dcxbookmania Site;SiteRootNode;HomepageNavLink;DcxbookmaniaNavNode
+;ScienceFictionFantasyNavNode;;Science Fiction Fantasy Navigation Node;;ScienceFictionFantasyCategoryLink;ScienceFictionFantasyNavNode
+;ScienceFictionFantasyLinkNavNode;;Science Fiction Fantasy Link NavNode;ScienceFictionFantasyNavNode;SpaceOperaCategoryLink,UrbanFantasyCategoryLink;ScienceFictionFantasyLinkNavNode
+;MysteryThrillerNavNode;;Mystery Thriller Navigation Node;;MysteryThrillerCategoryLink;MysteryThrillerNavNode
+;MysteryThrillerLinkNavNode;;Mystery Thriller Link Navigation Node;MysteryThrillerNavNode;PsychologicalThrillersCategoryLink,CozyMysteriesCategoryLink;MysteryThrillerLinkNavNode
+;RomanceNavNode;;Romance Navigation Node;;RomanceCategoryLink;RomanceNavNode
+;RomanceLinkNavNode;;Romance Category Link Navigation Node;RomanceNavNode;HistoricalRomanceCategoryLink,ParanormalRomanceCategoryLink;RomanceLinkNavNode
+;LiteratureLiteraryStudiesNavNode;;Literature Literary Studies Nav Node;;LiteratureLiteraryStudiesCategoryLink;LiteratureLiteraryStudiesNavNode
+;LiteratureLiteraryStudiesLinkNavNode;;Literature Literary Studies Link Nav Node;LiteratureLiteraryStudiesNavNode;ClassicLiteratureCategoryLink,ModernFictionCategoryLink;LiteratureLiteraryStudiesLinkNavNode
+;SelfHelpNavNode;;Self Help Nav Node;;SelfHelpCategoryLink;SelfHelpNavNode
+;SelfHelpLinkNavNode;;Self Help Link Nav Node;SelfHelpNavNode;MindfulnessMeditationCategoryLink,MotivationInspirationCategoryLink;SelfHelpLinkNavNode
+
+INSERT_UPDATE CategoryNavigationComponent;$contentCV[unique=true];uid[unique=true];name;styleClass;&componentRef;navigationNode(&nodeRef);wrapAfter
+;;DcxbookmaniaCategoryNavComponent;Category Navigation Component;;DcxbookmaniaCategoryNavComponent;DcxbookmaniaCategoryNavNode;10
+
+INSERT_UPDATE ContentSlot;$contentCV[unique=true];uid[unique=true];cmsComponents(uid, $contentCV)
+;;NavigationBarSlot;DcxbookmaniaCategoryNavComponent,breadcrumbComponent
+
+## level 1. SiteRoot ##
+## level 2. children of SiteRoot ##
+# the following order of children is the display order on the site
+INSERT_UPDATE CMSNavigationNode;uid[unique=true];$contentCV[unique=true];name;parent(uid, $contentCV);&nodeRef;children(uid,$contentCV)
+;DcxbookmaniaCategoryNavNode;;Categories;DcxbookmaniaNavNode;DcxbookmaniaCategoryNavNode;ScienceFictionFantasyNavNode,MysteryThrillerNavNode,RomanceNavNode,LiteratureLiteraryStudiesNavNode,SelfHelpNavNode
+
+## level 3. children of Category Nav ##
+INSERT_UPDATE CMSNavigationNode;uid[unique=true];$contentCV[unique=true];name;&nodeRef;children(uid,$contentCV);links(&linkRef);
+;ScienceFictionFantasyNavNode;;Science Fiction Fantasy Category;ScienceFictionFantasyNavNode;SpaceOperaNavNode,UrbanFantasyNavNode
+;MysteryThrillerNavNode;;Mystery Thriller category;MysteryThrillerNavNode;PsychologicalThrillersNavNode,CozyMysteriesNavNode
+;RomanceNavNode;;Romance Category;RomanceNavNode;HistoricalRomanceNavNode,ParanormalRomanceNavNode
+;LiteratureLiteraryStudiesNavNode;;Literature Literary Category;LiteratureLiteraryStudiesNavNode;ClassicLiteratureNavNode,ModernFictionNavNode
+;SelfHelpNavNode;;Self Help Category;SelfHelpNavNode;MindfulnessMeditationNavNode,MotivationInspirationNavNode
+
+
+## entries of the above navigation nodes ##
+INSERT_UPDATE CMSNavigationEntry;uid[unique=true];$contentCV[unique=true];name;navigationNode(&nodeRef);item(CMSLinkComponent.uid,CMSLinkComponent.$contentCV);
+;ScienceFictionFantasyNavNodeEntry;;Science Fiction Fantasy Nav Node Entry;ScienceFictionFantasyNavNode;ScienceFictionFantasyCategoryLink;
+;MysteryThrillerNavNodeEntry;;Mystery Thriller Navigation Node Entry;MysteryThrillerNavNode;MysteryThrillerCategoryLink;
+;RomanceNavNodeEntry;;Romance Navigation Node Entry;RomanceNavNode;RomanceCategoryLink;
+;LiteratureLiteraryStudiesNavNodeEntry;;Literature Literary Studies Navigation Node Entry;LiteratureLiteraryStudiesNavNode;LiteratureLiteraryStudiesCategoryLink;
+;SelfHelpNavNodeEntry;;Self Help Navigation Node Entry;SelfHelpNavNode;SelfHelpCategoryLink;
+
+
+## level 4. children of NavNode (the following order of children is the display order on the site) ##
+INSERT_UPDATE CMSNavigationNode;uid[unique=true];$contentCV[unique=true];name;&nodeRef;children(uid,$contentCV);links(&linkRef);
+
+## children of ScienceFictionFantasyNavNode
+;SpaceOperaNavNode;;Space Opera Links;SpaceOperaNavNode
+;UrbanFantasyNavNode;;Urban Fantasy Links;UrbanFantasyNavNode
+## children of MysteryThrillerNavNode
+;PsychologicalThrillersNavNode;; Psychological Thrillers Links;PsychologicalThrillersNavNode
+;CozyMysteriesNavNode;;Cozy Mysteries Links;CozyMysteriesNavNode
+## children of RomanceNavNode
+;HistoricalRomanceNavNode;;Historical Romance Links;HistoricalRomanceNavNode
+;ParanormalRomanceNavNode;;Paranormal Romance Links;ParanormalRomanceNavNode
+## children of LiteratureLiteraryStudiesNavNode
+;ClassicLiteratureNavNode;;Classic Literature Links;ClassicLiteratureNavNode
+;ModernFictionNavNode;;Modern Fiction Links;ModernFictionNavNode
+## children of SelfHelpNavNode
+;MindfulnessMeditationNavNode;;Mindfulness Meditation Links;MindfulnessMeditationNavNode
+;MotivationInspirationNavNode;;Motivation Inspiration Links;MotivationInspirationNavNode
+
+
+
+## entries of the above navigation nodes ##
+INSERT_UPDATE CMSNavigationEntry;uid[unique=true];$contentCV[unique=true];name;navigationNode(&nodeRef);item(CMSLinkComponent.uid,CMSLinkComponent.$contentCV);
+#Entries of Break Suspension node
+;SpaceOperaNavNodeEntry;;Space Opera Navigation Node Entry;SpaceOperaNavNode;SpaceOperaCategoryLink;
+;UrbanFantasyNavNodeEntry;;Urban Fantasy Navigation Node Entry;UrbanFantasyNavNode;UrbanFantasyCategoryLink;
+;PsychologicalThrillersNavNodeEntry;;Psychological Thrillers Navigation Node Entry;PsychologicalThrillersNavNode;PsychologicalThrillersCategoryLink;
+;CozyMysteriesNavNodeEntry;;Cozy Mysteries Navigation Node Entry;CozyMysteriesNavNode;CozyMysteriesCategoryLink;
+;HistoricalRomanceNavNodeEntry;; Historical Romance Navigation Node Entry;HistoricalRomanceNavNode;HistoricalRomanceCategoryLink
+;ParanormalRomanceNavNodeEntry;;Paranormal Romance Navigation Node Entry;ParanormalRomanceNavNode;ParanormalRomanceCategoryLink
+;ClassicLiteratureNavNodeEntry;;Classic Literature Navigation Node Entry;ClassicLiteratureNavNode;ClassicLiteratureCategoryLink
+;ModernFictionNavNodeEntry;;Modern Fiction Navigation Node Entry;ModernFictionNavNode;ModernFictionCategoryLink
+;MindfulnessMeditationNavNodeEntry;;Mindfulness Meditation Navigation Node Entry;MindfulnessMeditationNavNode;MindfulnessMeditationCategoryLink
+;MotivationInspirationNavNodeEntry;;Motivation Inspiration Navigation Node Entry;MotivationInspirationNavNode;MotivationInspirationCategoryLink
+
+
+# CMS Link Components to show data on storefront
+UPDATE CMSLinkComponent;$contentCV[unique=true];uid[unique=true];linkName[lang=$lang]
+;;ScienceFictionFantasyCategoryLink;"Science Fiction & Fantasy"
+;;MysteryThrillerCategoryLink;"Mystery & Thriller"
+;;RomanceCategoryLink;"Romance"
+;;LiteratureLiteraryStudiesCategoryLink;"Literature & Literary Studies"
+;;SelfHelpCategoryLink;"Self-Help and Personal Growth"
+;;SpaceOperaCategoryLink;"Space Opera"
+;;UrbanFantasyCategoryLink;"Urban Fantasy"
+;;PsychologicalThrillersCategoryLink;"Psychological Thrillers"
+;;CozyMysteriesCategoryLink;"Cozy Mysteries"
+;;HistoricalRomanceCategoryLink;"Historical Romance"
+;;ParanormalRomanceCategoryLink;"Paranormal Romance"
+;;ClassicLiteratureCategoryLink;"Classic Literature"
+;;ModernFictionCategoryLink;"Modern Fiction"
+;;MindfulnessMeditationCategoryLink;"Mindfulness & Meditation"
+;;MotivationInspirationCategoryLink;"Motivation & Inspiration"
+
+# CMS Navigation Nodes to show data on storefront
+UPDATE CMSNavigationNode;$contentCV[unique=true];uid[unique=true];title[lang=$lang]
+;;ScienceFictionFantasyNavNode;"Science Fiction & Fantasy"
+;;MysteryThrillerNavNode;"Mystery & Thriller"
+;;RomanceNavNode;"Romance"
+;;LiteratureLiteraryStudiesNavNode;"Literature & Literary Studies"
+;;SelfHelpNavNode;"Self-Help and Personal Growth"
+;;SpaceOperaNavNode;"Space Opera"
+;;UrbanFantasyNavNode;"Urban Fantasy"
+;;PsychologicalThrillersNavNode;"Psychological Thrillers"
+;;CozyMysteriesNavNode;"Cozy Mysteries"
+;;HistoricalRomanceNavNode;"Historical Romance"
+;;ParanormalRomanceNavNode;"Paranormal Romance"
+;;ClassicLiteratureNavNode;"Classic Literature"
+;;ModernFictionNavNode;"Modern Fiction"
+;;MindfulnessMeditationNavNode;"Mindfulness & Meditation"
+;;MotivationInspirationNavNode;"Motivation & Inspiration"

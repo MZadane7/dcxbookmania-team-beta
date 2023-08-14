@@ -21,11 +21,12 @@ UPDATE SolrIndexedProperty;solrIndexedType(identifier)[unique=true];name[unique=
  ;$solrIndexedType;description;"Description"
  ;$solrIndexedType;manufacturerName;"Manufacturer Name"
  ;$solrIndexedType;name;"Name"
- ;$solrIndexedType;author;"Author"
- ;$solrIndexedType;isbn;"Isbn"
- ;$solrIndexedType;languages;"Languages"
- ;$solrIndexedType;publisher;"Publisher"
+# ;$solrIndexedType;author;"Author"
+# ;$solrIndexedType;isbn;"Isbn"
+# ;$solrIndexedType;languages;"Languages"
+# ;$solrIndexedType;publisher;"Publisher"
  ;$solrIndexedType;price;"Price"
+# ;$solrIndexedType;noOfPages;"No. of Pages"
  ;$solrIndexedType;summary;"Summary"
 
 # Define the available sorts
@@ -34,6 +35,8 @@ UPDATE SolrSort;indexedType(identifier)[unique=true];code[unique=true];name[lang
  ;$solrIndexedType;name-desc;"Name (descending)"
  ;$solrIndexedType;price-asc;"Price (lowest first)"
  ;$solrIndexedType;price-desc;"Price (highest first)"
+# ;$solrIndexedType;noOfPages-asc;"No. of Pages (lowest first)"
+# ;$solrIndexedType;noOfPages-desc;"No. of Pages (highest first)"
  ;$solrIndexedType;relevance;"Relevance"
  ;$solrIndexedType;topRated;"Top Rated"
 

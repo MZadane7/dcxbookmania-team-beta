@@ -19,7 +19,7 @@
 				<div class="rating-stars pull-left js-ratingCalc " data-rating='{"rating":"${ycommerce:encodeJSON(review.rating)}","total":5}' >
 					<div class="greyStars">
                         <c:forEach  begin="1" end="5">
-                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star-empty"></span>
                         </c:forEach>
 					</div>
 					<div class="greenStars js-greenStars">
