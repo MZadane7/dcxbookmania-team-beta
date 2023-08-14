@@ -11,13 +11,13 @@
 <%@ attribute name="product" required="true"
 	type="de.hybris.platform.commercefacades.product.data.ProductData"%>
 
-<h1>DCXBookMania review summary</h1>
+<h1>DCXBookMania Review Summary</h1>
 <div class="rating">
 	<c:set var="ratingJson">${ycommerce:encodeJSON(product.averageRating)}</c:set>
 	<div class="rating-stars pull-left js-ratingCalc ${fn:escapeXml(starsClass)}" data-rating='{"rating":"${fn:escapeXml(ratingJson)}","total":5}' >
 		<div class="greyStars">
 			<c:forEach  begin="1" end="5">
-				<span class="glyphicon glyphicon-star"></span>
+				<span class="glyphicon glyphicon-star-empty"></span>
 			</c:forEach>
 		</div>
 		<div class="greenStars js-greenStars">

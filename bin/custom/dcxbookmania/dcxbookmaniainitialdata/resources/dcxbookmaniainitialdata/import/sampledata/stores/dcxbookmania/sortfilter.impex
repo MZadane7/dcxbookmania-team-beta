@@ -1,0 +1,71 @@
+$productCatalog=dcxbookmaniaProductCatalog
+$catalogVersions=catalogVersions(catalog(id),version);
+$facetSearchConfigName=dcxbookmaniaIndex
+$facetSearchConfigDescription=Dcxbookmania Solr Index
+$searchIndexNamePrefix=dcxbookmania
+$solrIndexedType=dcxbookmaniaProductType
+$indexBaseSite=dcxbookmania
+$indexStandaloneBaseSite=dcxbookmania-standalone
+$indexLanguages=ja,en,de,zh
+$indexCurrencies=JPY,USD
+$lang=en
+
+INSERT_UPDATE SolrSearchQueryProperty;indexedProperty(name, solrIndexedType(identifier))[unique=true];facet[default=true];facetType(code);priority;facetDisplayNameProvider;facetSortProvider;facetTopValuesProvider;includeInResponse[default=true];searchQueryTemplate(name, indexedType(identifier))[unique=true][default=DEFAULT:$solrIndexedType]
+									 ;noOfPages:$solrIndexedType									 ;					 ;MultiSelectOr	 ;4000	  
+                                     
+# Declare the indexed type Product
+INSERT_UPDATE SolrIndexedType;identifier[unique=true];type(code);variant;sorts(&sortRefID)
+;$solrIndexedType;Product;false;sortRef1,sortRef2,sortRef3,sortRef4,sortRef5,sortRef6,sortRef7,sortRef8
+INSERT_UPDATE SolrSort;&sortRefID;indexedType(identifier)[unique=true];code[unique=true];useBoost
+;sortRef1;$solrIndexedType;relevance;true
+;sortRef2;$solrIndexedType;topRated;false
+;sortRef3;$solrIndexedType;name-asc;false
+;sortRef4;$solrIndexedType;name-desc;false
+;sortRef5;$solrIndexedType;price-asc;false
+;sortRef6;$solrIndexedType;price-desc;false
+;sortRef7;$solrIndexedType;noOfPages-asc;false
+;sortRef8;$solrIndexedType;noOfPages-desc;false
+
+# Define the sort fields
+INSERT_UPDATE SolrSortField;sort(indexedType(identifier),code)[unique=true];fieldName[unique=true];ascending[unique=true]
+;$solrIndexedType:relevance;inStockFlag;false
+;$solrIndexedType:relevance;score;false
+;$solrIndexedType:topRated;inStockFlag;false
+;$solrIndexedType:topRated;reviewAvgRating;false
+;$solrIndexedType:name-asc;name;true
+;$solrIndexedType:name-desc;name;false
+;$solrIndexedType:price-asc;priceValue;true
+;$solrIndexedType:price-desc;priceValue;false
+;$solrIndexedType:noOfPages-asc;noOfPages;true
+;$solrIndexedType:noOfPages-desc;noOfPages;false
+
+
+
+# Solr Indexed Property
+UPDATE SolrIndexedProperty;solrIndexedType(identifier)[unique=true];name[unique=true];displayName[lang=$lang]
+ ;$solrIndexedType;allPromotions;"Promotion"
+ ;$solrIndexedType;availableInStores;"Stores"
+ ;$solrIndexedType;brand;"Brand"
+ ;$solrIndexedType;category;"Category"
+ ;$solrIndexedType;code;"Code"
+ ;$solrIndexedType;description;"Description"
+ ;$solrIndexedType;manufacturerName;"Manufacturer Name"
+ ;$solrIndexedType;name;"Name"
+ ;$solrIndexedType;author;"Author"
+ ;$solrIndexedType;isbn;"Isbn"
+ ;$solrIndexedType;languages;"Languages"
+ ;$solrIndexedType;publisher;"Publisher"
+ ;$solrIndexedType;price;"Price"
+ ;$solrIndexedType;noOfPages;"No. of Pages"
+ ;$solrIndexedType;summary;"Summary"
+
+# Define the available sorts
+UPDATE SolrSort;indexedType(identifier)[unique=true];code[unique=true];name[lang=$lang]
+ ;$solrIndexedType;name-asc;"Name (ascending)"
+ ;$solrIndexedType;name-desc;"Name (descending)"
+ ;$solrIndexedType;price-asc;"Price (lowest first)"
+ ;$solrIndexedType;price-desc;"Price (highest first)"
+ ;$solrIndexedType;noOfPages-asc;"No. of Pages (lowest first)"
+ ;$solrIndexedType;noOfPages-desc;"No. of Pages (highest first)"
+ ;$solrIndexedType;relevance;"Relevance"
+ ;$solrIndexedType;topRated;"Top Rated"

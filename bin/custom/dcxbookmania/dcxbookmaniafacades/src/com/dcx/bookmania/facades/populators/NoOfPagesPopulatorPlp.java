@@ -15,15 +15,17 @@ import org.apache.commons.lang.StringUtils;
  * @author sdutta2
  *
  */
-public class BookDetailsPopulatorPlp implements Populator<SearchResultValueData, ProductData>
+public class NoOfPagesPopulatorPlp implements Populator<SearchResultValueData, ProductData>
 {
 	public void populate(final SearchResultValueData source, final ProductData target) throws ConversionException
 	{
-		final String author = (String) source.getValues().get("author");
+		final String noOfPages = (String) source.getValues().get("noOfPages");
 
-		if (StringUtils.isNotEmpty(author))
+		if (StringUtils.isNotEmpty(noOfPages))
 		{
-			target.setAuthor(author);
+			target.setNoOfPages(noOfPages);
 		}
+
 	}
+
 }

@@ -258,7 +258,7 @@
 		</property>
 	</bean>
 
-<!-- 	<alias name="bookDetailsPopulatorPlp"
+	<alias name="bookDetailsPopulatorPlp"
 		alias="bookDetailsPopulatorPlp" />
 	<bean id="bookDetailsPopulatorPlp"
 		class="com.dcx.bookmania.facades.populators.BookDetailsPopulatorPlp" />
@@ -266,5 +266,14 @@
 		<property name="list"
 			ref="commerceSearchResultProductConverter" />
 		<property name="add" ref="bookDetailsPopulatorPlp" />
-	</bean> -->
+	</bean>
+	<alias name="noOfPagesPopulatorPlp"
+		alias="noOfPagesPopulatorPlp" />
+	<bean id="noOfPagesPopulatorPlp"
+		class="com.dcx.bookmania.facades.populators.NoOfPagesPopulatorPlp" />
+	<bean parent="modifyPopulatorList">
+		<property name="list"
+			ref="commerceSearchResultProductConverter" />
+		<property name="add" ref="noOfPagesPopulatorPlp" />
+	</bean>
 </beans>
