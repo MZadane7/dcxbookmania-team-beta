@@ -261,7 +261,7 @@ if(!extensionNames.contains(extensionName))
                                      ;customerCouponCode:$solrIndexedType;;;Refine;;customerCouponFacetDisplayNameProvider;
 ###### CustomerCouponData END ######
 
-
+#Import all the previous code to configure solr for the first time
 INSERT_UPDATE SolrIndexedProperty;solrIndexedType(identifier)[unique=true];name[unique=true];type(code);sortableType(code);currency[default=false];localized[default=false];multiValue[default=false];useForSpellchecking[default=false];useForAutocomplete[default=false];fieldValueProvider;valueProviderParameter
 ;$solrIndexedType; author ;string ;;;;;true;true;;
 ;$solrIndexedType; isbn ;string ;;;;;true;true;;

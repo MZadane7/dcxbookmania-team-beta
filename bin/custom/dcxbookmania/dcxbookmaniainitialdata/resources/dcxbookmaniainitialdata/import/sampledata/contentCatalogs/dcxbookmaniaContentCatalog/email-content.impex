@@ -4,12 +4,17 @@
 # ImpEx for Importing Email Content
 
 # Macros / Replacement Parameter definitions
-$contentCatalog=__CONTENT_CATALOG_NAME__
+$contentCatalog=dcxbookmaniaContentCatalog
 
 $contentCV=catalogVersion(CatalogVersion.catalog(Catalog.id[default=$contentCatalog]),CatalogVersion.version[default=Staged])[default=$contentCatalog:Staged]
 
 # CMS Image Components
-INSERT_UPDATE CMSImageComponent;$contentCV[unique=true];uid[unique=true];name
+#INSERT_UPDATE CMSImageComponent;$contentCV[unique=true];uid[unique=true];name
 
 # Content Slots
-INSERT_UPDATE ContentSlot;$contentCV[unique=true];uid[unique=true];cmsComponents(uid,$contentCV)
+#INSERT_UPDATE ContentSlot;$contentCV[unique=true];uid[unique=true];cmsComponents(uid,$contentCV)
+
+# CMS Image Components
+INSERT_UPDATE CMSImageComponent;$contentCV[unique=true];uid[unique=true];name
+;;EmailBannerSaleNowOnImage;Email Banner Sale Now On Image
+;;EmailBannerFreeDeliveryImage;Email Banner Free Delivery Image

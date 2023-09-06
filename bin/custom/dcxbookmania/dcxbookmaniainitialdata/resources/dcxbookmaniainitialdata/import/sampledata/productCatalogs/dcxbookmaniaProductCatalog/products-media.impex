@@ -168,3 +168,1483 @@ INSERT_UPDATE MediaContainer;qualifier[unique=true];$medias;$catalogVersion
 # Update Products with Media and Media Containers
 UPDATE DcxbookmaniaProduct;code[unique=true];$picture;$thumbnail;$detail;$others;$normal;$thumbnails;$galleryImages;$catalogVersion
 ;A110;/300Wx300H/Ancillaryjustice.jpg;/96Wx96H/Ancillaryjustice.jpg;/1200Wx1200H/Ancillaryjustice.jpg;/515Wx515H/Ancillaryjustice.jpg,/65Wx65H/Ancillaryjustice.jpg,/30Wx30H/Ancillaryjustice.jpg;/300Wx300H/Ancillaryjustice.jpg;/96Wx96H/Ancillaryjustice.jpg;Ancillaryjustice;
+
+
+
+# Create Media for B101
+INSERT_UPDATE Media;mediaFormat(qualifier);code[unique=true];$media;mime[default='image/jpeg'];$catalogVersion;folder(qualifier)
+;1200Wx1200H;/1200Wx1200H/Gone Girl_1200.jpg;$siteResource/images/1200Wx1200H/Gone Girl_1200.jpg;;;images
+;515Wx515H;/515Wx515H/Gone Girl_515.jpg;$siteResource/images/515Wx515H/Gone Girl_515.jpg;;;images
+;300Wx300H;/300Wx300H/Gone Girl_300.jpg;$siteResource/images/300Wx300H/Gone Girl_300.jpg;;;images
+;96Wx96H;/96Wx96H/Gone Girl_96.jpg;$siteResource/images/96Wx96H/Gone Girl_96.jpg;;;images
+;65Wx65H;/65Wx65H/Gone Girl_65.jpg;$siteResource/images/65Wx65H/Gone Girl_65.jpg;;;images
+;30Wx30H;/30Wx30H/Gone Girl_30.jpg;$siteResource/images/30Wx30H/Gone Girl_30.jpg;;;images
+# Create Media Containers
+INSERT_UPDATE MediaContainer;qualifier[unique=true];$medias;$catalogVersion
+;Gone Girl;/1200Wx1200H/Gone Girl_1200.jpg,/515Wx515H/Gone Girl_515.jpg,/300Wx300H/Gone Girl_300.jpg,/96Wx96H/Gone Girl_96.jpg,/65Wx65H/Gone Girl_65.jpg,/30Wx30H/Gone Girl_30.jpg;
+# Update Products with Media and Media Containers
+UPDATE DcxbookmaniaProduct;code[unique=true];$picture;$thumbnail;$detail;$others;$normal;$thumbnails;$galleryImages;$catalogVersion
+;B101;/300Wx300H/Gone Girl_300.jpg;/96Wx96H/Gone Girl_96.jpg;/1200Wx1200H/Gone Girl_1200.jpg;/515Wx515H/Gone Girl_515.jpg,/65Wx65H/Gone Girl_65.jpg,/30Wx30H/Gone Girl_30.jpg;/300Wx300H/Gone Girl_300.jpg;/96Wx96H/Gone Girl_96.jpg;Gone Girl;
+
+
+# Create Media for B102
+INSERT_UPDATE Media;mediaFormat(qualifier);code[unique=true];$media;mime[default='image/jpeg'];$catalogVersion;folder(qualifier)
+;1200Wx1200H;/1200Wx1200H/The Girl on the Train_1200.jpg;$siteResource/images/1200Wx1200H/The Girl on the Train_1200.jpg;;;images
+;515Wx515H;/515Wx515H/The Girl on the Train_515.jpg;$siteResource/images/515Wx515H/The Girl on the Train_515.jpg;;;images
+;300Wx300H;/300Wx300H/The Girl on the Train_300.jpg;$siteResource/images/300Wx300H/The Girl on the Train_300.jpg;;;images
+;96Wx96H;/96Wx96H/The Girl on the Train_96.jpg;$siteResource/images/96Wx96H/The Girl on the Train_96.jpg;;;images
+;65Wx65H;/65Wx65H/The Girl on the Train_65.jpg;$siteResource/images/65Wx65H/The Girl on the Train_65.jpg;;;images
+;30Wx30H;/30Wx30H/The Girl on the Train_30.jpg;$siteResource/images/30Wx30H/The Girl on the Train_30.jpg;;;images
+# Create Media Containers
+INSERT_UPDATE MediaContainer;qualifier[unique=true];$medias;$catalogVersion
+;The Girl on the Train;/1200Wx1200H/The Girl on the Train_1200.jpg,/515Wx515H/The Girl on the Train_515.jpg,/300Wx300H/The Girl on the Train_300.jpg,/96Wx96H/The Girl on the Train_96.jpg,/65Wx65H/The Girl on the Train_65.jpg,/30Wx30H/The Girl on the Train_30.jpg;
+# Update Products with Media and Media Containers
+UPDATE DcxbookmaniaProduct;code[unique=true];$picture;$thumbnail;$detail;$others;$normal;$thumbnails;$galleryImages;$catalogVersion
+;B102;/300Wx300H/The Girl on the Train_300.jpg;/96Wx96H/The Girl on the Train_96.jpg;/1200Wx1200H/The Girl on the Train_1200.jpg;/515Wx515H/The Girl on the Train_515.jpg,/65Wx65H/The Girl on the Train_65.jpg,/30Wx30H/The Girl on the Train_30.jpg;/300Wx300H/The Girl on the Train_300.jpg;/96Wx96H/The Girl on the Train_96.jpg;The Girl on the Train;
+
+
+
+# Create Media for B103
+INSERT_UPDATE Media;mediaFormat(qualifier);code[unique=true];$media;mime[default='image/jpeg'];$catalogVersion;folder(qualifier)
+;1200Wx1200H;/1200Wx1200H/The Silent Patient_1200.jpg;$siteResource/images/1200Wx1200H/The Silent Patient_1200.jpg;;;images
+;515Wx515H;/515Wx515H/The Silent Patient_515.jpg;$siteResource/images/515Wx515H/The Silent Patient_515.jpg;;;images
+;300Wx300H;/300Wx300H/The Silent Patient_300.jpg;$siteResource/images/300Wx300H/The Silent Patient_300.jpg;;;images
+;96Wx96H;/96Wx96H/The Silent Patient_96.jpg;$siteResource/images/96Wx96H/The Silent Patient_96.jpg;;;images
+;65Wx65H;/65Wx65H/The Silent Patient_65.jpg;$siteResource/images/65Wx65H/The Silent Patient_65.jpg;;;images
+;30Wx30H;/30Wx30H/The Silent Patient_30.jpg;$siteResource/images/30Wx30H/The Silent Patient_30.jpg;;;images
+# Create Media Containers
+INSERT_UPDATE MediaContainer;qualifier[unique=true];$medias;$catalogVersion
+;The Silent Patient;/1200Wx1200H/The Silent Patient_1200.jpg,/515Wx515H/The Silent Patient_515.jpg,/300Wx300H/The Silent Patient_300.jpg,/96Wx96H/The Silent Patient_96.jpg,/65Wx65H/The Silent Patient_65.jpg,/30Wx30H/The Silent Patient_30.jpg;
+# Update Products with Media and Media Containers
+UPDATE DcxbookmaniaProduct;code[unique=true];$picture;$thumbnail;$detail;$others;$normal;$thumbnails;$galleryImages;$catalogVersion
+;B103;/300Wx300H/The Silent Patient_300.jpg;/96Wx96H/The Silent Patient_96.jpg;/1200Wx1200H/The Silent Patient_1200.jpg;/515Wx515H/The Silent Patient_515.jpg,/65Wx65H/The Silent Patient_65.jpg,/30Wx30H/The Silent Patient_30.jpg;/300Wx300H/The Silent Patient_300.jpg;/96Wx96H/The Silent Patient_96.jpg;The Silent Patient;
+
+
+# Create Media for B104
+INSERT_UPDATE Media;mediaFormat(qualifier);code[unique=true];$media;mime[default='image/jpeg'];$catalogVersion;folder(qualifier)
+;1200Wx1200H;/1200Wx1200H/Before I Go to Sleep_1200.jpg;$siteResource/images/1200Wx1200H/Before I Go to Sleep_1200.jpg;;;images
+;515Wx515H;/515Wx515H/Before I Go to Sleep_515.jpg;$siteResource/images/515Wx515H/Before I Go to Sleep_515.jpg;;;images
+;300Wx300H;/300Wx300H/Before I Go to Sleep_300.jpg;$siteResource/images/300Wx300H/Before I Go to Sleep_300.jpg;;;images
+;96Wx96H;/96Wx96H/Before I Go to Sleep_96.jpg;$siteResource/images/96Wx96H/Before I Go to Sleep_96.jpg;;;images
+;65Wx65H;/65Wx65H/Before I Go to Sleep_65.jpg;$siteResource/images/65Wx65H/Before I Go to Sleep_65.jpg;;;images
+;30Wx30H;/30Wx30H/Before I Go to Sleep_30.jpg;$siteResource/images/30Wx30H/Before I Go to Sleep_30.jpg;;;images
+# Create Media Containers
+INSERT_UPDATE MediaContainer;qualifier[unique=true];$medias;$catalogVersion
+;Before I Go to Sleep;/1200Wx1200H/Before I Go to Sleep_1200.jpg,/515Wx515H/Before I Go to Sleep_515.jpg,/300Wx300H/Before I Go to Sleep_300.jpg,/96Wx96H/Before I Go to Sleep_96.jpg,/65Wx65H/Before I Go to Sleep_65.jpg,/30Wx30H/Before I Go to Sleep_30.jpg;
+# Update Products with Media and Media Containers
+UPDATE DcxbookmaniaProduct;code[unique=true];$picture;$thumbnail;$detail;$others;$normal;$thumbnails;$galleryImages;$catalogVersion
+;B104;/300Wx300H/Before I Go to Sleep_300.jpg;/96Wx96H/Before I Go to Sleep_96.jpg;/1200Wx1200H/Before I Go to Sleep_1200.jpg;/515Wx515H/Before I Go to Sleep_515.jpg,/65Wx65H/Before I Go to Sleep_65.jpg,/30Wx30H/Before I Go to Sleep_30.jpg;/300Wx300H/Before I Go to Sleep_300.jpg;/96Wx96H/Before I Go to Sleep_96.jpg;Before I Go to Sleep;
+
+# Create Media for B105
+INSERT_UPDATE Media;mediaFormat(qualifier);code[unique=true];$media;mime[default='image/jpeg'];$catalogVersion;folder(qualifier)
+;1200Wx1200H;/1200Wx1200H/The Woman in the Window_1200.jpg;$siteResource/images/1200Wx1200H/The Woman in the Window_1200.jpg;;;images
+;515Wx515H;/515Wx515H/The Woman in the Window_515.jpg;$siteResource/images/515Wx515H/The Woman in the Window_515.jpg;;;images
+;300Wx300H;/300Wx300H/The Woman in the Window_300.jpg;$siteResource/images/300Wx300H/The Woman in the Window_300.jpg;;;images
+;96Wx96H;/96Wx96H/The Woman in the Window_96.jpg;$siteResource/images/96Wx96H/The Woman in the Window_96.jpg;;;images
+;65Wx65H;/65Wx65H/The Woman in the Window_65.jpg;$siteResource/images/65Wx65H/The Woman in the Window_65.jpg;;;images
+;30Wx30H;/30Wx30H/The Woman in the Window_30.jpg;$siteResource/images/30Wx30H/The Woman in the Window_30.jpg;;;images
+# Create Media Containers
+INSERT_UPDATE MediaContainer;qualifier[unique=true];$medias;$catalogVersion
+;The Woman in the Window;/1200Wx1200H/The Woman in the Window_1200.jpg,/515Wx515H/The Woman in the Window_515.jpg,/300Wx300H/The Woman in the Window_300.jpg,/96Wx96H/The Woman in the Window_96.jpg,/65Wx65H/The Woman in the Window_65.jpg,/30Wx30H/The Woman in the Window_30.jpg;
+# Update Products with Media and Media Containers
+UPDATE DcxbookmaniaProduct;code[unique=true];$picture;$thumbnail;$detail;$others;$normal;$thumbnails;$galleryImages;$catalogVersion
+;B105;/300Wx300H/The Woman in the Window_300.jpg;/96Wx96H/The Woman in the Window_96.jpg;/1200Wx1200H/The Woman in the Window_1200.jpg;/515Wx515H/The Woman in the Window_515.jpg,/65Wx65H/The Woman in the Window_65.jpg,/30Wx30H/The Woman in the Window_30.jpg;/300Wx300H/The Woman in the Window_300.jpg;/96Wx96H/The Woman in the Window_96.jpg;The Woman in the Window;
+
+# Create Media for B106
+INSERT_UPDATE Media;mediaFormat(qualifier);code[unique=true];$media;mime[default='image/jpeg'];$catalogVersion;folder(qualifier)
+;1200Wx1200H;/1200Wx1200H/Sharp Objects_1200.jpg;$siteResource/images/1200Wx1200H/Sharp Objects_1200.jpg;;;images
+;515Wx515H;/515Wx515H/Sharp Objects_515.jpg;$siteResource/images/515Wx515H/Sharp Objects_515.jpg;;;images
+;300Wx300H;/300Wx300H/Sharp Objects_300.jpg;$siteResource/images/300Wx300H/Sharp Objects_300.jpg;;;images
+;96Wx96H;/96Wx96H/Sharp Objects_96.jpg;$siteResource/images/96Wx96H/Sharp Objects_96.jpg;;;images
+;65Wx65H;/65Wx65H/Sharp Objects_65.jpg;$siteResource/images/65Wx65H/Sharp Objects_65.jpg;;;images
+;30Wx30H;/30Wx30H/Sharp Objects_30.jpg;$siteResource/images/30Wx30H/Sharp Objects_30.jpg;;;images
+# Create Media Containers
+INSERT_UPDATE MediaContainer;qualifier[unique=true];$medias;$catalogVersion
+;Sharp Objects;/1200Wx1200H/Sharp Objects_1200.jpg,/515Wx515H/Sharp Objects_515.jpg,/300Wx300H/Sharp Objects_300.jpg,/96Wx96H/Sharp Objects_96.jpg,/65Wx65H/Sharp Objects_65.jpg,/30Wx30H/Sharp Objects_30.jpg;
+# Update Products with Media and Media Containers
+UPDATE DcxbookmaniaProduct;code[unique=true];$picture;$thumbnail;$detail;$others;$normal;$thumbnails;$galleryImages;$catalogVersion
+;B106;/300Wx300H/Sharp Objects_300.jpg;/96Wx96H/Sharp Objects_96.jpg;/1200Wx1200H/Sharp Objects_1200.jpg;/515Wx515H/Sharp Objects_515.jpg,/65Wx65H/Sharp Objects_65.jpg,/30Wx30H/Sharp Objects_30.jpg;/300Wx300H/Sharp Objects_300.jpg;/96Wx96H/Sharp Objects_96.jpg;Sharp Objects;
+
+# Create Media for B107
+INSERT_UPDATE Media;mediaFormat(qualifier);code[unique=true];$media;mime[default='image/jpeg'];$catalogVersion;folder(qualifier)
+;1200Wx1200H;/1200Wx1200H/Behind Closed Doors_1200.jpg;$siteResource/images/1200Wx1200H/Behind Closed Doors_1200.jpg;;;images
+;515Wx515H;/515Wx515H/Behind Closed Doors_515.jpg;$siteResource/images/515Wx515H/Behind Closed Doors_515.jpg;;;images
+;300Wx300H;/300Wx300H/Behind Closed Doors_300.jpg;$siteResource/images/300Wx300H/Behind Closed Doors_300.jpg;;;images
+;96Wx96H;/96Wx96H/Behind Closed Doors_96.jpg;$siteResource/images/96Wx96H/Behind Closed Doors_96.jpg;;;images
+;65Wx65H;/65Wx65H/Behind Closed Doors_65.jpg;$siteResource/images/65Wx65H/Behind Closed Doors_65.jpg;;;images
+;30Wx30H;/30Wx30H/Behind Closed Doors_30.jpg;$siteResource/images/30Wx30H/Behind Closed Doors_30.jpg;;;images
+# Create Media Containers
+INSERT_UPDATE MediaContainer;qualifier[unique=true];$medias;$catalogVersion
+;Behind Closed Doors;/1200Wx1200H/Behind Closed Doors_1200.jpg,/515Wx515H/Behind Closed Doors_515.jpg,/300Wx300H/Behind Closed Doors_300.jpg,/96Wx96H/Behind Closed Doors_96.jpg,/65Wx65H/Behind Closed Doors_65.jpg,/30Wx30H/Behind Closed Doors_30.jpg;
+# Update Products with Media and Media Containers
+UPDATE DcxbookmaniaProduct;code[unique=true];$picture;$thumbnail;$detail;$others;$normal;$thumbnails;$galleryImages;$catalogVersion
+;B107;/300Wx300H/Behind Closed Doors_300.jpg;/96Wx96H/Behind Closed Doors_96.jpg;/1200Wx1200H/Behind Closed Doors_1200.jpg;/515Wx515H/Behind Closed Doors_515.jpg,/65Wx65H/Behind Closed Doors_65.jpg,/30Wx30H/Behind Closed Doors_30.jpg;/300Wx300H/Behind Closed Doors_300.jpg;/96Wx96H/Behind Closed Doors_96.jpg;Behind Closed Doors;
+
+# Create Media for B108
+INSERT_UPDATE Media;mediaFormat(qualifier);code[unique=true];$media;mime[default='image/jpeg'];$catalogVersion;folder(qualifier)
+;1200Wx1200H;/1200Wx1200H/The Girl with the Dragon Tattoo_1200.jpg;$siteResource/images/1200Wx1200H/The Girl with the Dragon Tattoo_1200.jpg;;;images
+;515Wx515H;/515Wx515H/The Girl with the Dragon Tattoo_515.jpg;$siteResource/images/515Wx515H/The Girl with the Dragon Tattoo_515.jpg;;;images
+;300Wx300H;/300Wx300H/The Girl with the Dragon Tattoo_300.jpg;$siteResource/images/300Wx300H/The Girl with the Dragon Tattoo_300.jpg;;;images
+;96Wx96H;/96Wx96H/The Girl with the Dragon Tattoo_96.jpg;$siteResource/images/96Wx96H/The Girl with the Dragon Tattoo_96.jpg;;;images
+;65Wx65H;/65Wx65H/The Girl with the Dragon Tattoo_65.jpg;$siteResource/images/65Wx65H/The Girl with the Dragon Tattoo_65.jpg;;;images
+;30Wx30H;/30Wx30H/The Girl with the Dragon Tattoo_30.jpg;$siteResource/images/30Wx30H/The Girl with the Dragon Tattoo_30.jpg;;;images
+# Create Media Containers
+INSERT_UPDATE MediaContainer;qualifier[unique=true];$medias;$catalogVersion
+;The Girl with the Dragon Tattoo;/1200Wx1200H/The Girl with the Dragon Tattoo_1200.jpg,/515Wx515H/The Girl with the Dragon Tattoo_515.jpg,/300Wx300H/The Girl with the Dragon Tattoo_300.jpg,/96Wx96H/The Girl with the Dragon Tattoo_96.jpg,/65Wx65H/The Girl with the Dragon Tattoo_65.jpg,/30Wx30H/The Girl with the Dragon Tattoo_30.jpg;
+# Update Products with Media and Media Containers
+UPDATE DcxbookmaniaProduct;code[unique=true];$picture;$thumbnail;$detail;$others;$normal;$thumbnails;$galleryImages;$catalogVersion
+;B108;/300Wx300H/The Girl with the Dragon Tattoo_300.jpg;/96Wx96H/The Girl with the Dragon Tattoo_96.jpg;/1200Wx1200H/The Girl with the Dragon Tattoo_1200.jpg;/515Wx515H/The Girl with the Dragon Tattoo_515.jpg,/65Wx65H/The Girl with the Dragon Tattoo_65.jpg,/30Wx30H/The Girl with the Dragon Tattoo_30.jpg;/300Wx300H/The Girl with the Dragon Tattoo_300.jpg;/96Wx96H/The Girl with the Dragon Tattoo_96.jpg;The Girl with the Dragon Tattoo;
+
+# Create Media for B109
+INSERT_UPDATE Media;mediaFormat(qualifier);code[unique=true];$media;mime[default='image/jpeg'];$catalogVersion;folder(qualifier)
+;1200Wx1200H;/1200Wx1200H/You_1200.jpg;$siteResource/images/1200Wx1200H/You_1200.jpg;;;images
+;515Wx515H;/515Wx515H/You_515.jpg;$siteResource/images/515Wx515H/You_515.jpg;;;images
+;300Wx300H;/300Wx300H/You_300.jpg;$siteResource/images/300Wx300H/You_300.jpg;;;images
+;96Wx96H;/96Wx96H/You_96.jpg;$siteResource/images/96Wx96H/You_96.jpg;;;images
+;65Wx65H;/65Wx65H/You_65.jpg;$siteResource/images/65Wx65H/You_65.jpg;;;images
+;30Wx30H;/30Wx30H/You_30.jpg;$siteResource/images/30Wx30H/You_30.jpg;;;images
+# Create Media Containers
+INSERT_UPDATE MediaContainer;qualifier[unique=true];$medias;$catalogVersion
+;You;/1200Wx1200H/You_1200.jpg,/515Wx515H/You_515.jpg,/300Wx300H/You_300.jpg,/96Wx96H/You_96.jpg,/65Wx65H/You_65.jpg,/30Wx30H/You_30.jpg;
+# Update Products with Media and Media Containers
+UPDATE DcxbookmaniaProduct;code[unique=true];$picture;$thumbnail;$detail;$others;$normal;$thumbnails;$galleryImages;$catalogVersion
+;B109;/300Wx300H/You_300.jpg;/96Wx96H/You_96.jpg;/1200Wx1200H/You_1200.jpg;/515Wx515H/You_515.jpg,/65Wx65H/You_65.jpg,/30Wx30H/You_30.jpg;/300Wx300H/You_300.jpg;/96Wx96H/You_96.jpg;You;
+
+# Create Media for B110
+INSERT_UPDATE Media;mediaFormat(qualifier);code[unique=true];$media;mime[default='image/jpeg'];$catalogVersion;folder(qualifier)
+;1200Wx1200H;/1200Wx1200H/The Girl Before_1200.jpg;$siteResource/images/1200Wx1200H/The Girl Before_1200.jpg;;;images
+;515Wx515H;/515Wx515H/The Girl Before_515.jpg;$siteResource/images/515Wx515H/The Girl Before_515.jpg;;;images
+;300Wx300H;/300Wx300H/The Girl Before_300.jpg;$siteResource/images/300Wx300H/The Girl Before_300.jpg;;;images
+;96Wx96H;/96Wx96H/The Girl Before_96.jpg;$siteResource/images/96Wx96H/The Girl Before_96.jpg;;;images
+;65Wx65H;/65Wx65H/The Girl Before_65.jpg;$siteResource/images/65Wx65H/The Girl Before_65.jpg;;;images
+;30Wx30H;/30Wx30H/The Girl Before_30.jpg;$siteResource/images/30Wx30H/The Girl Before_30.jpg;;;images
+# Create Media Containers
+INSERT_UPDATE MediaContainer;qualifier[unique=true];$medias;$catalogVersion
+;The Girl Before;/1200Wx1200H/The Girl Before_1200.jpg,/515Wx515H/The Girl Before_515.jpg,/300Wx300H/The Girl Before_300.jpg,/96Wx96H/The Girl Before_96.jpg,/65Wx65H/The Girl Before_65.jpg,/30Wx30H/The Girl Before_30.jpg;
+# Update Products with Media and Media Containers
+UPDATE DcxbookmaniaProduct;code[unique=true];$picture;$thumbnail;$detail;$others;$normal;$thumbnails;$galleryImages;$catalogVersion
+;B110;/300Wx300H/The Girl Before_300.jpg;/96Wx96H/The Girl Before_96.jpg;/1200Wx1200H/The Girl Before_1200.jpg;/515Wx515H/The Girl Before_515.jpg,/65Wx65H/The Girl Before_65.jpg,/30Wx30H/The Girl Before_30.jpg;/300Wx300H/The Girl Before_300.jpg;/96Wx96H/The Girl Before_96.jpg;The Girl Before;
+
+
+
+###B201###
+#INSERT_UPDATE Media;mediaFormat(qualifier);code[unique=true];$media;mime[default='image/jpeg'];$catalogVersion;folder(qualifier)
+#;1200Wx1200H;/1200Wx1200H/Agatha_Raisin_and_the_Quiche_of_Death_1200.jpg;$siteResource/images/1200Wx1200H/Agatha_Raisin_and_the_Quiche_of_Death_1200.jpg;;;images
+#;515Wx515H;/515Wx515H/Agatha_Raisin_and_the_Quiche_of_Death_515.jpg;$siteResource/images/515Wx515H/Agatha_Raisin_and_the_Quiche_of_Death_515.jpg;;;images
+#;300Wx300H;/300Wx300H/Agatha_Raisin_and_the_Quiche_of_Death_300.jpg;$siteResource/images/300Wx300H/Agatha_Raisin_and_the_Quiche_of_Death_300.jpg;;;images
+#;96Wx96H;/96Wx96H/Agatha_Raisin_and_the_Quiche_of_Death_96.jpg;$siteResource/images/96Wx96H/Agatha_Raisin_and_the_Quiche_of_Death_96.jpg;;;images
+#;65Wx65H;/65Wx65H/Agatha_Raisin_and_the_Quiche_of_Death_65.jpg;$siteResource/images/65Wx65H/Agatha_Raisin_and_the_Quiche_of_Death_65.jpg;;;images
+#;30Wx30H;/30Wx30H/Agatha_Raisin_and_the_Quiche_of_Death_30.jpg;$siteResource/images/30Wx30H/Agatha_Raisin_and_the_Quiche_of_Death_30.jpg;;;images
+
+# Create Media Containers
+#INSERT_UPDATE MediaContainer;qualifier[unique=true];$medias;$catalogVersion
+#;Agatha_Raisin_and_the_Quiche_of_Death;/1200Wx1200H/Agatha_Raisin_and_the_Quiche_of_Death_1200.jpg,/515Wx515H/Agatha_Raisin_and_the_Quiche_of_Death_515.jpg,/300Wx300H/Agatha_Raisin_and_the_Quiche_of_Death_300.jpg,/96Wx96H/Agatha_Raisin_and_the_Quiche_of_Death_96.jpg,/65Wx65H/Agatha_Raisin_and_the_Quiche_of_Death_65.jpg,/30Wx30H/Agatha_Raisin_and_the_Quiche_of_Death_30.jpg;
+
+# Update Products with Media and Media Containers
+#UPDATE DcxbookmaniaProduct;code[unique=true];$picture;$thumbnail;$detail;$others;$normal;$thumbnails;$galleryImages;$catalogVersion
+#;B201;/300Wx300H/Agatha_Raisin_and_the_Quiche_of_Death_300.jpg;/96Wx96H/Agatha_Raisin_and_the_Quiche_of_Death_96.jpg;/1200Wx1200H/Agatha_Raisin_and_the_Quiche_of_Death_1200.jpg;/515Wx515H/Agatha_Raisin_and_the_Quiche_of_Death_515.jpg,/65Wx65H/Agatha_Raisin_and_the_Quiche_of_Death_65.jpg,/30Wx30H/Agatha_Raisin_and_the_Quiche_of_Death_30.jpg;/300Wx300H/Agatha_Raisin_and_the_Quiche_of_Death_300.jpg;/96Wx96H/Agatha_Raisin_and_the_Quiche_of_Death_96.jpg;Agatha_Raisin_and_the_Quiche_of_Death;
+
+###### B202 #######
+#INSERT_UPDATE Media;mediaFormat(qualifier);code[unique=true];$media;mime[default='image/jpeg'];$catalogVersion;folder(qualifier)
+#;1200Wx1200H;/1200Wx1200H/Murder_at_the_Vicarage_1200.jpg;$siteResource/images/1200Wx1200H/Murder_at_the_Vicarage_1200.jpg;;;images
+#;515Wx515H;/515Wx515H/Murder_at_the_Vicarage_515.jpg;$siteResource/images/515Wx515H/Murder_at_the_Vicarage_515.jpg;;;images
+#;300Wx300H;/300Wx300H/Murder_at_the_Vicarage_300.jpg;$siteResource/images/300Wx300H/Murder_at_the_Vicarage_300.jpg;;;images
+#;96Wx96H;/96Wx96H/Murder_at_the_Vicarage_96.jpg;$siteResource/images/96Wx96H/Murder_at_the_Vicarage_96.jpg;;;images
+#;65Wx65H;/65Wx65H/Murder_at_the_Vicarage_65.jpg;$siteResource/images/65Wx65H/Murder_at_the_Vicarage_65.jpg;;;images
+#;30Wx30H;/30Wx30H/Murder_at_the_Vicarage_30.jpg;$siteResource/images/30Wx30H/Murder_at_the_Vicarage_30.jpg;;;images
+
+# Create Media Containers
+#INSERT_UPDATE MediaContainer;qualifier[unique=true];$medias;$catalogVersion
+#;Murder_at_the_Vicarage;/1200Wx1200H/Murder_at_the_Vicarage_1200.jpg,/515Wx515H/Murder_at_the_Vicarage_515.jpg,/300Wx300H/Murder_at_the_Vicarage_300.jpg,/96Wx96H/Murder_at_the_Vicarage_96.jpg,/65Wx65H/Murder_at_the_Vicarage_65.jpg,/30Wx30H/Murder_at_the_Vicarage_30.jpg;
+
+# Update Products with Media and Media Containers
+#UPDATE DcxbookmaniaProduct;code[unique=true];$picture;$thumbnail;$detail;$others;$normal;$thumbnails;$galleryImages;$catalogVersion
+#;B202;/300Wx300H/Murder_at_the_Vicarage_300.jpg;/96Wx96H/Murder_at_the_Vicarage_96.jpg;/1200Wx1200H/Murder_at_the_Vicarage_1200.jpg;/515Wx515H/Murder_at_the_Vicarage_515.jpg,/65Wx65H/Murder_at_the_Vicarage_65.jpg,/30Wx30H/Murder_at_the_Vicarage_30.jpg;/300Wx300H/Murder_at_the_Vicarage_300.jpg;/96Wx96H/Murder_at_the_Vicarage_96.jpg;Murder_at_the_Vicarage;
+
+ 
+########B203######
+#INSERT_UPDATE Media;mediaFormat(qualifier);code[unique=true];$media;mime[default='image/jpeg'];$catalogVersion;folder(qualifier)
+#;1200Wx1200H;/1200Wx1200H/The No. 1 Ladies' Detective Agency_1200.jpg;$siteResource/images/1200Wx1200H/The No. 1 Ladies' Detective Agency_1200.jpg;;;images
+#;515Wx515H;/515Wx515H/The No. 1 Ladies' Detective Agency_515.jpg;$siteResource/images/515Wx515H/The No. 1 Ladies' Detective Agency_515.jpg;;;images
+#;300Wx300H;/300Wx300H/The No. 1 Ladies' Detective Agency_300.jpg;$siteResource/images/300Wx300H/The No. 1 Ladies' Detective Agency_300.jpg;;;images
+#;96Wx96H;/96Wx96H/The No. 1 Ladies' Detective Agency_96.jpg;$siteResource/images/96Wx96H/The No. 1 Ladies' Detective Agency_96.jpg;;;images
+#;65Wx65H;/65Wx65H/The No. 1 Ladies' Detective Agency_65.jpg;$siteResource/images/65Wx65H/The No. 1 Ladies' Detective Agency_65.jpg;;;images
+#;30Wx30H;/30Wx30H/The No. 1 Ladies' Detective Agency_30.jpg;$siteResource/images/30Wx30H/The No. 1 Ladies' Detective Agency_30.jpg;;;images
+
+# Create Media Containers
+#INSERT_UPDATE MediaContainer;qualifier[unique=true];$medias;$catalogVersion
+#;The No. 1 Ladies' Detective Agency;/1200Wx1200H/The No. 1 Ladies' Detective Agency_1200.jpg,/515Wx515H/The No. 1 Ladies' Detective Agency_515.jpg,/300Wx300H/The No. 1 Ladies' Detective Agency_300.jpg,/96Wx96H/The No. 1 Ladies' Detective Agency_96.jpg,/65Wx65H/The No. 1 Ladies' Detective Agency_65.jpg,/30Wx30H/The No. 1 Ladies' Detective Agency_30.jpg;
+
+# Update Products with Media and Media Containers
+#UPDATE DcxbookmaniaProduct;code[unique=true];$picture;$thumbnail;$detail;$others;$normal;$thumbnails;$galleryImages;$catalogVersion
+#;B203;/300Wx300H/The No. 1 Ladies' Detective Agency_300.jpg;/96Wx96H/The No. 1 Ladies' Detective Agency_96.jpg;/1200Wx1200H/The No. 1 Ladies' Detective Agency_1200.jpg;/515Wx515H/The No. 1 Ladies' Detective Agency_515.jpg,/65Wx65H/The No. 1 Ladies' Detective Agency_65.jpg,/30Wx30H/The No. 1 Ladies' Detective Agency_30.jpg;/300Wx300H/The No. 1 Ladies' Detective Agency_300.jpg;/96Wx96H/The No. 1 Ladies' Detective Agency_96.jpg;The No. 1 Ladies' Detective Agency;
+
+ 
+######B204######
+#INSERT_UPDATE Media;mediaFormat(qualifier);code[unique=true];$media;mime[default='image/jpeg'];$catalogVersion;folder(qualifier)
+#;1200Wx1200H;/1200Wx1200H/Chocolate Chip Cookie Murder_1200.jpg;$siteResource/images/1200Wx1200H/Chocolate Chip Cookie Murder_1200.jpg;;;images
+#;515Wx515H;/515Wx515H/Chocolate Chip Cookie Murder_515.jpg;$siteResource/images/515Wx515H/Chocolate Chip Cookie Murder_515.jpg;;;images
+#;300Wx300H;/300Wx300H/Chocolate Chip Cookie Murder_300.jpg;$siteResource/images/300Wx300H/Chocolate Chip Cookie Murder_300.jpg;;;images
+#;96Wx96H;/96Wx96H/Chocolate Chip Cookie Murder_96.jpg;$siteResource/images/96Wx96H/Chocolate Chip Cookie Murder_96.jpg;;;images
+#;65Wx65H;/65Wx65H/Chocolate Chip Cookie Murder_65.jpg;$siteResource/images/65Wx65H/Chocolate Chip Cookie Murder_65.jpg;;;images
+#;30Wx30H;/30Wx30H/Chocolate Chip Cookie Murder_30.jpg;$siteResource/images/30Wx30H/Chocolate Chip Cookie Murder_30.jpg;;;images
+
+# Create Media Containers
+#INSERT_UPDATE MediaContainer;qualifier[unique=true];$medias;$catalogVersion
+#;Chocolate Chip Cookie Murder;/1200Wx1200H/Chocolate Chip Cookie Murder_1200.jpg,/515Wx515H/Chocolate Chip Cookie Murder_515.jpg,/300Wx300H/Chocolate Chip Cookie Murder_300.jpg,/96Wx96H/Chocolate Chip Cookie Murder_96.jpg,/65Wx65H/Chocolate Chip Cookie Murder_65.jpg,/30Wx30H/Chocolate Chip Cookie Murder_30.jpg;
+
+# Update Products with Media and Media Containers
+#UPDATE DcxbookmaniaProduct;code[unique=true];$picture;$thumbnail;$detail;$others;$normal;$thumbnails;$galleryImages;$catalogVersion
+#;B204;/300Wx300H/Chocolate Chip Cookie Murder_300.jpg;/96Wx96H/Chocolate Chip Cookie Murder_96.jpg;/1200Wx1200H/Chocolate Chip Cookie Murder_1200.jpg;/515Wx515H/Chocolate Chip Cookie Murder_515.jpg,/65Wx65H/Chocolate Chip Cookie Murder_65.jpg,/30Wx30H/Chocolate Chip Cookie Murder_30.jpg;/300Wx300H/Chocolate Chip Cookie Murder_300.jpg;/96Wx96H/Chocolate Chip Cookie Murder_96.jpg;Chocolate Chip Cookie Murder;
+
+ 
+########B205########
+
+#INSERT_UPDATE Media;mediaFormat(qualifier);code[unique=true];$media;mime[default='image/jpeg'];$catalogVersion;folder(qualifier)
+#;1200Wx1200H;/1200Wx1200H/Catering to Nobody_1200.jpg;$siteResource/images/1200Wx1200H/Catering to Nobody_1200.jpg;;;images
+#;515Wx515H;/515Wx515H/Catering to Nobody_515.jpg;$siteResource/images/515Wx515H/Catering to Nobody_515.jpg;;;images
+#;300Wx300H;/300Wx300H/Catering to Nobody_300.jpg;$siteResource/images/300Wx300H/Catering to Nobody_300.jpg;;;images
+#;96Wx96H;/96Wx96H/Catering to Nobody_96.jpg;$siteResource/images/96Wx96H/Catering to Nobody_96.jpg;;;images
+#;65Wx65H;/65Wx65H/Catering to Nobody_65.jpg;$siteResource/images/65Wx65H/Catering to Nobody_65.jpg;;;images
+#;30Wx30H;/30Wx30H/Catering to Nobody_30.jpg;$siteResource/images/30Wx30H/Catering to Nobody_30.jpg;;;images
+
+# Create Media Containers
+
+#INSERT_UPDATE MediaContainer;qualifier[unique=true];$medias;$catalogVersion
+#;Catering to Nobody;/1200Wx1200H/Catering to Nobody_1200.jpg,/515Wx515H/Catering to Nobody_515.jpg,/300Wx300H/Catering to Nobody_300.jpg,/96Wx96H/Catering to Nobody_96.jpg,/65Wx65H/Catering to Nobody_65.jpg,/30Wx30H/Catering to Nobody_30.jpg;
+
+# Update Products with Media and Media Containers
+
+#UPDATE DcxbookmaniaProduct;code[unique=true];$picture;$thumbnail;$detail;$others;$normal;$thumbnails;$galleryImages;$catalogVersion
+#;B205;/300Wx300H/Catering to Nobody_300.jpg;/96Wx96H/Catering to Nobody_96.jpg;/1200Wx1200H/Catering to Nobody_1200.jpg;/515Wx515H/Catering to Nobody_515.jpg,/65Wx65H/Catering to Nobody_65.jpg,/30Wx30H/Catering to Nobody_30.jpg;/300Wx300H/Catering to Nobody_300.jpg;/96Wx96H/Catering to Nobody_96.jpg;Catering to Nobody;
+
+#########B206##########
+
+#INSERT_UPDATE Media;mediaFormat(qualifier);code[unique=true];$media;mime[default='image/jpeg'];$catalogVersion;folder(qualifier)
+#;1200Wx1200H;/1200Wx1200H/Maisie Dobbs_1200.jpg;$siteResource/images/1200Wx1200H/Maisie Dobbs_1200.jpg;;;images
+#;515Wx515H;/515Wx515H/Maisie Dobbs_515.jpg;$siteResource/images/515Wx515H/Maisie Dobbs_515.jpg;;;images
+#;300Wx300H;/300Wx300H/Maisie Dobbs_300.jpg;$siteResource/images/300Wx300H/Maisie Dobbs_300.jpg;;;images
+#;96Wx96H;/96Wx96H/Maisie Dobbs_96.jpg;$siteResource/images/96Wx96H/Maisie Dobbs_96.jpg;;;images
+#;65Wx65H;/65Wx65H/Maisie Dobbs_65.jpg;$siteResource/images/65Wx65H/Maisie Dobbs_65.jpg;;;images
+#;30Wx30H;/30Wx30H/Maisie Dobbs_30.jpg;$siteResource/images/30Wx30H/Maisie Dobbs_30.jpg;;;images
+
+# Create Media Containers
+
+#INSERT_UPDATE MediaContainer;qualifier[unique=true];$medias;$catalogVersion
+#;Maisie Dobbs;/1200Wx1200H/Maisie Dobbs_1200.jpg,/515Wx515H/Maisie Dobbs_515.jpg,/300Wx300H/Maisie Dobbs_300.jpg,/96Wx96H/Maisie Dobbs_96.jpg,/65Wx65H/Maisie Dobbs_65.jpg,/30Wx30H/Maisie Dobbs_30.jpg;
+
+# Update Products with Media and Media Containers
+
+#UPDATE DcxbookmaniaProduct;code[unique=true];$picture;$thumbnail;$detail;$others;$normal;$thumbnails;$galleryImages;$catalogVersion
+#;B206;/300Wx300H/Maisie Dobbs_300.jpg;/96Wx96H/Maisie Dobbs_96.jpg;/1200Wx1200H/Maisie Dobbs_1200.jpg;/515Wx515H/Maisie Dobbs_515.jpg,/65Wx65H/Maisie Dobbs_65.jpg,/30Wx30H/Maisie Dobbs_30.jpg;/300Wx300H/Maisie Dobbs_300.jpg;/96Wx96H/Maisie Dobbs_96.jpg;Maisie Dobbs;
+
+##########B207########
+
+#INSERT_UPDATE Media;mediaFormat(qualifier);code[unique=true];$media;mime[default='image/jpeg'];$catalogVersion;folder(qualifier)
+#;1200Wx1200H;/1200Wx1200H/The Sweetness at the Bottom of the Pie_1200.jpg;$siteResource/images/1200Wx1200H/The Sweetness at the Bottom of the Pie_1200.jpg;;;images
+#;515Wx515H;/515Wx515H/The Sweetness at the Bottom of the Pie_515.jpg;$siteResource/images/515Wx515H/The Sweetness at the Bottom of the Pie_515.jpg;;;images
+#;300Wx300H;/300Wx300H/The Sweetness at the Bottom of the Pie_300.jpg;$siteResource/images/300Wx300H/The Sweetness at the Bottom of the Pie_300.jpg;;;images
+#;96Wx96H;/96Wx96H/The Sweetness at the Bottom of the Pie_96.jpg;$siteResource/images/96Wx96H/The Sweetness at the Bottom of the Pie_96.jpg;;;images
+#;65Wx65H;/65Wx65H/The Sweetness at the Bottom of the Pie_65.jpg;$siteResource/images/65Wx65H/The Sweetness at the Bottom of the Pie_65.jpg;;;images
+#;30Wx30H;/30Wx30H/The Sweetness at the Bottom of the Pie_30.jpg;$siteResource/images/30Wx30H/The Sweetness at the Bottom of the Pie_30.jpg;;;images
+
+# Create Media Containers
+
+#INSERT_UPDATE MediaContainer;qualifier[unique=true];$medias;$catalogVersion
+#;The Sweetness at the Bottom of the Pie;/1200Wx1200H/The Sweetness at the Bottom of the Pie_1200.jpg,/515Wx515H/The Sweetness at the Bottom of the Pie_515.jpg,/300Wx300H/The Sweetness at the Bottom of the Pie_300.jpg,/96Wx96H/The Sweetness at the Bottom of the Pie_96.jpg,/65Wx65H/The Sweetness at the Bottom of the Pie_65.jpg,/30Wx30H/The Sweetness at the Bottom of the Pie_30.jpg;
+
+# Update Products with Media and Media Containers
+
+#UPDATE DcxbookmaniaProduct;code[unique=true];$picture;$thumbnail;$detail;$others;$normal;$thumbnails;$galleryImages;$catalogVersion
+#;B207;/300Wx300H/The Sweetness at the Bottom of the Pie_300.jpg;/96Wx96H/The Sweetness at the Bottom of the Pie_96.jpg;/1200Wx1200H/The Sweetness at the Bottom of the Pie_1200.jpg;/515Wx515H/The Sweetness at the Bottom of the Pie_515.jpg,/65Wx65H/The Sweetness at the Bottom of the Pie_65.jpg,/30Wx30H/The Sweetness at the Bottom of the Pie_30.jpg;/300Wx300H/The Sweetness at the Bottom of the Pie_300.jpg;/96Wx96H/The Sweetness at the Bottom of the Pie_96.jpg;The Sweetness at the Bottom of the Pie;
+
+##########B208########
+
+#INSERT_UPDATE Media;mediaFormat(qualifier);code[unique=true];$media;mime[default='image/jpeg'];$catalogVersion;folder(qualifier)
+#;1200Wx1200H;/1200Wx1200H/Aunty Lee's Delights_1200.jpg;$siteResource/images/1200Wx1200H/Aunty Lee's Delights_1200.jpg;;;images
+#;515Wx515H;/515Wx515H/Aunty Lee's Delights_515.jpg;$siteResource/images/515Wx515H/Aunty Lee's Delights_515.jpg;;;images
+#;300Wx300H;/300Wx300H/Aunty Lee's Delights_300.jpg;$siteResource/images/300Wx300H/Aunty Lee's Delights_300.jpg;;;images
+#;96Wx96H;/96Wx96H/Aunty Lee's Delights_96.jpg;$siteResource/images/96Wx96H/Aunty Lee's Delights_96.jpg;;;images
+#;65Wx65H;/65Wx65H/Aunty Lee's Delights_65.jpg;$siteResource/images/65Wx65H/Aunty Lee's Delights_65.jpg;;;images
+#;30Wx30H;/30Wx30H/Aunty Lee's Delights_30.jpg;$siteResource/images/30Wx30H/Aunty Lee's Delights_30.jpg;;;images
+
+# Create Media Containers
+
+#INSERT_UPDATE MediaContainer;qualifier[unique=true];$medias;$catalogVersion
+#;Aunty Lee's Delights;/1200Wx1200H/Aunty Lee's Delights_1200.jpg,/515Wx515H/Aunty Lee's Delights_515.jpg,/300Wx300H/Aunty Lee's Delights_300.jpg,/96Wx96H/Aunty Lee's Delights_96.jpg,/65Wx65H/Aunty Lee's Delights_65.jpg,/30Wx30H/Aunty Lee's Delights_30.jpg;
+
+# Update Products with Media and Media Containers
+
+#UPDATE DcxbookmaniaProduct;code[unique=true];$picture;$thumbnail;$detail;$others;$normal;$thumbnails;$galleryImages;$catalogVersion
+#;B208;/300Wx300H/Aunty Lee's Delights_300.jpg;/96Wx96H/Aunty Lee's Delights_96.jpg;/1200Wx1200H/Aunty Lee's Delights_1200.jpg;/515Wx515H/Aunty Lee's Delights_515.jpg,/65Wx65H/Aunty Lee's Delights_65.jpg,/30Wx30H/Aunty Lee's Delights_30.jpg;/300Wx300H/Aunty Lee's Delights_300.jpg;/96Wx96H/Aunty Lee's Delights_96.jpg;Aunty Lee's Delights;
+
+
+
+
+##########B209########
+
+#INSERT_UPDATE Media;mediaFormat(qualifier);code[unique=true];$media;mime[default='image/jpeg'];$catalogVersion;folder(qualifier)
+#;1200Wx1200H;/1200Wx1200H/Murder Is Binding_1200.jpg;$siteResource/images/1200Wx1200H/Murder Is Binding_1200.jpg;;;images
+#;515Wx515H;/515Wx515H/Murder Is Binding_515.jpg;$siteResource/images/515Wx515H/Murder Is Binding_515.jpg;;;images
+#;300Wx300H;/300Wx300H/Murder Is Binding_300.jpg;$siteResource/images/300Wx300H/Murder Is Binding_300.jpg;;;images
+#;96Wx96H;/96Wx96H/Murder Is Binding_96.jpg;$siteResource/images/96Wx96H/Murder Is Binding_96.jpg;;;images
+#;65Wx65H;/65Wx65H/Murder Is Binding_65.jpg;$siteResource/images/65Wx65H/Murder Is Binding_65.jpg;;;images
+#;30Wx30H;/30Wx30H/Murder Is Binding_30.jpg;$siteResource/images/30Wx30H/Murder Is Binding_30.jpg;;;images
+
+# Create Media Containers
+
+#INSERT_UPDATE MediaContainer;qualifier[unique=true];$medias;$catalogVersion
+#;Murder Is Binding;/1200Wx1200H/Murder Is Binding_1200.jpg,/515Wx515H/Murder Is Binding_515.jpg,/300Wx300H/Murder Is Binding_300.jpg,/96Wx96H/Murder Is Binding_96.jpg,/65Wx65H/Murder Is Binding_65.jpg,/30Wx30H/Murder Is Binding_30.jpg;
+
+# Update Products with Media and Media Containers
+
+#UPDATE DcxbookmaniaProduct;code[unique=true];$picture;$thumbnail;$detail;$others;$normal;$thumbnails;$galleryImages;$catalogVersion
+#;B209;/300Wx300H/Murder Is Binding_300.jpg;/96Wx96H/Murder Is Binding_96.jpg;/1200Wx1200H/Murder Is Binding_1200.jpg;/515Wx515H/Murder Is Binding_515.jpg,/65Wx65H/Murder Is Binding_65.jpg,/30Wx30H/Murder Is Binding_30.jpg;/300Wx300H/Murder Is Binding_300.jpg;/96Wx96H/Murder Is Binding_96.jpg;Murder Is Binding;
+
+ 
+
+ 
+
+##########B210########
+
+#INSERT_UPDATE Media;mediaFormat(qualifier);code[unique=true];$media;mime[default='image/jpeg'];$catalogVersion;folder(qualifier)
+#;1200Wx1200H;/1200Wx1200H/The Cat Who Could Read Backwards_1200.jpg;$siteResource/images/1200Wx1200H/The Cat Who Could Read Backwards_1200.jpg;;;images
+#;515Wx515H;/515Wx515H/The Cat Who Could Read Backwards_515.jpg;$siteResource/images/515Wx515H/The Cat Who Could Read Backwards_515.jpg;;;images
+#;300Wx300H;/300Wx300H/The Cat Who Could Read Backwards_300.jpg;$siteResource/images/300Wx300H/The Cat Who Could Read Backwards_300.jpg;;;images
+#;96Wx96H;/96Wx96H/The Cat Who Could Read Backwards_96.jpg;$siteResource/images/96Wx96H/The Cat Who Could Read Backwards_96.jpg;;;images
+#;65Wx65H;/65Wx65H/The Cat Who Could Read Backwards_65.jpg;$siteResource/images/65Wx65H/The Cat Who Could Read Backwards_65.jpg;;;images
+#;30Wx30H;/30Wx30H/The Cat Who Could Read Backwards_30.jpg;$siteResource/images/30Wx30H/The Cat Who Could Read Backwards_30.jpg;;;images
+
+# Create Media Containers
+
+#INSERT_UPDATE MediaContainer;qualifier[unique=true];$medias;$catalogVersion
+#;The Cat Who Could Read Backwards;/1200Wx1200H/The Cat Who Could Read Backwards_1200.jpg,/515Wx515H/The Cat Who Could Read Backwards_515.jpg,/300Wx300H/The Cat Who Could Read Backwards_300.jpg,/96Wx96H/The Cat Who Could Read Backwards_96.jpg,/65Wx65H/The Cat Who Could Read Backwards_65.jpg,/30Wx30H/The Cat Who Could Read Backwards_30.jpg;
+
+# Update Products with Media and Media Containers
+
+#UPDATE DcxbookmaniaProduct;code[unique=true];$picture;$thumbnail;$detail;$others;$normal;$thumbnails;$galleryImages;$catalogVersion
+#;B210;/300Wx300H/The Cat Who Could Read Backwards_300.jpg;/96Wx96H/The Cat Who Could Read Backwards_96.jpg;/1200Wx1200H/The Cat Who Could Read Backwards_1200.jpg;/515Wx515H/The Cat Who Could Read Backwards_515.jpg,/65Wx65H/The Cat Who Could Read Backwards_65.jpg,/30Wx30H/The Cat Who Could Read Backwards_30.jpg;/300Wx300H/The Cat Who Could Read Backwards_300.jpg;/96Wx96H/The Cat Who Could Read Backwards_96.jpg;The Cat Who Could Read Backwards;
+
+
+# Create Media for C101
+INSERT_UPDATE Media;mediaFormat(qualifier);code[unique=true];$media;mime[default='image/jpeg'];$catalogVersion;folder(qualifier)
+;1200Wx1200H;/1200Wx1200H/Outlander 1200.jpg;$siteResource/images/1200Wx1200H/Outlander 1200.jpg;;;images
+;515Wx515H;/515Wx515H/Outlander 515.jpg;$siteResource/images/515Wx515H/Outlander 515.jpg;;;images
+;300Wx300H;/300Wx300H/Outlander 300.jpg;$siteResource/images/300Wx300H/Outlander 300.jpg;;;images
+;96Wx96H;/96Wx96H/Outlander 96.jpg;$siteResource/images/96Wx96H/Outlander 96.jpg;;;images
+;65Wx65H;/65Wx65H/Outlander 65.jpg;$siteResource/images/65Wx65H/Outlander 65.jpg;;;images
+;30Wx30H;/30Wx30H/Outlander 30.jpg;$siteResource/images/30Wx30H/Outlander 30.jpg;;;images
+# Create Media Containers
+INSERT_UPDATE MediaContainer;qualifier[unique=true];$medias;$catalogVersion
+;Outlander;/1200Wx1200H/Outlander 1200.jpg,/515Wx515H/Outlander 515.jpg,/300Wx300H/Outlander 300.jpg,/96Wx96H/Outlander 96.jpg,/65Wx65H/Outlander 65.jpg,/30Wx30H/Outlander 30.jpg;
+# Update Products with Media and Media Containers
+UPDATE DcxbookmaniaProduct;code[unique=true];$picture;$thumbnail;$detail;$others;$normal;$thumbnails;$galleryImages;$catalogVersion
+;C101;/300Wx300H/Outlander 300.jpg;/96Wx96H/Outlander 96.jpg;/1200Wx1200H/Outlander 1200.jpg;/515Wx515H/Outlander 515.jpg,/65Wx65H/Outlander 65.jpg,/30Wx30H/Outlander 30.jpg;/300Wx300H/Outlander 300.jpg;/96Wx96H/Outlander 96.jpg;Outlander;
+
+# Create Media for C102
+INSERT_UPDATE Media;mediaFormat(qualifier);code[unique=true];$media;mime[default='image/jpeg'];$catalogVersion;folder(qualifier)
+;1200Wx1200H;/1200Wx1200H/Pride and Prejudice 1200.jpg;$siteResource/images/1200Wx1200H/Pride and Prejudice 1200.jpg;;;images
+;515Wx515H;/515Wx515H/Pride and Prejudice 515.jpg;$siteResource/images/515Wx515H/Pride and Prejudice 515.jpg;;;images
+;300Wx300H;/300Wx300H/Pride and Prejudice 300.jpg;$siteResource/images/300Wx300H/Pride and Prejudice 300.jpg;;;images
+;96Wx96H;/96Wx96H/Pride and Prejudice 96.jpg;$siteResource/images/96Wx96H/Pride and Prejudice 96.jpg;;;images
+;65Wx65H;/65Wx65H/Pride and Prejudice 65.jpg;$siteResource/images/65Wx65H/Pride and Prejudice 65.jpg;;;images
+;30Wx30H;/30Wx30H/Pride and Prejudice 30.jpg;$siteResource/images/30Wx30H/Pride and Prejudice 30.jpg;;;images
+# Create Media Containers
+INSERT_UPDATE MediaContainer;qualifier[unique=true];$medias;$catalogVersion
+;Pride and Prejudice;/1200Wx1200H/Pride and Prejudice 1200.jpg,/515Wx515H/Pride and Prejudice 515.jpg,/300Wx300H/Pride and Prejudice 300.jpg,/96Wx96H/Pride and Prejudice 96.jpg,/65Wx65H/Pride and Prejudice 65.jpg,/30Wx30H/Pride and Prejudice 30.jpg;
+# Update Products with Media and Media Containers
+UPDATE DcxbookmaniaProduct;code[unique=true];$picture;$thumbnail;$detail;$others;$normal;$thumbnails;$galleryImages;$catalogVersion
+;C102;/300Wx300H/Pride and Prejudice 300.jpg;/96Wx96H/Pride and Prejudice 96.jpg;/1200Wx1200H/Pride and Prejudice 1200.jpg;/515Wx515H/Pride and Prejudice 515.jpg,/65Wx65H/Pride and Prejudice 65.jpg,/30Wx30H/Pride and Prejudice 30.jpg;/300Wx300H/Pride and Prejudice 300.jpg;/96Wx96H/Pride and Prejudice 96.jpg;Pride and Prejudice;
+
+
+
+# Create Media for C103
+INSERT_UPDATE Media;mediaFormat(qualifier);code[unique=true];$media;mime[default='image/jpeg'];$catalogVersion;folder(qualifier)
+;1200Wx1200H;/1200Wx1200H/The Duke and I 1200.jpg;$siteResource/images/1200Wx1200H/The Duke and I 1200.jpg;;;images
+;515Wx515H;/515Wx515H/The Duke and I 515.jpg;$siteResource/images/515Wx515H/The Duke and I 515.jpg;;;images
+;300Wx300H;/300Wx300H/The Duke and I 300.jpg;$siteResource/images/300Wx300H/The Duke and I 300.jpg;;;images
+;96Wx96H;/96Wx96H/The Duke and I 96.jpg;$siteResource/images/96Wx96H/The Duke and I 96.jpg;;;images
+;65Wx65H;/65Wx65H/The Duke and I 65.jpg;$siteResource/images/65Wx65H/The Duke and I 65.jpg;;;images
+;30Wx30H;/30Wx30H/The Duke and I 30.jpg;$siteResource/images/30Wx30H/The Duke and I 30.jpg;;;images
+# Create Media Containers
+INSERT_UPDATE MediaContainer;qualifier[unique=true];$medias;$catalogVersion
+;The Duke and I;/1200Wx1200H/The Duke and I 1200.jpg,/515Wx515H/The Duke and I 515.jpg,/300Wx300H/The Duke and I 300.jpg,/96Wx96H/The Duke and I 96.jpg,/65Wx65H/The Duke and I 65.jpg,/30Wx30H/The Duke and I 30.jpg;
+# Update Products with Media and Media Containers
+UPDATE DcxbookmaniaProduct;code[unique=true];$picture;$thumbnail;$detail;$others;$normal;$thumbnails;$galleryImages;$catalogVersion
+;C103;/300Wx300H/The Duke and I 300.jpg;/96Wx96H/The Duke and I 96.jpg;/1200Wx1200H/The Duke and I 1200.jpg;/515Wx515H/The Duke and I 515.jpg,/65Wx65H/The Duke and I 65.jpg,/30Wx30H/The Duke and I 30.jpg;/300Wx300H/The Duke and I 300.jpg;/96Wx96H/The Duke and I 96.jpg;The Duke and I;
+
+
+
+# Create Media for C104
+INSERT_UPDATE Media;mediaFormat(qualifier);code[unique=true];$media;mime[default='image/jpeg'];$catalogVersion;folder(qualifier)
+;1200Wx1200H;/1200Wx1200H/The Bronze Horseman 1200.jpg;$siteResource/images/1200Wx1200H/The Bronze Horseman 1200.jpg;;;images
+;515Wx515H;/515Wx515H/The Bronze Horseman 515.jpg;$siteResource/images/515Wx515H/The Bronze Horseman 515.jpg;;;images
+;300Wx300H;/300Wx300H/The Bronze Horseman 300.jpg;$siteResource/images/300Wx300H/The Bronze Horseman 300.jpg;;;images
+;96Wx96H;/96Wx96H/The Bronze Horseman 96.jpg;$siteResource/images/96Wx96H/The Bronze Horseman 96.jpg;;;images
+;65Wx65H;/65Wx65H/The Bronze Horseman 65.jpg;$siteResource/images/65Wx65H/The Bronze Horseman 65.jpg;;;images
+;30Wx30H;/30Wx30H/The Bronze Horseman 30.jpg;$siteResource/images/30Wx30H/The Bronze Horseman 30.jpg;;;images
+# Create Media Containers
+INSERT_UPDATE MediaContainer;qualifier[unique=true];$medias;$catalogVersion
+;The Bronze Horseman;/1200Wx1200H/The Bronze Horseman 1200.jpg,/515Wx515H/The Bronze Horseman 515.jpg,/300Wx300H/The Bronze Horseman 300.jpg,/96Wx96H/The Bronze Horseman 96.jpg,/65Wx65H/The Bronze Horseman 65.jpg,/30Wx30H/The Bronze Horseman 30.jpg;
+# Update Products with Media and Media Containers
+UPDATE DcxbookmaniaProduct;code[unique=true];$picture;$thumbnail;$detail;$others;$normal;$thumbnails;$galleryImages;$catalogVersion
+;C104;/300Wx300H/The Bronze Horseman 300.jpg;/96Wx96H/The Bronze Horseman 96.jpg;/1200Wx1200H/The Bronze Horseman 1200.jpg;/515Wx515H/The Bronze Horseman 515.jpg,/65Wx65H/The Bronze Horseman 65.jpg,/30Wx30H/The Bronze Horseman 30.jpg;/300Wx300H/The Bronze Horseman 300.jpg;/96Wx96H/The Bronze Horseman 96.jpg;The Bronze Horseman;
+
+
+# Create Media for C105
+INSERT_UPDATE Media;mediaFormat(qualifier);code[unique=true];$media;mime[default='image/jpeg'];$catalogVersion;folder(qualifier)
+;1200Wx1200H;/1200Wx1200H/A Knight in Shining Armor 1200.jpg;$siteResource/images/1200Wx1200H/A Knight in Shining Armor 1200.jpg;;;images
+;515Wx515H;/515Wx515H/A Knight in Shining Armor 515.jpg;$siteResource/images/515Wx515H/A Knight in Shining Armor 515.jpg;;;images
+;300Wx300H;/300Wx300H/A Knight in Shining Armor 300.jpg;$siteResource/images/300Wx300H/A Knight in Shining Armor 300.jpg;;;images
+;96Wx96H;/96Wx96H/A Knight in Shining Armor 96.jpg;$siteResource/images/96Wx96H/A Knight in Shining Armor 96.jpg;;;images
+;65Wx65H;/65Wx65H/A Knight in Shining Armor 65.jpg;$siteResource/images/65Wx65H/A Knight in Shining Armor 65.jpg;;;images
+;30Wx30H;/30Wx30H/A Knight in Shining Armor 30.jpg;$siteResource/images/30Wx30H/A Knight in Shining Armor 30.jpg;;;images
+# Create Media Containers
+INSERT_UPDATE MediaContainer;qualifier[unique=true];$medias;$catalogVersion
+;A Knight in Shining Armor;/1200Wx1200H/A Knight in Shining Armor 1200.jpg,/515Wx515H/A Knight in Shining Armor 515.jpg,/300Wx300H/A Knight in Shining Armor 300.jpg,/96Wx96H/A Knight in Shining Armor 96.jpg,/65Wx65H/A Knight in Shining Armor 65.jpg,/30Wx30H/A Knight in Shining Armor 30.jpg;
+# Update Products with Media and Media Containers
+UPDATE DcxbookmaniaProduct;code[unique=true];$picture;$thumbnail;$detail;$others;$normal;$thumbnails;$galleryImages;$catalogVersion
+;C105;/300Wx300H/A Knight in Shining Armor 300.jpg;/96Wx96H/A Knight in Shining Armor 96.jpg;/1200Wx1200H/A Knight in Shining Armor 1200.jpg;/515Wx515H/A Knight in Shining Armor 515.jpg,/65Wx65H/A Knight in Shining Armor 65.jpg,/30Wx30H/A Knight in Shining Armor 30.jpg;/300Wx300H/A Knight in Shining Armor 300.jpg;/96Wx96H/A Knight in Shining Armor 96.jpg;A Knight in Shining Armor;
+
+
+# Create Media for C106
+INSERT_UPDATE Media;mediaFormat(qualifier);code[unique=true];$media;mime[default='image/jpeg'];$catalogVersion;folder(qualifier)
+;1200Wx1200H;/1200Wx1200H/Devil in Winter 1200.jpg;$siteResource/images/1200Wx1200H/Devil in Winter 1200.jpg;;;images
+;515Wx515H;/515Wx515H/Devil in Winter 515.jpg;$siteResource/images/515Wx515H/Devil in Winter 515.jpg;;;images
+;300Wx300H;/300Wx300H/Devil in Winter 300.jpg;$siteResource/images/300Wx300H/Devil in Winter 300.jpg;;;images
+;96Wx96H;/96Wx96H/Devil in Winter 96.jpg;$siteResource/images/96Wx96H/Devil in Winter 96.jpg;;;images
+;65Wx65H;/65Wx65H/Devil in Winter 65.jpg;$siteResource/images/65Wx65H/Devil in Winter 65.jpg;;;images
+;30Wx30H;/30Wx30H/Devil in Winter 30.jpg;$siteResource/images/30Wx30H/Devil in Winter 30.jpg;;;images
+# Create Media Containers
+INSERT_UPDATE MediaContainer;qualifier[unique=true];$medias;$catalogVersion
+;Devil in Winter;/1200Wx1200H/Devil in Winter 1200.jpg,/515Wx515H/Devil in Winter 515.jpg,/300Wx300H/Devil in Winter 300.jpg,/96Wx96H/Devil in Winter 96.jpg,/65Wx65H/Devil in Winter 65.jpg,/30Wx30H/Devil in Winter 30.jpg;
+# Update Products with Media and Media Containers
+UPDATE DcxbookmaniaProduct;code[unique=true];$picture;$thumbnail;$detail;$others;$normal;$thumbnails;$galleryImages;$catalogVersion
+;C106;/300Wx300H/Devil in Winter 300.jpg;/96Wx96H/Devil in Winter 96.jpg;/1200Wx1200H/Devil in Winter 1200.jpg;/515Wx515H/Devil in Winter 515.jpg,/65Wx65H/Devil in Winter 65.jpg,/30Wx30H/Devil in Winter 30.jpg;/300Wx300H/Devil in Winter 300.jpg;/96Wx96H/Devil in Winter 96.jpg;Devil in Winter;
+
+
+# Create Media for C107
+INSERT_UPDATE Media;mediaFormat(qualifier);code[unique=true];$media;mime[default='image/jpeg'];$catalogVersion;folder(qualifier)
+;1200Wx1200H;/1200Wx1200H/Lord of Scoundrels 1200.jpg;$siteResource/images/1200Wx1200H/Lord of Scoundrels 1200.jpg;;;images
+;515Wx515H;/515Wx515H/Lord of Scoundrels 515.jpg;$siteResource/images/515Wx515H/Lord of Scoundrels 515.jpg;;;images
+;300Wx300H;/300Wx300H/Lord of Scoundrels 300.jpg;$siteResource/images/300Wx300H/Lord of Scoundrels 300.jpg;;;images
+;96Wx96H;/96Wx96H/Lord of Scoundrels 96.jpg;$siteResource/images/96Wx96H/Lord of Scoundrels 96.jpg;;;images
+;65Wx65H;/65Wx65H/Lord of Scoundrels 65.jpg;$siteResource/images/65Wx65H/Lord of Scoundrels 65.jpg;;;images
+;30Wx30H;/30Wx30H/Lord of Scoundrels 30.jpg;$siteResource/images/30Wx30H/Lord of Scoundrels 30.jpg;;;images
+# Create Media Containers
+INSERT_UPDATE MediaContainer;qualifier[unique=true];$medias;$catalogVersion
+;Lord of Scoundrels;/1200Wx1200H/Lord of Scoundrels 1200.jpg,/515Wx515H/Lord of Scoundrels 515.jpg,/300Wx300H/Lord of Scoundrels 300.jpg,/96Wx96H/Lord of Scoundrels 96.jpg,/65Wx65H/Lord of Scoundrels 65.jpg,/30Wx30H/Lord of Scoundrels 30.jpg;
+# Update Products with Media and Media Containers
+UPDATE DcxbookmaniaProduct;code[unique=true];$picture;$thumbnail;$detail;$others;$normal;$thumbnails;$galleryImages;$catalogVersion
+;C107;/300Wx300H/Lord of Scoundrels 300.jpg;/96Wx96H/Lord of Scoundrels 96.jpg;/1200Wx1200H/Lord of Scoundrels 1200.jpg;/515Wx515H/Lord of Scoundrels 515.jpg,/65Wx65H/Lord of Scoundrels 65.jpg,/30Wx30H/Lord of Scoundrels 30.jpg;/300Wx300H/Lord of Scoundrels 300.jpg;/96Wx96H/Lord of Scoundrels 96.jpg;Lord of Scoundrels;
+
+
+# Create Media for C108
+INSERT_UPDATE Media;mediaFormat(qualifier);code[unique=true];$media;mime[default='image/jpeg'];$catalogVersion;folder(qualifier)
+;1200Wx1200H;/1200Wx1200H/The Wallflower Wager 1200.jpg;$siteResource/images/1200Wx1200H/The Wallflower Wager 1200.jpg;;;images
+;515Wx515H;/515Wx515H/The Wallflower Wager 515.jpg;$siteResource/images/515Wx515H/The Wallflower Wager 515.jpg;;;images
+;300Wx300H;/300Wx300H/The Wallflower Wager 300.jpg;$siteResource/images/300Wx300H/The Wallflower Wager 300.jpg;;;images
+;96Wx96H;/96Wx96H/The Wallflower Wager 96.jpg;$siteResource/images/96Wx96H/The Wallflower Wager 96.jpg;;;images
+;65Wx65H;/65Wx65H/The Wallflower Wager 65.jpg;$siteResource/images/65Wx65H/The Wallflower Wager 65.jpg;;;images
+;30Wx30H;/30Wx30H/The Wallflower Wager 30.jpg;$siteResource/images/30Wx30H/The Wallflower Wager 30.jpg;;;images
+# Create Media Containers
+INSERT_UPDATE MediaContainer;qualifier[unique=true];$medias;$catalogVersion
+;The Wallflower Wager;/1200Wx1200H/The Wallflower Wager 1200.jpg,/515Wx515H/The Wallflower Wager 515.jpg,/300Wx300H/The Wallflower Wager 300.jpg,/96Wx96H/The Wallflower Wager 96.jpg,/65Wx65H/The Wallflower Wager 65.jpg,/30Wx30H/The Wallflower Wager 30.jpg;
+# Update Products with Media and Media Containers
+UPDATE DcxbookmaniaProduct;code[unique=true];$picture;$thumbnail;$detail;$others;$normal;$thumbnails;$galleryImages;$catalogVersion
+;C108;/300Wx300H/The Wallflower Wager 300.jpg;/96Wx96H/The Wallflower Wager 96.jpg;/1200Wx1200H/The Wallflower Wager 1200.jpg;/515Wx515H/The Wallflower Wager 515.jpg,/65Wx65H/The Wallflower Wager 65.jpg,/30Wx30H/The Wallflower Wager 30.jpg;/300Wx300H/The Wallflower Wager 300.jpg;/96Wx96H/The Wallflower Wager 96.jpg;The Wallflower Wager;
+
+
+# Create Media for C109
+INSERT_UPDATE Media;mediaFormat(qualifier);code[unique=true];$media;mime[default='image/jpeg'];$catalogVersion;folder(qualifier)
+;1200Wx1200H;/1200Wx1200H/The Hating Game 1200.jpg;$siteResource/images/1200Wx1200H/The Hating Game 1200.jpg;;;images
+;515Wx515H;/515Wx515H/The Hating Game 515.jpg;$siteResource/images/515Wx515H/The Hating Game 515.jpg;;;images
+;300Wx300H;/300Wx300H/The Hating Game 300.jpg;$siteResource/images/300Wx300H/The Hating Game 300.jpg;;;images
+;96Wx96H;/96Wx96H/The Hating Game 96.jpg;$siteResource/images/96Wx96H/The Hating Game 96.jpg;;;images
+;65Wx65H;/65Wx65H/The Hating Game 65.jpg;$siteResource/images/65Wx65H/The Hating Game 65.jpg;;;images
+;30Wx30H;/30Wx30H/The Hating Game 30.jpg;$siteResource/images/30Wx30H/The Hating Game 30.jpg;;;images
+# Create Media Containers
+INSERT_UPDATE MediaContainer;qualifier[unique=true];$medias;$catalogVersion
+;The Hating Game;/1200Wx1200H/The Hating Game 1200.jpg,/515Wx515H/The Hating Game 515.jpg,/300Wx300H/The Hating Game 300.jpg,/96Wx96H/The Hating Game 96.jpg,/65Wx65H/The Hating Game 65.jpg,/30Wx30H/The Hating Game 30.jpg;
+# Update Products with Media and Media Containers
+UPDATE DcxbookmaniaProduct;code[unique=true];$picture;$thumbnail;$detail;$others;$normal;$thumbnails;$galleryImages;$catalogVersion
+;C109;/300Wx300H/The Hating Game 300.jpg;/96Wx96H/The Hating Game 96.jpg;/1200Wx1200H/The Hating Game 1200.jpg;/515Wx515H/The Hating Game 515.jpg,/65Wx65H/The Hating Game 65.jpg,/30Wx30H/The Hating Game 30.jpg;/300Wx300H/The Hating Game 300.jpg;/96Wx96H/The Hating Game 96.jpg;The Hating Game;
+
+
+# Create Media for C110
+INSERT_UPDATE Media;mediaFormat(qualifier);code[unique=true];$media;mime[default='image/jpeg'];$catalogVersion;folder(qualifier)
+;1200Wx1200H;/1200Wx1200H/The Viscount Who Loved Me 1200.jpg;$siteResource/images/1200Wx1200H/The Viscount Who Loved Me 1200.jpg;;;images
+;515Wx515H;/515Wx515H/The Viscount Who Loved Me 515.jpg;$siteResource/images/515Wx515H/The Viscount Who Loved Me 515.jpg;;;images
+;300Wx300H;/300Wx300H/The Viscount Who Loved Me 300.jpg;$siteResource/images/300Wx300H/The Viscount Who Loved Me 300.jpg;;;images
+;96Wx96H;/96Wx96H/The Viscount Who Loved Me 96.jpg;$siteResource/images/96Wx96H/The Viscount Who Loved Me 96.jpg;;;images
+;65Wx65H;/65Wx65H/The Viscount Who Loved Me 65.jpg;$siteResource/images/65Wx65H/The Viscount Who Loved Me 65.jpg;;;images
+;30Wx30H;/30Wx30H/The Viscount Who Loved Me 30.jpg;$siteResource/images/30Wx30H/The Viscount Who Loved Me 30.jpg;;;images
+# Create Media Containers
+INSERT_UPDATE MediaContainer;qualifier[unique=true];$medias;$catalogVersion
+;The Viscount Who Loved Me;/1200Wx1200H/The Viscount Who Loved Me 1200.jpg,/515Wx515H/The Viscount Who Loved Me 515.jpg,/300Wx300H/The Viscount Who Loved Me 300.jpg,/96Wx96H/The Viscount Who Loved Me 96.jpg,/65Wx65H/The Viscount Who Loved Me 65.jpg,/30Wx30H/The Viscount Who Loved Me 30.jpg;
+# Update Products with Media and Media Containers
+UPDATE DcxbookmaniaProduct;code[unique=true];$picture;$thumbnail;$detail;$others;$normal;$thumbnails;$galleryImages;$catalogVersion
+;C110;/300Wx300H/The Viscount Who Loved Me 300.jpg;/96Wx96H/The Viscount Who Loved Me 96.jpg;/1200Wx1200H/The Viscount Who Loved Me 1200.jpg;/515Wx515H/The Viscount Who Loved Me 515.jpg,/65Wx65H/The Viscount Who Loved Me 65.jpg,/30Wx30H/The Viscount Who Loved Me 30.jpg;/300Wx300H/The Viscount Who Loved Me 300.jpg;/96Wx96H/The Viscount Who Loved Me 96.jpg;The Viscount Who Loved Me;
+
+
+
+######C201#######
+
+ 
+
+INSERT_UPDATE Media;mediaFormat(qualifier);code[unique=true];$media;mime[default='image/jpeg'];$catalogVersion;folder(qualifier)
+;1200Wx1200H;/1200Wx1200H/Twilight_1200.jpg;$siteResource/images/1200Wx1200H/Twilight_1200.jpg;;;images
+;515Wx515H;/515Wx515H/Twilight_515.jpg;$siteResource/images/515Wx515H/Twilight_515.jpg;;;images
+;300Wx300H;/300Wx300H/Twilight_300.jpg;$siteResource/images/300Wx300H/Twilight_300.jpg;;;images
+;96Wx96H;/96Wx96H/Twilight_96.jpg;$siteResource/images/96Wx96H/Twilight_96.jpg;;;images
+;65Wx65H;/65Wx65H/Twilight_65.jpg;$siteResource/images/65Wx65H/Twilight_65.jpg;;;images
+;30Wx30H;/30Wx30H/Twilight_30.jpg;$siteResource/images/30Wx30H/Twilight_30.jpg;;;images
+
+# Create Media Containers
+
+INSERT_UPDATE MediaContainer;qualifier[unique=true];$medias;$catalogVersion
+;Twilight;/1200Wx1200H/Twilight_1200.jpg,/515Wx515H/Twilight_515.jpg,/300Wx300H/Twilight_300.jpg,/96Wx96H/Twilight_96.jpg,/65Wx65H/Twilight_65.jpg,/30Wx30H/Twilight_30.jpg;
+
+# Update Products with Media and Media Containers
+
+UPDATE DcxbookmaniaProduct;code[unique=true];$picture;$thumbnail;$detail;$others;$normal;$thumbnails;$galleryImages;$catalogVersion
+;C201;/300Wx300H/Twilight_300.jpg;/96Wx96H/Twilight_96.jpg;/1200Wx1200H/Twilight_1200.jpg;/515Wx515H/Twilight_515.jpg,/65Wx65H/Twilight_65.jpg,/30Wx30H/Twilight_30.jpg;/300Wx300H/Twilight_300.jpg;/96Wx96H/Twilight_96.jpg;Twilight;
+
+ 
+
+ 
+
+######C202#######
+
+INSERT_UPDATE Media;mediaFormat(qualifier);code[unique=true];$media;mime[default='image/jpeg'];$catalogVersion;folder(qualifier)
+;1200Wx1200H;/1200Wx1200H/A Discovery of Witches_1200.jpg;$siteResource/images/1200Wx1200H/A Discovery of Witches_1200.jpg;;;images
+;515Wx515H;/515Wx515H/A Discovery of Witches_515.jpg;$siteResource/images/515Wx515H/A Discovery of Witches_515.jpg;;;images
+;300Wx300H;/300Wx300H/A Discovery of Witches_300.jpg;$siteResource/images/300Wx300H/A Discovery of Witches_300.jpg;;;images
+;96Wx96H;/96Wx96H/A Discovery of Witches_96.jpg;$siteResource/images/96Wx96H/A Discovery of Witches_96.jpg;;;images
+;65Wx65H;/65Wx65H/A Discovery of Witches_65.jpg;$siteResource/images/65Wx65H/A Discovery of Witches_65.jpg;;;images
+;30Wx30H;/30Wx30H/A Discovery of Witches_30.jpg;$siteResource/images/30Wx30H/A Discovery of Witches_30.jpg;;;images
+
+# Create Media Containers
+
+INSERT_UPDATE MediaContainer;qualifier[unique=true];$medias;$catalogVersion
+;A Discovery of Witches;/1200Wx1200H/A Discovery of Witches_1200.jpg,/515Wx515H/A Discovery of Witches_515.jpg,/300Wx300H/A Discovery of Witches_300.jpg,/96Wx96H/A Discovery of Witches_96.jpg,/65Wx65H/A Discovery of Witches_65.jpg,/30Wx30H/A Discovery of Witches_30.jpg;
+
+# Update Products with Media and Media Containers
+
+UPDATE DcxbookmaniaProduct;code[unique=true];$picture;$thumbnail;$detail;$others;$normal;$thumbnails;$galleryImages;$catalogVersion
+;C202;/300Wx300H/A Discovery of Witches_300.jpg;/96Wx96H/A Discovery of Witches_96.jpg;/1200Wx1200H/A Discovery of Witches_1200.jpg;/515Wx515H/A Discovery of Witches_515.jpg,/65Wx65H/A Discovery of Witches_65.jpg,/30Wx30H/A Discovery of Witches_30.jpg;/300Wx300H/A Discovery of Witches_300.jpg;/96Wx96H/A Discovery of Witches_96.jpg;A Discovery of Witches;
+
+ 
+
+######C203#######
+
+INSERT_UPDATE Media;mediaFormat(qualifier);code[unique=true];$media;mime[default='image/jpeg'];$catalogVersion;folder(qualifier)
+;1200Wx1200H;/1200Wx1200H/Dark Lover_1200.jpg;$siteResource/images/1200Wx1200H/Dark Lover_1200.jpg;;;images
+;515Wx515H;/515Wx515H/Dark Lover_515.jpg;$siteResource/images/515Wx515H/Dark Lover_515.jpg;;;images
+;300Wx300H;/300Wx300H/Dark Lover_300.jpg;$siteResource/images/300Wx300H/Dark Lover_300.jpg;;;images
+;96Wx96H;/96Wx96H/Dark Lover_96.jpg;$siteResource/images/96Wx96H/Dark Lover_96.jpg;;;images
+;65Wx65H;/65Wx65H/Dark Lover_65.jpg;$siteResource/images/65Wx65H/Dark Lover_65.jpg;;;images
+;30Wx30H;/30Wx30H/Dark Lover_30.jpg;$siteResource/images/30Wx30H/Dark Lover_30.jpg;;;images
+
+# Create Media Containers
+
+INSERT_UPDATE MediaContainer;qualifier[unique=true];$medias;$catalogVersion
+;Dark Lover;/1200Wx1200H/Dark Lover_1200.jpg,/515Wx515H/Dark Lover_515.jpg,/300Wx300H/Dark Lover_300.jpg,/96Wx96H/Dark Lover_96.jpg,/65Wx65H/Dark Lover_65.jpg,/30Wx30H/Dark Lover_30.jpg;
+
+# Update Products with Media and Media Containers
+
+UPDATE DcxbookmaniaProduct;code[unique=true];$picture;$thumbnail;$detail;$others;$normal;$thumbnails;$galleryImages;$catalogVersion
+;C203;/300Wx300H/Dark Lover_300.jpg;/96Wx96H/Dark Lover_96.jpg;/1200Wx1200H/Dark Lover_1200.jpg;/515Wx515H/Dark Lover_515.jpg,/65Wx65H/Dark Lover_65.jpg,/30Wx30H/Dark Lover_30.jpg;/300Wx300H/Dark Lover_300.jpg;/96Wx96H/Dark Lover_96.jpg;Dark Lover;
+
+ 
+
+######C204#######
+
+INSERT_UPDATE Media;mediaFormat(qualifier);code[unique=true];$media;mime[default='image/jpeg'];$catalogVersion;folder(qualifier)
+;1200Wx1200H;/1200Wx1200H/Moon Called_1200.jpg;$siteResource/images/1200Wx1200H/Moon Called_1200.jpg;;;images
+;515Wx515H;/515Wx515H/Moon Called_515.jpg;$siteResource/images/515Wx515H/Moon Called_515.jpg;;;images
+;300Wx300H;/300Wx300H/Moon Called_300.jpg;$siteResource/images/300Wx300H/Moon Called_300.jpg;;;images
+;96Wx96H;/96Wx96H/Moon Called_96.jpg;$siteResource/images/96Wx96H/Moon Called_96.jpg;;;images
+;65Wx65H;/65Wx65H/Moon Called_65.jpg;$siteResource/images/65Wx65H/Moon Called_65.jpg;;;images
+;30Wx30H;/30Wx30H/Moon Called_30.jpg;$siteResource/images/30Wx30H/Moon Called_30.jpg;;;images
+
+# Create Media Containers
+
+INSERT_UPDATE MediaContainer;qualifier[unique=true];$medias;$catalogVersion
+;Moon Called;/1200Wx1200H/Moon Called_1200.jpg,/515Wx515H/Moon Called_515.jpg,/300Wx300H/Moon Called_300.jpg,/96Wx96H/Moon Called_96.jpg,/65Wx65H/Moon Called_65.jpg,/30Wx30H/Moon Called_30.jpg;
+
+# Update Products with Media and Media Containers
+
+UPDATE DcxbookmaniaProduct;code[unique=true];$picture;$thumbnail;$detail;$others;$normal;$thumbnails;$galleryImages;$catalogVersion
+;C204;/300Wx300H/Moon Called_300.jpg;/96Wx96H/Moon Called_96.jpg;/1200Wx1200H/Moon Called_1200.jpg;/515Wx515H/Moon Called_515.jpg,/65Wx65H/Moon Called_65.jpg,/30Wx30H/Moon Called_30.jpg;/300Wx300H/Moon Called_300.jpg;/96Wx96H/Moon Called_96.jpg;Moon Called;
+
+ 
+
+######C205#######
+
+INSERT_UPDATE Media;mediaFormat(qualifier);code[unique=true];$media;mime[default='image/jpeg'];$catalogVersion;folder(qualifier)
+;1200Wx1200H;/1200Wx1200H/Halfway to the Grave_1200.jpg;$siteResource/images/1200Wx1200H/Halfway to the Grave_1200.jpg;;;images
+;515Wx515H;/515Wx515H/Halfway to the Grave_515.jpg;$siteResource/images/515Wx515H/Halfway to the Grave_515.jpg;;;images
+;300Wx300H;/300Wx300H/Halfway to the Grave_300.jpg;$siteResource/images/300Wx300H/Halfway to the Grave_300.jpg;;;images
+;96Wx96H;/96Wx96H/Halfway to the Grave_96.jpg;$siteResource/images/96Wx96H/Halfway to the Grave_96.jpg;;;images
+;65Wx65H;/65Wx65H/Halfway to the Grave_65.jpg;$siteResource/images/65Wx65H/Halfway to the Grave_65.jpg;;;images
+;30Wx30H;/30Wx30H/Halfway to the Grave_30.jpg;$siteResource/images/30Wx30H/Halfway to the Grave_30.jpg;;;images
+
+# Create Media Containers
+
+INSERT_UPDATE MediaContainer;qualifier[unique=true];$medias;$catalogVersion
+;Halfway to the Grave;/1200Wx1200H/Halfway to the Grave_1200.jpg,/515Wx515H/Halfway to the Grave_515.jpg,/300Wx300H/Halfway to the Grave_300.jpg,/96Wx96H/Halfway to the Grave_96.jpg,/65Wx65H/Halfway to the Grave_65.jpg,/30Wx30H/Halfway to the Grave_30.jpg;
+
+# Update Products with Media and Media Containers
+
+UPDATE DcxbookmaniaProduct;code[unique=true];$picture;$thumbnail;$detail;$others;$normal;$thumbnails;$galleryImages;$catalogVersion
+;C205;/300Wx300H/Halfway to the Grave_300.jpg;/96Wx96H/Halfway to the Grave_96.jpg;/1200Wx1200H/Halfway to the Grave_1200.jpg;/515Wx515H/Halfway to the Grave_515.jpg,/65Wx65H/Halfway to the Grave_65.jpg,/30Wx30H/Halfway to the Grave_30.jpg;/300Wx300H/Halfway to the Grave_300.jpg;/96Wx96H/Halfway to the Grave_96.jpg;Halfway to the Grave;
+
+ 
+
+######C206#######
+
+INSERT_UPDATE Media;mediaFormat(qualifier);code[unique=true];$media;mime[default='image/jpeg'];$catalogVersion;folder(qualifier)
+;1200Wx1200H;/1200Wx1200H/Magic Bites_1200.jpg;$siteResource/images/1200Wx1200H/Magic Bites_1200.jpg;;;images
+;515Wx515H;/515Wx515H/Magic Bites_515.jpg;$siteResource/images/515Wx515H/Magic Bites_515.jpg;;;images
+;300Wx300H;/300Wx300H/Magic Bites_300.jpg;$siteResource/images/300Wx300H/Magic Bites_300.jpg;;;images
+;96Wx96H;/96Wx96H/Magic Bites_96.jpg;$siteResource/images/96Wx96H/Magic Bites_96.jpg;;;images
+;65Wx65H;/65Wx65H/Magic Bites_65.jpg;$siteResource/images/65Wx65H/Magic Bites_65.jpg;;;images
+;30Wx30H;/30Wx30H/Magic Bites_30.jpg;$siteResource/images/30Wx30H/Magic Bites_30.jpg;;;images
+
+# Create Media Containers
+
+INSERT_UPDATE MediaContainer;qualifier[unique=true];$medias;$catalogVersion
+;Magic Bites;/1200Wx1200H/Magic Bites_1200.jpg,/515Wx515H/Magic Bites_515.jpg,/300Wx300H/Magic Bites_300.jpg,/96Wx96H/Magic Bites_96.jpg,/65Wx65H/Magic Bites_65.jpg,/30Wx30H/Magic Bites_30.jpg;
+
+# Update Products with Media and Media Containers
+
+UPDATE DcxbookmaniaProduct;code[unique=true];$picture;$thumbnail;$detail;$others;$normal;$thumbnails;$galleryImages;$catalogVersion
+;C206;/300Wx300H/Magic Bites_300.jpg;/96Wx96H/Magic Bites_96.jpg;/1200Wx1200H/Magic Bites_1200.jpg;/515Wx515H/Magic Bites_515.jpg,/65Wx65H/Magic Bites_65.jpg,/30Wx30H/Magic Bites_30.jpg;/300Wx300H/Magic Bites_300.jpg;/96Wx96H/Magic Bites_96.jpg;Magic Bites;
+
+ 
+
+######C207#######
+
+INSERT_UPDATE Media;mediaFormat(qualifier);code[unique=true];$media;mime[default='image/jpeg'];$catalogVersion;folder(qualifier)
+;1200Wx1200H;/1200Wx1200H/Darkfever_1200.jpg;$siteResource/images/1200Wx1200H/Darkfever_1200.jpg;;;images
+;515Wx515H;/515Wx515H/Darkfever_515.jpg;$siteResource/images/515Wx515H/Darkfever_515.jpg;;;images
+;300Wx300H;/300Wx300H/Darkfever_300.jpg;$siteResource/images/300Wx300H/Darkfever_300.jpg;;;images
+;96Wx96H;/96Wx96H/Darkfever_96.jpg;$siteResource/images/96Wx96H/Darkfever_96.jpg;;;images
+;65Wx65H;/65Wx65H/Darkfever_65.jpg;$siteResource/images/65Wx65H/Darkfever_65.jpg;;;images
+;30Wx30H;/30Wx30H/Darkfever_30.jpg;$siteResource/images/30Wx30H/Darkfever_30.jpg;;;images
+
+# Create Media Containers
+
+INSERT_UPDATE MediaContainer;qualifier[unique=true];$medias;$catalogVersion
+;Darkfever;/1200Wx1200H/Darkfever_1200.jpg,/515Wx515H/Darkfever_515.jpg,/300Wx300H/Darkfever_300.jpg,/96Wx96H/Darkfever_96.jpg,/65Wx65H/Darkfever_65.jpg,/30Wx30H/Darkfever_30.jpg;
+
+# Update Products with Media and Media Containers
+
+UPDATE DcxbookmaniaProduct;code[unique=true];$picture;$thumbnail;$detail;$others;$normal;$thumbnails;$galleryImages;$catalogVersion
+;C207;/300Wx300H/Darkfever_300.jpg;/96Wx96H/Darkfever_96.jpg;/1200Wx1200H/Darkfever_1200.jpg;/515Wx515H/Darkfever_515.jpg,/65Wx65H/Darkfever_65.jpg,/30Wx30H/Darkfever_30.jpg;/300Wx300H/Darkfever_300.jpg;/96Wx96H/Darkfever_96.jpg;Darkfever;
+
+ 
+
+######C208#######
+
+INSERT_UPDATE Media;mediaFormat(qualifier);code[unique=true];$media;mime[default='image/jpeg'];$catalogVersion;folder(qualifier)
+;1200Wx1200H;/1200Wx1200H/Angels' Blood_1200.jpg;$siteResource/images/1200Wx1200H/Angels' Blood_1200.jpg;;;images
+;515Wx515H;/515Wx515H/Angels' Blood_515.jpg;$siteResource/images/515Wx515H/Angels' Blood_515.jpg;;;images
+;300Wx300H;/300Wx300H/Angels' Blood_300.jpg;$siteResource/images/300Wx300H/Angels' Blood_300.jpg;;;images
+;96Wx96H;/96Wx96H/Angels' Blood_96.jpg;$siteResource/images/96Wx96H/Angels' Blood_96.jpg;;;images
+;65Wx65H;/65Wx65H/Angels' Blood_65.jpg;$siteResource/images/65Wx65H/Angels' Blood_65.jpg;;;images
+;30Wx30H;/30Wx30H/Angels' Blood_30.jpg;$siteResource/images/30Wx30H/Angels' Blood_30.jpg;;;images
+
+# Create Media Containers
+
+INSERT_UPDATE MediaContainer;qualifier[unique=true];$medias;$catalogVersion
+;Angels' Blood;/1200Wx1200H/Angels' Blood_1200.jpg,/515Wx515H/Angels' Blood_515.jpg,/300Wx300H/Angels' Blood_300.jpg,/96Wx96H/Angels' Blood_96.jpg,/65Wx65H/Angels' Blood_65.jpg,/30Wx30H/Angels' Blood_30.jpg;
+
+# Update Products with Media and Media Containers
+
+UPDATE DcxbookmaniaProduct;code[unique=true];$picture;$thumbnail;$detail;$others;$normal;$thumbnails;$galleryImages;$catalogVersion
+;C208;/300Wx300H/Angels' Blood_300.jpg;/96Wx96H/Angels' Blood_96.jpg;/1200Wx1200H/Angels' Blood_1200.jpg;/515Wx515H/Angels' Blood_515.jpg,/65Wx65H/Angels' Blood_65.jpg,/30Wx30H/Angels' Blood_30.jpg;/300Wx300H/Angels' Blood_300.jpg;/96Wx96H/Angels' Blood_96.jpg;Angels' Blood;
+
+ 
+
+######C209#######
+
+INSERT_UPDATE Media;mediaFormat(qualifier);code[unique=true];$media;mime[default='image/jpeg'];$catalogVersion;folder(qualifier)
+;1200Wx1200H;/1200Wx1200H/Slave to Sensation_1200.jpg;$siteResource/images/1200Wx1200H/Slave to Sensation_1200.jpg;;;images
+;515Wx515H;/515Wx515H/Slave to Sensation_515.jpg;$siteResource/images/515Wx515H/Slave to Sensation_515.jpg;;;images
+;300Wx300H;/300Wx300H/Slave to Sensation_300.jpg;$siteResource/images/300Wx300H/Slave to Sensation_300.jpg;;;images
+;96Wx96H;/96Wx96H/Slave to Sensation_96.jpg;$siteResource/images/96Wx96H/Slave to Sensation_96.jpg;;;images
+;65Wx65H;/65Wx65H/Slave to Sensation_65.jpg;$siteResource/images/65Wx65H/Slave to Sensation_65.jpg;;;images
+;30Wx30H;/30Wx30H/Slave to Sensation_30.jpg;$siteResource/images/30Wx30H/Slave to Sensation_30.jpg;;;images
+
+# Create Media Containers
+
+INSERT_UPDATE MediaContainer;qualifier[unique=true];$medias;$catalogVersion
+;Slave to Sensation;/1200Wx1200H/Slave to Sensation_1200.jpg,/515Wx515H/Slave to Sensation_515.jpg,/300Wx300H/Slave to Sensation_300.jpg,/96Wx96H/Slave to Sensation_96.jpg,/65Wx65H/Slave to Sensation_65.jpg,/30Wx30H/Slave to Sensation_30.jpg;
+
+# Update Products with Media and Media Containers
+
+UPDATE DcxbookmaniaProduct;code[unique=true];$picture;$thumbnail;$detail;$others;$normal;$thumbnails;$galleryImages;$catalogVersion
+;C209;/300Wx300H/Slave to Sensation_300.jpg;/96Wx96H/Slave to Sensation_96.jpg;/1200Wx1200H/Slave to Sensation_1200.jpg;/515Wx515H/Slave to Sensation_515.jpg,/65Wx65H/Slave to Sensation_65.jpg,/30Wx30H/Slave to Sensation_30.jpg;/300Wx300H/Slave to Sensation_300.jpg;/96Wx96H/Slave to Sensation_96.jpg;Slave to Sensation;
+
+ 
+
+######C210#######
+
+INSERT_UPDATE Media;mediaFormat(qualifier);code[unique=true];$media;mime[default='image/jpeg'];$catalogVersion;folder(qualifier)
+;1200Wx1200H;/1200Wx1200H/Dead Until Dark_1200.jpg;$siteResource/images/1200Wx1200H/Dead Until Dark_1200.jpg;;;images
+;515Wx515H;/515Wx515H/Dead Until Dark_515.jpg;$siteResource/images/515Wx515H/Dead Until Dark_515.jpg;;;images
+;300Wx300H;/300Wx300H/Dead Until Dark_300.jpg;$siteResource/images/300Wx300H/Dead Until Dark_300.jpg;;;images
+;96Wx96H;/96Wx96H/Dead Until Dark_96.jpg;$siteResource/images/96Wx96H/Dead Until Dark_96.jpg;;;images
+;65Wx65H;/65Wx65H/Dead Until Dark_65.jpg;$siteResource/images/65Wx65H/Dead Until Dark_65.jpg;;;images
+;30Wx30H;/30Wx30H/Dead Until Dark_30.jpg;$siteResource/images/30Wx30H/Dead Until Dark_30.jpg;;;images
+
+# Create Media Containers
+
+INSERT_UPDATE MediaContainer;qualifier[unique=true];$medias;$catalogVersion
+;Dead Until Dark;/1200Wx1200H/Dead Until Dark_1200.jpg,/515Wx515H/Dead Until Dark_515.jpg,/300Wx300H/Dead Until Dark_300.jpg,/96Wx96H/Dead Until Dark_96.jpg,/65Wx65H/Dead Until Dark_65.jpg,/30Wx30H/Dead Until Dark_30.jpg;
+
+# Update Products with Media and Media Containers
+
+UPDATE DcxbookmaniaProduct;code[unique=true];$picture;$thumbnail;$detail;$others;$normal;$thumbnails;$galleryImages;$catalogVersion
+;C210;/300Wx300H/Dead Until Dark_300.jpg;/96Wx96H/Dead Until Dark_96.jpg;/1200Wx1200H/Dead Until Dark_1200.jpg;/515Wx515H/Dead Until Dark_515.jpg,/65Wx65H/Dead Until Dark_65.jpg,/30Wx30H/Dead Until Dark_30.jpg;/300Wx300H/Dead Until Dark_300.jpg;/96Wx96H/Dead Until Dark_96.jpg;Dead Until Dark;
+
+ 
+
+# Create Media for D101
+INSERT_UPDATE Media;mediaFormat(qualifier);code[unique=true];$media;mime[default='image/jpeg'];$catalogVersion;folder(qualifier)
+;1200Wx1200H;/1200Wx1200H/To Kill a Mockingbird 1200.jpg;$siteResource/images/1200Wx1200H/To Kill a Mockingbird 1200.jpg;;;images
+;515Wx515H;/515Wx515H/To Kill a Mockingbird 515.jpg;$siteResource/images/515Wx515H/To Kill a Mockingbird 515.jpg;;;images
+;300Wx300H;/300Wx300H/To Kill a Mockingbird 300.jpg;$siteResource/images/300Wx300H/To Kill a Mockingbird 300.jpg;;;images
+;96Wx96H;/96Wx96H/To Kill a Mockingbird 96.jpg;$siteResource/images/96Wx96H/To Kill a Mockingbird 96.jpg;;;images
+;65Wx65H;/65Wx65H/To Kill a Mockingbird 65.jpg;$siteResource/images/65Wx65H/To Kill a Mockingbird 65.jpg;;;images
+;30Wx30H;/30Wx30H/To Kill a Mockingbird 30.jpg;$siteResource/images/30Wx30H/To Kill a Mockingbird 30.jpg;;;images
+# Create Media Containers
+INSERT_UPDATE MediaContainer;qualifier[unique=true];$medias;$catalogVersion
+;To Kill a Mockingbird;/1200Wx1200H/To Kill a Mockingbird 1200.jpg,/515Wx515H/To Kill a Mockingbird 515.jpg,/300Wx300H/To Kill a Mockingbird 300.jpg,/96Wx96H/To Kill a Mockingbird 96.jpg,/65Wx65H/To Kill a Mockingbird 65.jpg,/30Wx30H/To Kill a Mockingbird 30.jpg;
+# Update Products with Media and Media Containers
+UPDATE DcxbookmaniaProduct;code[unique=true];$picture;$thumbnail;$detail;$others;$normal;$thumbnails;$galleryImages;$catalogVersion
+;D101;/300Wx300H/To Kill a Mockingbird 300.jpg;/96Wx96H/To Kill a Mockingbird 96.jpg;/1200Wx1200H/To Kill a Mockingbird 1200.jpg;/515Wx515H/To Kill a Mockingbird 515.jpg,/65Wx65H/To Kill a Mockingbird 65.jpg,/30Wx30H/To Kill a Mockingbird 30.jpg;/300Wx300H/To Kill a Mockingbird 300.jpg;/96Wx96H/To Kill a Mockingbird 96.jpg;To Kill a Mockingbird;
+
+# Create Media for D102
+INSERT_UPDATE Media;mediaFormat(qualifier);code[unique=true];$media;mime[default='image/jpeg'];$catalogVersion;folder(qualifier)
+;1200Wx1200H;/1200Wx1200H/1984 1200.jpg;$siteResource/images/1200Wx1200H/1984 1200.jpg;;;images
+;515Wx515H;/515Wx515H/1984 515.jpg;$siteResource/images/515Wx515H/1984 515.jpg;;;images
+;300Wx300H;/300Wx300H/1984 300.jpg;$siteResource/images/300Wx300H/1984 300.jpg;;;images
+;96Wx96H;/96Wx96H/1984 96.jpg;$siteResource/images/96Wx96H/1984 96.jpg;;;images
+;65Wx65H;/65Wx65H/1984 65.jpg;$siteResource/images/65Wx65H/1984 65.jpg;;;images
+;30Wx30H;/30Wx30H/1984 30.jpg;$siteResource/images/30Wx30H/1984 30.jpg;;;images
+# Create Media Containers
+INSERT_UPDATE MediaContainer;qualifier[unique=true];$medias;$catalogVersion
+;1984;/1200Wx1200H/1984 1200.jpg,/515Wx515H/1984 515.jpg,/300Wx300H/1984 300.jpg,/96Wx96H/1984 96.jpg,/65Wx65H/1984 65.jpg,/30Wx30H/1984 30.jpg;
+# Update Products with Media and Media Containers
+UPDATE DcxbookmaniaProduct;code[unique=true];$picture;$thumbnail;$detail;$others;$normal;$thumbnails;$galleryImages;$catalogVersion
+;D102;/300Wx300H/1984 300.jpg;/96Wx96H/1984 96.jpg;/1200Wx1200H/1984 1200.jpg;/515Wx515H/1984 515.jpg,/65Wx65H/1984 65.jpg,/30Wx30H/1984 30.jpg;/300Wx300H/1984 300.jpg;/96Wx96H/1984 96.jpg;1984
+
+
+# Create Media for D103
+INSERT_UPDATE Media;mediaFormat(qualifier);code[unique=true];$media;mime[default='image/jpeg'];$catalogVersion;folder(qualifier)
+;1200Wx1200H;/1200Wx1200H/Pride and Prejudice 1200.jpg;$siteResource/images/1200Wx1200H/Pride and Prejudice 1200.jpg;;;images
+;515Wx515H;/515Wx515H/Pride and Prejudice 515.jpg;$siteResource/images/515Wx515H/Pride and Prejudice 515.jpg;;;images
+;300Wx300H;/300Wx300H/Pride and Prejudice 300.jpg;$siteResource/images/300Wx300H/Pride and Prejudice 300.jpg;;;images
+;96Wx96H;/96Wx96H/Pride and Prejudice 96.jpg;$siteResource/images/96Wx96H/Pride and Prejudice 96.jpg;;;images
+;65Wx65H;/65Wx65H/Pride and Prejudice 65.jpg;$siteResource/images/65Wx65H/Pride and Prejudice 65.jpg;;;images
+;30Wx30H;/30Wx30H/Pride and Prejudice 30.jpg;$siteResource/images/30Wx30H/Pride and Prejudice 30.jpg;;;images
+# Create Media Containers
+INSERT_UPDATE MediaContainer;qualifier[unique=true];$medias;$catalogVersion
+;Pride and Prejudice;/1200Wx1200H/Pride and Prejudice 1200.jpg,/515Wx515H/Pride and Prejudice 515.jpg,/300Wx300H/Pride and Prejudice 300.jpg,/96Wx96H/Pride and Prejudice 96.jpg,/65Wx65H/Pride and Prejudice 65.jpg,/30Wx30H/Pride and Prejudice 30.jpg;
+# Update Products with Media and Media Containers
+UPDATE DcxbookmaniaProduct;code[unique=true];$picture;$thumbnail;$detail;$others;$normal;$thumbnails;$galleryImages;$catalogVersion
+;D103;/300Wx300H/Pride and Prejudice 300.jpg;/96Wx96H/Pride and Prejudice 96.jpg;/1200Wx1200H/Pride and Prejudice 1200.jpg;/515Wx515H/Pride and Prejudice 515.jpg,/65Wx65H/Pride and Prejudice 65.jpg,/30Wx30H/Pride and Prejudice 30.jpg;/300Wx300H/Pride and Prejudice 300.jpg;/96Wx96H/Pride and Prejudice 96.jpg;Pride and Prejudice;
+
+
+# Create Media for D104
+INSERT_UPDATE Media;mediaFormat(qualifier);code[unique=true];$media;mime[default='image/jpeg'];$catalogVersion;folder(qualifier)
+;1200Wx1200H;/1200Wx1200H/The Great Gatsby 1200.jpg;$siteResource/images/1200Wx1200H/The Great Gatsby 1200.jpg;;;images
+;515Wx515H;/515Wx515H/The Great Gatsby 515.jpg;$siteResource/images/515Wx515H/The Great Gatsby 515.jpg;;;images
+;300Wx300H;/300Wx300H/The Great Gatsby 300.jpg;$siteResource/images/300Wx300H/The Great Gatsby 300.jpg;;;images
+;96Wx96H;/96Wx96H/The Great Gatsby 96.jpg;$siteResource/images/96Wx96H/The Great Gatsby 96.jpg;;;images
+;65Wx65H;/65Wx65H/The Great Gatsby 65.jpg;$siteResource/images/65Wx65H/The Great Gatsby 65.jpg;;;images
+;30Wx30H;/30Wx30H/The Great Gatsby 30.jpg;$siteResource/images/30Wx30H/The Great Gatsby 30.jpg;;;images
+# Create Media Containers
+INSERT_UPDATE MediaContainer;qualifier[unique=true];$medias;$catalogVersion
+;The Great Gatsby;/1200Wx1200H/The Great Gatsby 1200.jpg,/515Wx515H/The Great Gatsby 515.jpg,/300Wx300H/The Great Gatsby 300.jpg,/96Wx96H/The Great Gatsby 96.jpg,/65Wx65H/The Great Gatsby 65.jpg,/30Wx30H/The Great Gatsby 30.jpg;
+# Update Products with Media and Media Containers
+UPDATE DcxbookmaniaProduct;code[unique=true];$picture;$thumbnail;$detail;$others;$normal;$thumbnails;$galleryImages;$catalogVersion
+;D104;/300Wx300H/The Great Gatsby 300.jpg;/96Wx96H/The Great Gatsby 96.jpg;/1200Wx1200H/The Great Gatsby 1200.jpg;/515Wx515H/The Great Gatsby 515.jpg,/65Wx65H/The Great Gatsby 65.jpg,/30Wx30H/The Great Gatsby 30.jpg;/300Wx300H/The Great Gatsby 300.jpg;/96Wx96H/The Great Gatsby 96.jpg;The Great Gatsby;
+
+# Create Media for D105
+INSERT_UPDATE Media;mediaFormat(qualifier);code[unique=true];$media;mime[default='image/jpeg'];$catalogVersion;folder(qualifier)
+;1200Wx1200H;/1200Wx1200H/Brave New World 1200.jpg;$siteResource/images/1200Wx1200H/Brave New World 1200.jpg;;;images
+;515Wx515H;/515Wx515H/Brave New World 515.jpg;$siteResource/images/515Wx515H/Brave New World 515.jpg;;;images
+;300Wx300H;/300Wx300H/Brave New World 300.jpg;$siteResource/images/300Wx300H/Brave New World 300.jpg;;;images
+;96Wx96H;/96Wx96H/Brave New World 96.jpg;$siteResource/images/96Wx96H/Brave New World 96.jpg;;;images
+;65Wx65H;/65Wx65H/Brave New World 65.jpg;$siteResource/images/65Wx65H/Brave New World 65.jpg;;;images
+;30Wx30H;/30Wx30H/Brave New World 30.jpg;$siteResource/images/30Wx30H/Brave New World 30.jpg;;;images
+# Create Media Containers
+INSERT_UPDATE MediaContainer;qualifier[unique=true];$medias;$catalogVersion
+;Brave New World;/1200Wx1200H/Brave New World 1200.jpg,/515Wx515H/Brave New World 515.jpg,/300Wx300H/Brave New World 300.jpg,/96Wx96H/Brave New World 96.jpg,/65Wx65H/Brave New World 65.jpg,/30Wx30H/Brave New World 30.jpg;
+# Update Products with Media and Media Containers
+UPDATE DcxbookmaniaProduct;code[unique=true];$picture;$thumbnail;$detail;$others;$normal;$thumbnails;$galleryImages;$catalogVersion
+;D105;/300Wx300H/Brave New World 300.jpg;/96Wx96H/Brave New World 96.jpg;/1200Wx1200H/Brave New World 1200.jpg;/515Wx515H/Brave New World 515.jpg,/65Wx65H/Brave New World 65.jpg,/30Wx30H/Brave New World 30.jpg;/300Wx300H/Brave New World 300.jpg;/96Wx96H/Brave New World 96.jpg;Brave New World;
+
+# Create Media for D106
+INSERT_UPDATE Media;mediaFormat(qualifier);code[unique=true];$media;mime[default='image/jpeg'];$catalogVersion;folder(qualifier)
+;1200Wx1200H;/1200Wx1200H/Moby-Dick 1200.jpg;$siteResource/images/1200Wx1200H/Moby-Dick 1200.jpg;;;images
+;515Wx515H;/515Wx515H/Moby-Dick 515.jpg;$siteResource/images/515Wx515H/Moby-Dick 515.jpg;;;images
+;300Wx300H;/300Wx300H/Moby-Dick 300.jpg;$siteResource/images/300Wx300H/Moby-Dick 300.jpg;;;images
+;96Wx96H;/96Wx96H/Moby-Dick 96.jpg;$siteResource/images/96Wx96H/Moby-Dick 96.jpg;;;images
+;65Wx65H;/65Wx65H/Moby-Dick 65.jpg;$siteResource/images/65Wx65H/Moby-Dick 65.jpg;;;images
+;30Wx30H;/30Wx30H/Moby-Dick 30.jpg;$siteResource/images/30Wx30H/Moby-Dick 30.jpg;;;images
+# Create Media Containers
+INSERT_UPDATE MediaContainer;qualifier[unique=true];$medias;$catalogVersion
+;Moby-Dick;/1200Wx1200H/Moby-Dick 1200.jpg,/515Wx515H/Moby-Dick 515.jpg,/300Wx300H/Moby-Dick 300.jpg,/96Wx96H/Moby-Dick 96.jpg,/65Wx65H/Moby-Dick 65.jpg,/30Wx30H/Moby-Dick 30.jpg;
+# Update Products with Media and Media Containers
+UPDATE DcxbookmaniaProduct;code[unique=true];$picture;$thumbnail;$detail;$others;$normal;$thumbnails;$galleryImages;$catalogVersion
+;D106;/300Wx300H/Moby-Dick 300.jpg;/96Wx96H/Moby-Dick 96.jpg;/1200Wx1200H/Moby-Dick 1200.jpg;/515Wx515H/Moby-Dick 515.jpg,/65Wx65H/Moby-Dick 65.jpg,/30Wx30H/Moby-Dick 30.jpg;/300Wx300H/Moby-Dick 300.jpg;/96Wx96H/Moby-Dick 96.jpg;Moby-Dick;
+
+
+
+# Create Media for D107
+INSERT_UPDATE Media;mediaFormat(qualifier);code[unique=true];$media;mime[default='image/jpeg'];$catalogVersion;folder(qualifier)
+;1200Wx1200H;/1200Wx1200H/Jane Eyre 1200.jpg;$siteResource/images/1200Wx1200H/Jane Eyre 1200.jpg;;;images
+;515Wx515H;/515Wx515H/Jane Eyre 515.jpg;$siteResource/images/515Wx515H/Jane Eyre 515.jpg;;;images
+;300Wx300H;/300Wx300H/Jane Eyre 300.jpg;$siteResource/images/300Wx300H/Jane Eyre 300.jpg;;;images
+;96Wx96H;/96Wx96H/Jane Eyre 96.jpg;$siteResource/images/96Wx96H/Jane Eyre 96.jpg;;;images
+;65Wx65H;/65Wx65H/Jane Eyre 65.jpg;$siteResource/images/65Wx65H/Jane Eyre 65.jpg;;;images
+;30Wx30H;/30Wx30H/Jane Eyre 30.jpg;$siteResource/images/30Wx30H/Jane Eyre 30.jpg;;;images
+# Create Media Containers
+INSERT_UPDATE MediaContainer;qualifier[unique=true];$medias;$catalogVersion
+;Jane Eyre;/1200Wx1200H/Jane Eyre 1200.jpg,/515Wx515H/Jane Eyre 515.jpg,/300Wx300H/Jane Eyre 300.jpg,/96Wx96H/Jane Eyre 96.jpg,/65Wx65H/Jane Eyre 65.jpg,/30Wx30H/Jane Eyre 30.jpg;
+# Update Products with Media and Media Containers
+UPDATE DcxbookmaniaProduct;code[unique=true];$picture;$thumbnail;$detail;$others;$normal;$thumbnails;$galleryImages;$catalogVersion
+;D107;/300Wx300H/Jane Eyre 300.jpg;/96Wx96H/Jane Eyre 96.jpg;/1200Wx1200H/Jane Eyre 1200.jpg;/515Wx515H/Jane Eyre 515.jpg,/65Wx65H/Jane Eyre 65.jpg,/30Wx30H/Jane Eyre 30.jpg;/300Wx300H/Jane Eyre 300.jpg;/96Wx96H/Jane Eyre 96.jpg;Jane Eyre;
+
+
+# Create Media for D108
+INSERT_UPDATE Media;mediaFormat(qualifier);code[unique=true];$media;mime[default='image/jpeg'];$catalogVersion;folder(qualifier)
+;1200Wx1200H;/1200Wx1200H/Frankenstein 1200.jpg;$siteResource/images/1200Wx1200H/Frankenstein 1200.jpg;;;images
+;515Wx515H;/515Wx515H/Frankenstein 515.jpg;$siteResource/images/515Wx515H/Frankenstein 515.jpg;;;images
+;300Wx300H;/300Wx300H/Frankenstein 300.jpg;$siteResource/images/300Wx300H/Frankenstein 300.jpg;;;images
+;96Wx96H;/96Wx96H/Frankenstein 96.jpg;$siteResource/images/96Wx96H/Frankenstein 96.jpg;;;images
+;65Wx65H;/65Wx65H/Frankenstein 65.jpg;$siteResource/images/65Wx65H/Frankenstein 65.jpg;;;images
+;30Wx30H;/30Wx30H/Frankenstein 30.jpg;$siteResource/images/30Wx30H/Frankenstein 30.jpg;;;images
+# Create Media Containers
+INSERT_UPDATE MediaContainer;qualifier[unique=true];$medias;$catalogVersion
+;Frankenstein;/1200Wx1200H/Frankenstein 1200.jpg,/515Wx515H/Frankenstein 515.jpg,/300Wx300H/Frankenstein 300.jpg,/96Wx96H/Frankenstein 96.jpg,/65Wx65H/Frankenstein 65.jpg,/30Wx30H/Frankenstein 30.jpg;
+# Update Products with Media and Media Containers
+UPDATE DcxbookmaniaProduct;code[unique=true];$picture;$thumbnail;$detail;$others;$normal;$thumbnails;$galleryImages;$catalogVersion
+;D108;/300Wx300H/Frankenstein 300.jpg;/96Wx96H/Frankenstein 96.jpg;/1200Wx1200H/Frankenstein 1200.jpg;/515Wx515H/Frankenstein 515.jpg,/65Wx65H/Frankenstein 65.jpg,/30Wx30H/Frankenstein 30.jpg;/300Wx300H/Frankenstein 300.jpg;/96Wx96H/Frankenstein 96.jpg;Frankenstein;
+
+
+
+# Create Media for D109
+INSERT_UPDATE Media;mediaFormat(qualifier);code[unique=true];$media;mime[default='image/jpeg'];$catalogVersion;folder(qualifier)
+;1200Wx1200H;/1200Wx1200H/The Catcher in the Rye 1200.jpg;$siteResource/images/1200Wx1200H/The Catcher in the Rye 1200.jpg;;;images
+;515Wx515H;/515Wx515H/The Catcher in the Rye 515.jpg;$siteResource/images/515Wx515H/The Catcher in the Rye 515.jpg;;;images
+;300Wx300H;/300Wx300H/The Catcher in the Rye 300.jpg;$siteResource/images/300Wx300H/The Catcher in the Rye 300.jpg;;;images
+;96Wx96H;/96Wx96H/The Catcher in the Rye 96.jpg;$siteResource/images/96Wx96H/The Catcher in the Rye 96.jpg;;;images
+;65Wx65H;/65Wx65H/The Catcher in the Rye 65.jpg;$siteResource/images/65Wx65H/The Catcher in the Rye 65.jpg;;;images
+;30Wx30H;/30Wx30H/The Catcher in the Rye 30.jpg;$siteResource/images/30Wx30H/The Catcher in the Rye 30.jpg;;;images
+# Create Media Containers
+INSERT_UPDATE MediaContainer;qualifier[unique=true];$medias;$catalogVersion
+;The Catcher in the Rye;/1200Wx1200H/The Catcher in the Rye 1200.jpg,/515Wx515H/The Catcher in the Rye 515.jpg,/300Wx300H/The Catcher in the Rye 300.jpg,/96Wx96H/The Catcher in the Rye 96.jpg,/65Wx65H/The Catcher in the Rye 65.jpg,/30Wx30H/The Catcher in the Rye 30.jpg;
+# Update Products with Media and Media Containers
+UPDATE DcxbookmaniaProduct;code[unique=true];$picture;$thumbnail;$detail;$others;$normal;$thumbnails;$galleryImages;$catalogVersion
+;D109;/300Wx300H/The Catcher in the Rye 300.jpg;/96Wx96H/The Catcher in the Rye 96.jpg;/1200Wx1200H/The Catcher in the Rye 1200.jpg;/515Wx515H/The Catcher in the Rye 515.jpg,/65Wx65H/The Catcher in the Rye 65.jpg,/30Wx30H/The Catcher in the Rye 30.jpg;/300Wx300H/The Catcher in the Rye 300.jpg;/96Wx96H/The Catcher in the Rye 96.jpg;The Catcher in the Rye;
+
+
+# Create Media for D110
+INSERT_UPDATE Media;mediaFormat(qualifier);code[unique=true];$media;mime[default='image/jpeg'];$catalogVersion;folder(qualifier)
+;1200Wx1200H;/1200Wx1200H/The Picture of Dorian Gray 1200.jpg;$siteResource/images/1200Wx1200H/The Picture of Dorian Gray 1200.jpg;;;images
+;515Wx515H;/515Wx515H/The Picture of Dorian Gray 515.jpg;$siteResource/images/515Wx515H/The Picture of Dorian Gray 515.jpg;;;images
+;300Wx300H;/300Wx300H/The Picture of Dorian Gray 300.jpg;$siteResource/images/300Wx300H/The Picture of Dorian Gray 300.jpg;;;images
+;96Wx96H;/96Wx96H/The Picture of Dorian Gray 96.jpg;$siteResource/images/96Wx96H/The Picture of Dorian Gray 96.jpg;;;images
+;65Wx65H;/65Wx65H/The Picture of Dorian Gray 65.jpg;$siteResource/images/65Wx65H/The Picture of Dorian Gray 65.jpg;;;images
+;30Wx30H;/30Wx30H/The Picture of Dorian Gray 30.jpg;$siteResource/images/30Wx30H/The Picture of Dorian Gray 30.jpg;;;images
+# Create Media Containers
+INSERT_UPDATE MediaContainer;qualifier[unique=true];$medias;$catalogVersion
+;The Picture of Dorian Gray;/1200Wx1200H/The Picture of Dorian Gray 1200.jpg,/515Wx515H/The Picture of Dorian Gray 515.jpg,/300Wx300H/The Picture of Dorian Gray 300.jpg,/96Wx96H/The Picture of Dorian Gray 96.jpg,/65Wx65H/The Picture of Dorian Gray 65.jpg,/30Wx30H/The Picture of Dorian Gray 30.jpg;
+# Update Products with Media and Media Containers
+UPDATE DcxbookmaniaProduct;code[unique=true];$picture;$thumbnail;$detail;$others;$normal;$thumbnails;$galleryImages;$catalogVersion
+;D110;/300Wx300H/The Picture of Dorian Gray 300.jpg;/96Wx96H/The Picture of Dorian Gray 96.jpg;/1200Wx1200H/The Picture of Dorian Gray 1200.jpg;/515Wx515H/The Picture of Dorian Gray 515.jpg,/65Wx65H/The Picture of Dorian Gray 65.jpg,/30Wx30H/The Picture of Dorian Gray 30.jpg;/300Wx300H/The Picture of Dorian Gray 300.jpg;/96Wx96H/The Picture of Dorian Gray 96.jpg;The Picture of Dorian Gray;
+
+
+######D201#######
+
+ 
+
+INSERT_UPDATE Media;mediaFormat(qualifier);code[unique=true];$media;mime[default='image/jpeg'];$catalogVersion;folder(qualifier)
+;1200Wx1200H;/1200Wx1200H/The Goldfinch_1200.jpg;$siteResource/images/1200Wx1200H/The Goldfinch_1200.jpg;;;images
+;515Wx515H;/515Wx515H/The Goldfinch_515.jpg;$siteResource/images/515Wx515H/The Goldfinch_515.jpg;;;images
+;300Wx300H;/300Wx300H/The Goldfinch_300.jpg;$siteResource/images/300Wx300H/The Goldfinch_300.jpg;;;images
+;96Wx96H;/96Wx96H/The Goldfinch_96.jpg;$siteResource/images/96Wx96H/The Goldfinch_96.jpg;;;images
+;65Wx65H;/65Wx65H/The Goldfinch_65.jpg;$siteResource/images/65Wx65H/The Goldfinch_65.jpg;;;images
+;30Wx30H;/30Wx30H/The Goldfinch_30.jpg;$siteResource/images/30Wx30H/The Goldfinch_30.jpg;;;images
+
+# Create Media Containers
+
+INSERT_UPDATE MediaContainer;qualifier[unique=true];$medias;$catalogVersion
+;The Goldfinch;/1200Wx1200H/The Goldfinch_1200.jpg,/515Wx515H/The Goldfinch_515.jpg,/300Wx300H/The Goldfinch_300.jpg,/96Wx96H/The Goldfinch_96.jpg,/65Wx65H/The Goldfinch_65.jpg,/30Wx30H/The Goldfinch_30.jpg;
+
+# Update Products with Media and Media Containers
+
+UPDATE DcxbookmaniaProduct;code[unique=true];$picture;$thumbnail;$detail;$others;$normal;$thumbnails;$galleryImages;$catalogVersion
+;D201;/300Wx300H/The Goldfinch_300.jpg;/96Wx96H/The Goldfinch_96.jpg;/1200Wx1200H/The Goldfinch_1200.jpg;/515Wx515H/The Goldfinch_515.jpg,/65Wx65H/The Goldfinch_65.jpg,/30Wx30H/The Goldfinch_30.jpg;/300Wx300H/The Goldfinch_300.jpg;/96Wx96H/The Goldfinch_96.jpg;The Goldfinch;
+
+ 
+
+ 
+
+######D202#######
+
+ 
+
+INSERT_UPDATE Media;mediaFormat(qualifier);code[unique=true];$media;mime[default='image/jpeg'];$catalogVersion;folder(qualifier)
+;1200Wx1200H;/1200Wx1200H/Normal People_1200.jpg;$siteResource/images/1200Wx1200H/Normal People_1200.jpg;;;images
+;515Wx515H;/515Wx515H/Normal People_515.jpg;$siteResource/images/515Wx515H/Normal People_515.jpg;;;images
+;300Wx300H;/300Wx300H/Normal People_300.jpg;$siteResource/images/300Wx300H/Normal People_300.jpg;;;images
+;96Wx96H;/96Wx96H/Normal People_96.jpg;$siteResource/images/96Wx96H/Normal People_96.jpg;;;images
+;65Wx65H;/65Wx65H/Normal People_65.jpg;$siteResource/images/65Wx65H/Normal People_65.jpg;;;images
+;30Wx30H;/30Wx30H/Normal People_30.jpg;$siteResource/images/30Wx30H/Normal People_30.jpg;;;images
+
+# Create Media Containers
+
+INSERT_UPDATE MediaContainer;qualifier[unique=true];$medias;$catalogVersion
+;Normal People;/1200Wx1200H/Normal People_1200.jpg,/515Wx515H/Normal People_515.jpg,/300Wx300H/Normal People_300.jpg,/96Wx96H/Normal People_96.jpg,/65Wx65H/Normal People_65.jpg,/30Wx30H/Normal People_30.jpg;
+
+# Update Products with Media and Media Containers
+
+UPDATE DcxbookmaniaProduct;code[unique=true];$picture;$thumbnail;$detail;$others;$normal;$thumbnails;$galleryImages;$catalogVersion
+;D202;/300Wx300H/Normal People_300.jpg;/96Wx96H/Normal People_96.jpg;/1200Wx1200H/Normal People_1200.jpg;/515Wx515H/Normal People_515.jpg,/65Wx65H/Normal People_65.jpg,/30Wx30H/Normal People_30.jpg;/300Wx300H/Normal People_300.jpg;/96Wx96H/Normal People_96.jpg;Normal People;
+
+ 
+
+ 
+
+######D203#######
+
+ 
+
+INSERT_UPDATE Media;mediaFormat(qualifier);code[unique=true];$media;mime[default='image/jpeg'];$catalogVersion;folder(qualifier)
+;1200Wx1200H;/1200Wx1200H/The Night Circus_1200.jpg;$siteResource/images/1200Wx1200H/The Night Circus_1200.jpg;;;images
+;515Wx515H;/515Wx515H/The Night Circus_515.jpg;$siteResource/images/515Wx515H/The Night Circus_515.jpg;;;images
+;300Wx300H;/300Wx300H/The Night Circus_300.jpg;$siteResource/images/300Wx300H/The Night Circus_300.jpg;;;images
+;96Wx96H;/96Wx96H/The Night Circus_96.jpg;$siteResource/images/96Wx96H/The Night Circus_96.jpg;;;images
+;65Wx65H;/65Wx65H/The Night Circus_65.jpg;$siteResource/images/65Wx65H/The Night Circus_65.jpg;;;images
+;30Wx30H;/30Wx30H/The Night Circus_30.jpg;$siteResource/images/30Wx30H/The Night Circus_30.jpg;;;images
+
+# Create Media Containers
+
+INSERT_UPDATE MediaContainer;qualifier[unique=true];$medias;$catalogVersion
+;The Night Circus;/1200Wx1200H/The Night Circus_1200.jpg,/515Wx515H/The Night Circus_515.jpg,/300Wx300H/The Night Circus_300.jpg,/96Wx96H/The Night Circus_96.jpg,/65Wx65H/The Night Circus_65.jpg,/30Wx30H/The Night Circus_30.jpg;
+
+# Update Products with Media and Media Containers
+
+UPDATE DcxbookmaniaProduct;code[unique=true];$picture;$thumbnail;$detail;$others;$normal;$thumbnails;$galleryImages;$catalogVersion
+;D203;/300Wx300H/The Night Circus_300.jpg;/96Wx96H/The Night Circus_96.jpg;/1200Wx1200H/The Night Circus_1200.jpg;/515Wx515H/The Night Circus_515.jpg,/65Wx65H/The Night Circus_65.jpg,/30Wx30H/The Night Circus_30.jpg;/300Wx300H/The Night Circus_300.jpg;/96Wx96H/The Night Circus_96.jpg;The Night Circus;
+
+ 
+
+ 
+
+######D204#######
+
+ 
+
+INSERT_UPDATE Media;mediaFormat(qualifier);code[unique=true];$media;mime[default='image/jpeg'];$catalogVersion;folder(qualifier)
+;1200Wx1200H;/1200Wx1200H/Educated_1200.jpg;$siteResource/images/1200Wx1200H/Educated_1200.jpg;;;images
+;515Wx515H;/515Wx515H/Educated_515.jpg;$siteResource/images/515Wx515H/Educated_515.jpg;;;images
+;300Wx300H;/300Wx300H/Educated_300.jpg;$siteResource/images/300Wx300H/Educated_300.jpg;;;images
+;96Wx96H;/96Wx96H/Educated_96.jpg;$siteResource/images/96Wx96H/Educated_96.jpg;;;images
+;65Wx65H;/65Wx65H/Educated_65.jpg;$siteResource/images/65Wx65H/Educated_65.jpg;;;images
+;30Wx30H;/30Wx30H/Educated_30.jpg;$siteResource/images/30Wx30H/Educated_30.jpg;;;images
+
+# Create Media Containers
+
+INSERT_UPDATE MediaContainer;qualifier[unique=true];$medias;$catalogVersion
+;Educated;/1200Wx1200H/Educated_1200.jpg,/515Wx515H/Educated_515.jpg,/300Wx300H/Educated_300.jpg,/96Wx96H/Educated_96.jpg,/65Wx65H/Educated_65.jpg,/30Wx30H/Educated_30.jpg;
+
+# Update Products with Media and Media Containers
+
+UPDATE DcxbookmaniaProduct;code[unique=true];$picture;$thumbnail;$detail;$others;$normal;$thumbnails;$galleryImages;$catalogVersion
+;D204;/300Wx300H/Educated_300.jpg;/96Wx96H/Educated_96.jpg;/1200Wx1200H/Educated_1200.jpg;/515Wx515H/Educated_515.jpg,/65Wx65H/Educated_65.jpg,/30Wx30H/Educated_30.jpg;/300Wx300H/Educated_300.jpg;/96Wx96H/Educated_96.jpg;Educated;
+
+ 
+
+ 
+
+######D205#######
+
+ 
+
+INSERT_UPDATE Media;mediaFormat(qualifier);code[unique=true];$media;mime[default='image/jpeg'];$catalogVersion;folder(qualifier)
+;1200Wx1200H;/1200Wx1200H/Little Fires Everywhere_1200.jpg;$siteResource/images/1200Wx1200H/Little Fires Everywhere_1200.jpg;;;images
+;515Wx515H;/515Wx515H/Little Fires Everywhere_515.jpg;$siteResource/images/515Wx515H/Little Fires Everywhere_515.jpg;;;images
+;300Wx300H;/300Wx300H/Little Fires Everywhere_300.jpg;$siteResource/images/300Wx300H/Little Fires Everywhere_300.jpg;;;images
+;96Wx96H;/96Wx96H/Little Fires Everywhere_96.jpg;$siteResource/images/96Wx96H/Little Fires Everywhere_96.jpg;;;images
+;65Wx65H;/65Wx65H/Little Fires Everywhere_65.jpg;$siteResource/images/65Wx65H/Little Fires Everywhere_65.jpg;;;images
+;30Wx30H;/30Wx30H/Little Fires Everywhere_30.jpg;$siteResource/images/30Wx30H/Little Fires Everywhere_30.jpg;;;images
+
+# Create Media Containers
+
+INSERT_UPDATE MediaContainer;qualifier[unique=true];$medias;$catalogVersion
+;Little Fires Everywhere;/1200Wx1200H/Little Fires Everywhere_1200.jpg,/515Wx515H/Little Fires Everywhere_515.jpg,/300Wx300H/Little Fires Everywhere_300.jpg,/96Wx96H/Little Fires Everywhere_96.jpg,/65Wx65H/Little Fires Everywhere_65.jpg,/30Wx30H/Little Fires Everywhere_30.jpg;
+
+# Update Products with Media and Media Containers
+
+UPDATE DcxbookmaniaProduct;code[unique=true];$picture;$thumbnail;$detail;$others;$normal;$thumbnails;$galleryImages;$catalogVersion
+;D205;/300Wx300H/Little Fires Everywhere_300.jpg;/96Wx96H/Little Fires Everywhere_96.jpg;/1200Wx1200H/Little Fires Everywhere_1200.jpg;/515Wx515H/Little Fires Everywhere_515.jpg,/65Wx65H/Little Fires Everywhere_65.jpg,/30Wx30H/Little Fires Everywhere_30.jpg;/300Wx300H/Little Fires Everywhere_300.jpg;/96Wx96H/Little Fires Everywhere_96.jpg;Little Fires Everywhere;
+
+ 
+
+ 
+
+######D206#######
+
+ 
+
+INSERT_UPDATE Media;mediaFormat(qualifier);code[unique=true];$media;mime[default='image/jpeg'];$catalogVersion;folder(qualifier)
+;1200Wx1200H;/1200Wx1200H/The Underground Railroad_1200.jpg;$siteResource/images/1200Wx1200H/The Underground Railroad_1200.jpg;;;images
+;515Wx515H;/515Wx515H/The Underground Railroad_515.jpg;$siteResource/images/515Wx515H/The Underground Railroad_515.jpg;;;images
+;300Wx300H;/300Wx300H/The Underground Railroad_300.jpg;$siteResource/images/300Wx300H/The Underground Railroad_300.jpg;;;images
+;96Wx96H;/96Wx96H/The Underground Railroad_96.jpg;$siteResource/images/96Wx96H/The Underground Railroad_96.jpg;;;images
+;65Wx65H;/65Wx65H/The Underground Railroad_65.jpg;$siteResource/images/65Wx65H/The Underground Railroad_65.jpg;;;images
+;30Wx30H;/30Wx30H/The Underground Railroad_30.jpg;$siteResource/images/30Wx30H/The Underground Railroad_30.jpg;;;images
+
+# Create Media Containers
+
+INSERT_UPDATE MediaContainer;qualifier[unique=true];$medias;$catalogVersion
+;The Underground Railroad;/1200Wx1200H/The Underground Railroad_1200.jpg,/515Wx515H/The Underground Railroad_515.jpg,/300Wx300H/The Underground Railroad_300.jpg,/96Wx96H/The Underground Railroad_96.jpg,/65Wx65H/The Underground Railroad_65.jpg,/30Wx30H/The Underground Railroad_30.jpg;
+
+# Update Products with Media and Media Containers
+
+UPDATE DcxbookmaniaProduct;code[unique=true];$picture;$thumbnail;$detail;$others;$normal;$thumbnails;$galleryImages;$catalogVersion
+;D206;/300Wx300H/The Underground Railroad_300.jpg;/96Wx96H/The Underground Railroad_96.jpg;/1200Wx1200H/The Underground Railroad_1200.jpg;/515Wx515H/The Underground Railroad_515.jpg,/65Wx65H/The Underground Railroad_65.jpg,/30Wx30H/The Underground Railroad_30.jpg;/300Wx300H/The Underground Railroad_300.jpg;/96Wx96H/The Underground Railroad_96.jpg;The Underground Railroad;
+
+ 
+
+ 
+
+######D207#######
+
+ 
+
+INSERT_UPDATE Media;mediaFormat(qualifier);code[unique=true];$media;mime[default='image/jpeg'];$catalogVersion;folder(qualifier)
+;1200Wx1200H;/1200Wx1200H/All the Light We Cannot See_1200.jpg;$siteResource/images/1200Wx1200H/All the Light We Cannot See_1200.jpg;;;images
+;515Wx515H;/515Wx515H/All the Light We Cannot See_515.jpg;$siteResource/images/515Wx515H/All the Light We Cannot See_515.jpg;;;images
+;300Wx300H;/300Wx300H/All the Light We Cannot See_300.jpg;$siteResource/images/300Wx300H/All the Light We Cannot See_300.jpg;;;images
+;96Wx96H;/96Wx96H/All the Light We Cannot See_96.jpg;$siteResource/images/96Wx96H/All the Light We Cannot See_96.jpg;;;images
+;65Wx65H;/65Wx65H/All the Light We Cannot See_65.jpg;$siteResource/images/65Wx65H/All the Light We Cannot See_65.jpg;;;images
+;30Wx30H;/30Wx30H/All the Light We Cannot See_30.jpg;$siteResource/images/30Wx30H/All the Light We Cannot See_30.jpg;;;images
+
+# Create Media Containers
+
+INSERT_UPDATE MediaContainer;qualifier[unique=true];$medias;$catalogVersion
+;All the Light We Cannot See;/1200Wx1200H/All the Light We Cannot See_1200.jpg,/515Wx515H/All the Light We Cannot See_515.jpg,/300Wx300H/All the Light We Cannot See_300.jpg,/96Wx96H/All the Light We Cannot See_96.jpg,/65Wx65H/All the Light We Cannot See_65.jpg,/30Wx30H/All the Light We Cannot See_30.jpg;
+
+# Update Products with Media and Media Containers
+
+UPDATE DcxbookmaniaProduct;code[unique=true];$picture;$thumbnail;$detail;$others;$normal;$thumbnails;$galleryImages;$catalogVersion
+;D207;/300Wx300H/All the Light We Cannot See_300.jpg;/96Wx96H/All the Light We Cannot See_96.jpg;/1200Wx1200H/All the Light We Cannot See_1200.jpg;/515Wx515H/All the Light We Cannot See_515.jpg,/65Wx65H/All the Light We Cannot See_65.jpg,/30Wx30H/All the Light We Cannot See_30.jpg;/300Wx300H/All the Light We Cannot See_300.jpg;/96Wx96H/All the Light We Cannot See_96.jpg;All the Light We Cannot See;
+
+ 
+
+ 
+
+######D208#######
+
+ 
+
+INSERT_UPDATE Media;mediaFormat(qualifier);code[unique=true];$media;mime[default='image/jpeg'];$catalogVersion;folder(qualifier)
+;1200Wx1200H;/1200Wx1200H/Where the Crawdads Sing_1200.jpg;$siteResource/images/1200Wx1200H/Where the Crawdads Sing_1200.jpg;;;images
+;515Wx515H;/515Wx515H/Where the Crawdads Sing_515.jpg;$siteResource/images/515Wx515H/Where the Crawdads Sing_515.jpg;;;images
+;300Wx300H;/300Wx300H/Where the Crawdads Sing_300.jpg;$siteResource/images/300Wx300H/Where the Crawdads Sing_300.jpg;;;images
+;96Wx96H;/96Wx96H/Where the Crawdads Sing_96.jpg;$siteResource/images/96Wx96H/Where the Crawdads Sing_96.jpg;;;images
+;65Wx65H;/65Wx65H/Where the Crawdads Sing_65.jpg;$siteResource/images/65Wx65H/Where the Crawdads Sing_65.jpg;;;images
+;30Wx30H;/30Wx30H/Where the Crawdads Sing_30.jpg;$siteResource/images/30Wx30H/Where the Crawdads Sing_30.jpg;;;images
+
+# Create Media Containers
+
+INSERT_UPDATE MediaContainer;qualifier[unique=true];$medias;$catalogVersion
+;Where the Crawdads Sing;/1200Wx1200H/Where the Crawdads Sing_1200.jpg,/515Wx515H/Where the Crawdads Sing_515.jpg,/300Wx300H/Where the Crawdads Sing_300.jpg,/96Wx96H/Where the Crawdads Sing_96.jpg,/65Wx65H/Where the Crawdads Sing_65.jpg,/30Wx30H/Where the Crawdads Sing_30.jpg;
+
+# Update Products with Media and Media Containers
+
+UPDATE DcxbookmaniaProduct;code[unique=true];$picture;$thumbnail;$detail;$others;$normal;$thumbnails;$galleryImages;$catalogVersion
+;D208;/300Wx300H/Where the Crawdads Sing_300.jpg;/96Wx96H/Where the Crawdads Sing_96.jpg;/1200Wx1200H/Where the Crawdads Sing_1200.jpg;/515Wx515H/Where the Crawdads Sing_515.jpg,/65Wx65H/Where the Crawdads Sing_65.jpg,/30Wx30H/Where the Crawdads Sing_30.jpg;/300Wx300H/Where the Crawdads Sing_300.jpg;/96Wx96H/Where the Crawdads Sing_96.jpg;Where the Crawdads Sing;
+
+ 
+
+ 
+
+######D209#######
+
+ 
+
+INSERT_UPDATE Media;mediaFormat(qualifier);code[unique=true];$media;mime[default='image/jpeg'];$catalogVersion;folder(qualifier)
+;1200Wx1200H;/1200Wx1200H/The Sympathizer_1200.jpg;$siteResource/images/1200Wx1200H/The Sympathizer_1200.jpg;;;images
+;515Wx515H;/515Wx515H/The Sympathizer_515.jpg;$siteResource/images/515Wx515H/The Sympathizer_515.jpg;;;images
+;300Wx300H;/300Wx300H/The Sympathizer_300.jpg;$siteResource/images/300Wx300H/The Sympathizer_300.jpg;;;images
+;96Wx96H;/96Wx96H/The Sympathizer_96.jpg;$siteResource/images/96Wx96H/The Sympathizer_96.jpg;;;images
+;65Wx65H;/65Wx65H/The Sympathizer_65.jpg;$siteResource/images/65Wx65H/The Sympathizer_65.jpg;;;images
+;30Wx30H;/30Wx30H/The Sympathizer_30.jpg;$siteResource/images/30Wx30H/The Sympathizer_30.jpg;;;images
+
+# Create Media Containers
+
+INSERT_UPDATE MediaContainer;qualifier[unique=true];$medias;$catalogVersion
+;The Sympathizer;/1200Wx1200H/The Sympathizer_1200.jpg,/515Wx515H/The Sympathizer_515.jpg,/300Wx300H/The Sympathizer_300.jpg,/96Wx96H/The Sympathizer_96.jpg,/65Wx65H/The Sympathizer_65.jpg,/30Wx30H/The Sympathizer_30.jpg;
+
+# Update Products with Media and Media Containers
+
+UPDATE DcxbookmaniaProduct;code[unique=true];$picture;$thumbnail;$detail;$others;$normal;$thumbnails;$galleryImages;$catalogVersion
+;D209;/300Wx300H/The Sympathizer_300.jpg;/96Wx96H/The Sympathizer_96.jpg;/1200Wx1200H/The Sympathizer_1200.jpg;/515Wx515H/The Sympathizer_515.jpg,/65Wx65H/The Sympathizer_65.jpg,/30Wx30H/The Sympathizer_30.jpg;/300Wx300H/The Sympathizer_300.jpg;/96Wx96H/The Sympathizer_96.jpg;The Sympathizer;
+
+ 
+
+ 
+
+######D210#######
+
+ 
+
+INSERT_UPDATE Media;mediaFormat(qualifier);code[unique=true];$media;mime[default='image/jpeg'];$catalogVersion;folder(qualifier)
+;1200Wx1200H;/1200Wx1200H/Circe_1200.jpg;$siteResource/images/1200Wx1200H/Circe_1200.jpg;;;images
+;515Wx515H;/515Wx515H/Circe_515.jpg;$siteResource/images/515Wx515H/Circe_515.jpg;;;images
+;300Wx300H;/300Wx300H/Circe_300.jpg;$siteResource/images/300Wx300H/Circe_300.jpg;;;images
+;96Wx96H;/96Wx96H/Circe_96.jpg;$siteResource/images/96Wx96H/Circe_96.jpg;;;images
+;65Wx65H;/65Wx65H/Circe_65.jpg;$siteResource/images/65Wx65H/Circe_65.jpg;;;images
+;30Wx30H;/30Wx30H/Circe_30.jpg;$siteResource/images/30Wx30H/Circe_30.jpg;;;images
+
+# Create Media Containers
+
+INSERT_UPDATE MediaContainer;qualifier[unique=true];$medias;$catalogVersion
+;Circe;/1200Wx1200H/Circe_1200.jpg,/515Wx515H/Circe_515.jpg,/300Wx300H/Circe_300.jpg,/96Wx96H/Circe_96.jpg,/65Wx65H/Circe_65.jpg,/30Wx30H/Circe_30.jpg;
+
+# Update Products with Media and Media Containers
+
+UPDATE DcxbookmaniaProduct;code[unique=true];$picture;$thumbnail;$detail;$others;$normal;$thumbnails;$galleryImages;$catalogVersion
+;D210;/300Wx300H/Circe_300.jpg;/96Wx96H/Circe_96.jpg;/1200Wx1200H/Circe_1200.jpg;/515Wx515H/Circe_515.jpg,/65Wx65H/Circe_65.jpg,/30Wx30H/Circe_30.jpg;/300Wx300H/Circe_300.jpg;/96Wx96H/Circe_96.jpg;Circe;
+
+
+
+# Create Media for E101
+INSERT_UPDATE Media;mediaFormat(qualifier);code[unique=true];$media;mime[default='image/jpeg'];$catalogVersion;folder(qualifier)
+;1200Wx1200H;/1200Wx1200H/The Power of Now_1200.jpg;$siteResource/images/1200Wx1200H/The Power of Now_1200.jpg;;;images
+;515Wx515H;/515Wx515H/The Power of Now_515.jpg;$siteResource/images/515Wx515H/The Power of Now_515.jpg;;;images
+;300Wx300H;/300Wx300H/The Power of Now_300.jpg;$siteResource/images/300Wx300H/The Power of Now_300.jpg;;;images
+;96Wx96H;/96Wx96H/The Power of Now_96.jpg;$siteResource/images/96Wx96H/The Power of Now_96.jpg;;;images
+;65Wx65H;/65Wx65H/The Power of Now_65.jpg;$siteResource/images/65Wx65H/The Power of Now_65.jpg;;;images
+;30Wx30H;/30Wx30H/The Power of Now_30.jpg;$siteResource/images/30Wx30H/The Power of Now_30.jpg;;;images
+# Create Media Containers
+INSERT_UPDATE MediaContainer;qualifier[unique=true];$medias;$catalogVersion
+;The Power of Now;/1200Wx1200H/The Power of Now_1200.jpg,/515Wx515H/The Power of Now_515.jpg,/300Wx300H/The Power of Now_300.jpg,/96Wx96H/The Power of Now_96.jpg,/65Wx65H/The Power of Now_65.jpg,/30Wx30H/The Power of Now_30.jpg;
+# Update Products with Media and Media Containers
+UPDATE DcxbookmaniaProduct;code[unique=true];$picture;$thumbnail;$detail;$others;$normal;$thumbnails;$galleryImages;$catalogVersion
+;E101;/300Wx300H/The Power of Now_300.jpg;/96Wx96H/The Power of Now_96.jpg;/1200Wx1200H/The Power of Now_1200.jpg;/515Wx515H/The Power of Now_515.jpg,/65Wx65H/The Power of Now_65.jpg,/30Wx30H/The Power of Now_30.jpg;/300Wx300H/The Power of Now_300.jpg;/96Wx96H/The Power of Now_96.jpg;The Power of Now;
+
+# Create Media for E102
+INSERT_UPDATE Media;mediaFormat(qualifier);code[unique=true];$media;mime[default='image/jpeg'];$catalogVersion;folder(qualifier)
+;1200Wx1200H;/1200Wx1200H/Wherever You Go There You Are1200.jpg;$siteResource/images/1200Wx1200H/Wherever You Go There You Are1200.jpg;;;images
+;515Wx515H;/515Wx515H/Wherever You Go There You Are515.jpg;$siteResource/images/515Wx515H/Wherever You Go There You Are515.jpg;;;images
+;300Wx300H;/300Wx300H/Wherever You Go There You Are300.jpg;$siteResource/images/300Wx300H/Wherever You Go There You Are300.jpg;;;images
+;96Wx96H;/96Wx96H/Wherever You Go There You Are96.jpg;$siteResource/images/96Wx96H/Wherever You Go There You Are96.jpg;;;images
+;65Wx65H;/65Wx65H/Wherever You Go There You Are65.jpg;$siteResource/images/65Wx65H/Wherever You Go There You Are65.jpg;;;images
+;30Wx30H;/30Wx30H/Wherever You Go There You Are30.jpg;$siteResource/images/30Wx30H/Wherever You Go There You Are30.jpg;;;images
+# Create Media Containers
+INSERT_UPDATE MediaContainer;qualifier[unique=true];$medias;$catalogVersion
+;Wherever You Go There You Are;/1200Wx1200H/Wherever You Go There You Are1200.jpg,/515Wx515H/Wherever You Go There You Are515.jpg,/300Wx300H/Wherever You Go There You Are300.jpg,/96Wx96H/Wherever You Go There You Are96.jpg,/65Wx65H/Wherever You Go There You Are65.jpg,/30Wx30H/Wherever You Go There You Are30.jpg;
+# Update Products with Media and Media Containers
+UPDATE DcxbookmaniaProduct;code[unique=true];$picture;$thumbnail;$detail;$others;$normal;$thumbnails;$galleryImages;$catalogVersion
+;E102;/300Wx300H/Wherever You Go There You Are300.jpg;/96Wx96H/Wherever You Go There You Are96.jpg;/1200Wx1200H/Wherever You Go There You Are1200.jpg;/515Wx515H/Wherever You Go There You Are515.jpg,/65Wx65H/Wherever You Go There You Are65.jpg,/30Wx30H/Wherever You Go There You Are30.jpg;/300Wx300H/Wherever You Go There You Are300.jpg;/96Wx96H/Wherever You Go There You Are96.jpg;Wherever You Go There You Are;
+
+
+
+# Create Media for E103
+INSERT_UPDATE Media;mediaFormat(qualifier);code[unique=true];$media;mime[default='image/jpeg'];$catalogVersion;folder(qualifier)
+;1200Wx1200H;/1200Wx1200H/10% Happier1200.jpg;$siteResource/images/1200Wx1200H/10% Happier1200.jpg;;;images
+;515Wx515H;/515Wx515H/10% Happier515.jpg;$siteResource/images/515Wx515H/10% Happier515.jpg;;;images
+;300Wx300H;/300Wx300H/10% Happier300.jpg;$siteResource/images/300Wx300H/10% Happier300.jpg;;;images
+;96Wx96H;/96Wx96H/10% Happier96.jpg;$siteResource/images/96Wx96H/10% Happier96.jpg;;;images
+;65Wx65H;/65Wx65H/10% Happier65.jpg;$siteResource/images/65Wx65H/10% Happier65.jpg;;;images
+;30Wx30H;/30Wx30H/10% Happier30.jpg;$siteResource/images/30Wx30H/10% Happier30.jpg;;;images
+# Create Media Containers
+INSERT_UPDATE MediaContainer;qualifier[unique=true];$medias;$catalogVersion
+;10% Happier;/1200Wx1200H/10% Happier1200.jpg,/515Wx515H/10% Happier515.jpg,/300Wx300H/10% Happier300.jpg,/96Wx96H/10% Happier96.jpg,/65Wx65H/10% Happier65.jpg,/30Wx30H/10% Happier30.jpg;
+# Update Products with Media and Media Containers
+UPDATE DcxbookmaniaProduct;code[unique=true];$picture;$thumbnail;$detail;$others;$normal;$thumbnails;$galleryImages;$catalogVersion
+;E103;/300Wx300H/10% Happier300.jpg;/96Wx96H/10% Happier96.jpg;/1200Wx1200H/10% Happier1200.jpg;/515Wx515H/10% Happier515.jpg,/65Wx65H/10% Happier65.jpg,/30Wx30H/10% Happier30.jpg;/300Wx300H/10% Happier300.jpg;/96Wx96H/10% Happier96.jpg;10% Happier;
+
+
+
+# Create Media for E104
+INSERT_UPDATE Media;mediaFormat(qualifier);code[unique=true];$media;mime[default='image/jpeg'];$catalogVersion;folder(qualifier)
+;1200Wx1200H;/1200Wx1200H/The Miracle of Mindfulness1200.jpg;$siteResource/images/1200Wx1200H/The Miracle of Mindfulness1200.jpg;;;images
+;515Wx515H;/515Wx515H/The Miracle of Mindfulness515.jpg;$siteResource/images/515Wx515H/The Miracle of Mindfulness515.jpg;;;images
+;300Wx300H;/300Wx300H/The Miracle of Mindfulness300.jpg;$siteResource/images/300Wx300H/The Miracle of Mindfulness300.jpg;;;images
+;96Wx96H;/96Wx96H/The Miracle of Mindfulness96.jpg;$siteResource/images/96Wx96H/The Miracle of Mindfulness96.jpg;;;images
+;65Wx65H;/65Wx65H/The Miracle of Mindfulness65.jpg;$siteResource/images/65Wx65H/The Miracle of Mindfulness65.jpg;;;images
+;30Wx30H;/30Wx30H/The Miracle of Mindfulness30.jpg;$siteResource/images/30Wx30H/The Miracle of Mindfulness30.jpg;;;images
+# Create Media Containers
+INSERT_UPDATE MediaContainer;qualifier[unique=true];$medias;$catalogVersion
+;The Miracle of Mindfulness;/1200Wx1200H/The Miracle of Mindfulness1200.jpg,/515Wx515H/The Miracle of Mindfulness515.jpg,/300Wx300H/The Miracle of Mindfulness300.jpg,/96Wx96H/The Miracle of Mindfulness96.jpg,/65Wx65H/The Miracle of Mindfulness65.jpg,/30Wx30H/The Miracle of Mindfulness30.jpg;
+# Update Products with Media and Media Containers
+UPDATE DcxbookmaniaProduct;code[unique=true];$picture;$thumbnail;$detail;$others;$normal;$thumbnails;$galleryImages;$catalogVersion
+;E104;/300Wx300H/The Miracle of Mindfulness300.jpg;/96Wx96H/The Miracle of Mindfulness96.jpg;/1200Wx1200H/The Miracle of Mindfulness1200.jpg;/515Wx515H/The Miracle of Mindfulness515.jpg,/65Wx65H/The Miracle of Mindfulness65.jpg,/30Wx30H/The Miracle of Mindfulness30.jpg;/300Wx300H/The Miracle of Mindfulness300.jpg;/96Wx96H/The Miracle of Mindfulness96.jpg;The Miracle of Mindfulness;
+
+
+# Create Media for E105
+#INSERT_UPDATE Media;mediaFormat(qualifier);code[unique=true];$media;mime[default='image/jpeg'];$catalogVersion;folder(qualifier)
+#;1200Wx1200H;/1200Wx1200H/Radical Acceptance1200.jpg;$siteResource/images/1200Wx1200H/Radical Acceptance1200.jpg;;;images
+#;515Wx515H;/515Wx515H/Radical Acceptance515.jpg;$siteResource/images/515Wx515H/Radical Acceptance515.jpg;;;images
+#;300Wx300H;/300Wx300H/Radical Acceptance300.jpg;$siteResource/images/300Wx300H/Radical Acceptance300.jpg;;;images
+#;96Wx96H;/96Wx96H/Radical Acceptance96.jpg;$siteResource/images/96Wx96H/Radical Acceptance96.jpg;;;images
+#;65Wx65H;/65Wx65H/Radical Acceptance65.jpg;$siteResource/images/65Wx65H/Radical Acceptance65.jpg;;;images
+#;30Wx30H;/30Wx30H/Radical Acceptance30.jpg;$siteResource/images/30Wx30H/Radical Acceptance30.jpg;;;images
+# Create Media Containers
+#INSERT_UPDATE MediaContainer;qualifier[unique=true];$medias;$catalogVersion
+#;Radical Acceptance;/1200Wx1200H/Radical Acceptance1200.jpg,/515Wx515H/Radical Acceptance 515.jpg,/300Wx300H/Radical Acceptance300.jpg,/96Wx96H/Radical Acceptance96.jpg,/65Wx65H/Radical Acceptance65.jpg,/30Wx30H/Radical Acceptance30.jpg;
+# Update Products with Media and Media Containers
+#UPDATE DcxbookmaniaProduct;code[unique=true];$picture;$thumbnail;$detail;$others;$normal;$thumbnails;$galleryImages;$catalogVersion
+#;E105;/300Wx300H/Radical Acceptance300.jpg;/96Wx96H/Radical Acceptance96.jpg;/1200Wx1200H/Radical Acceptance1200.jpg;/515Wx515H/Radical Acceptance 515.jpg,/65Wx65H/Radical Acceptance65.jpg,/30Wx30H/Radical Acceptance30.jpg;/300Wx300H/Radical Acceptance300.jpg;/96Wx96H/Radical Acceptance96.jpg;Radical Acceptance;
+
+# Create Media for E106
+#INSERT_UPDATE Media;mediaFormat(qualifier);code[unique=true];$media;mime[default='image/jpeg'];$catalogVersion;folder(qualifier)
+#;1200Wx1200H;/1200Wx1200H/The Headspace Guide to Meditatio1200.jpg;$siteResource/images/1200Wx1200H/The Headspace Guide to Meditatio1200.jpg;;;images
+#;515Wx515H;/515Wx515H/The Headspace Guide to Meditatio515.jpg;$siteResource/images/515Wx515H/The Headspace Guide to Meditatio515.jpg;;;images
+#;300Wx300H;/300Wx300H/The Headspace Guide to Meditatio300.jpg;$siteResource/images/300Wx300H/The Headspace Guide to Meditatio300.jpg;;;images
+#;96Wx96H;/96Wx96H/The Headspace Guide to Meditatio96.jpg;$siteResource/images/96Wx96H/The Headspace Guide to Meditatio96.jpg;;;images
+#;65Wx65H;/65Wx65H/The Headspace Guide to Meditatio65.jpg;$siteResource/images/65Wx65H/The Headspace Guide to Meditatio65.jpg;;;images
+#;30Wx30H;/30Wx30H/The Headspace Guide to Meditatio30.jpg;$siteResource/images/30Wx30H/The Headspace Guide to Meditatio30.jpg;;;images
+# Create Media Containers
+#INSERT_UPDATE MediaContainer;qualifier[unique=true];$medias;$catalogVersion
+#;Headspace Guide to Meditation and Mindfulness;/1200Wx1200H/The Headspace Guide to Meditatio1200.jpg,/515Wx515H/The Headspace Guide to Meditatio515.jpg,/300Wx300H/The Headspace Guide to Meditatio300.jpg,/96Wx96H/The Headspace Guide to Meditatio96.jpg,/65Wx65H/The Headspace Guide to Meditatio65.jpg,/30Wx30H/The Headspace Guide to Meditatio30.jpg;
+# Update Products with Media and Media Containers
+#UPDATE DcxbookmaniaProduct;code[unique=true];$picture;$thumbnail;$detail;$others;$normal;$thumbnails;$galleryImages;$catalogVersion
+#;E106;/300Wx300H/The Headspace Guide to Meditatio300.jpg;/96Wx96H/The Headspace Guide to Meditatio96.jpg;/1200Wx1200H/The Headspace Guide to Meditatio1200.jpg;/515Wx515H/The Headspace Guide to Meditatio515.jpg,/65Wx65H/The Headspace Guide to Meditatio65.jpg,/30Wx30H/The Headspace Guide to Meditatio30.jpg;/300Wx300H/The Headspace Guide to Meditatio300.jpg;/96Wx96H/The Headspace Guide to Meditatio96.jpg;The Headspace Guide to Meditation and Mindfulness;
+
+
+
+
+# Create Media for E107
+INSERT_UPDATE Media;mediaFormat(qualifier);code[unique=true];$media;mime[default='image/jpeg'];$catalogVersion;folder(qualifier)
+;1200Wx1200H;/1200Wx1200H/The Untethered Soul1200.jpg;$siteResource/images/1200Wx1200H/The Untethered Soul1200.jpg;;;images
+;515Wx515H;/515Wx515H/The Untethered Soul515.jpg;$siteResource/images/515Wx515H/The Untethered Soul515.jpg;;;images
+;300Wx300H;/300Wx300H/The Untethered Soul300.jpg;$siteResource/images/300Wx300H/The Untethered Soul300.jpg;;;images
+;96Wx96H;/96Wx96H/The Untethered Soul96.jpg;$siteResource/images/96Wx96H/The Untethered Soul96.jpg;;;images
+;65Wx65H;/65Wx65H/The Untethered Soul65.jpg;$siteResource/images/65Wx65H/The Untethered Soul65.jpg;;;images
+;30Wx30H;/30Wx30H/The Untethered Soul30.jpg;$siteResource/images/30Wx30H/The Untethered Soul30.jpg;;;images
+# Create Media Containers
+INSERT_UPDATE MediaContainer;qualifier[unique=true];$medias;$catalogVersion
+;The Untethered Soul;/1200Wx1200H/The Untethered Soul1200.jpg,/515Wx515H/The Untethered Soul515.jpg,/300Wx300H/The Untethered Soul300.jpg,/96Wx96H/The Untethered Soul96.jpg,/65Wx65H/The Untethered Soul65.jpg,/30Wx30H/The Untethered Soul30.jpg;
+# Update Products with Media and Media Containers
+UPDATE DcxbookmaniaProduct;code[unique=true];$picture;$thumbnail;$detail;$others;$normal;$thumbnails;$galleryImages;$catalogVersion
+;E107;/300Wx300H/The Untethered Soul300.jpg;/96Wx96H/The Untethered Soul96.jpg;/1200Wx1200H/The Untethered Soul1200.jpg;/515Wx515H/The Untethered Soul515.jpg,/65Wx65H/The Untethered Soul65.jpg,/30Wx30H/The Untethered Soul30.jpg;/300Wx300H/The Untethered Soul300.jpg;/96Wx96H/The Untethered Soul96.jpg;The Untethered Soul;
+
+# Create Media for E108
+INSERT_UPDATE Media;mediaFormat(qualifier);code[unique=true];$media;mime[default='image/jpeg'];$catalogVersion;folder(qualifier)
+;1200Wx1200H;/1200Wx1200H/Real Happiness1200.jpg;$siteResource/images/1200Wx1200H/Real Happiness1200.jpg;;;images
+;515Wx515H;/515Wx515H/Real Happiness515.jpg;$siteResource/images/515Wx515H/Real Happiness515.jpg;;;images
+;300Wx300H;/300Wx300H/Real Happiness300.jpg;$siteResource/images/300Wx300H/Real Happiness300.jpg;;;images
+;96Wx96H;/96Wx96H/Real Happiness96.jpg;$siteResource/images/96Wx96H/Real Happiness96.jpg;;;images
+;65Wx65H;/65Wx65H/Real Happiness65.jpg;$siteResource/images/65Wx65H/Real Happiness65.jpg;;;images
+;30Wx30H;/30Wx30H/Real Happiness30.jpg;$siteResource/images/30Wx30H/Real Happiness30.jpg;;;images
+# Create Media Containers
+INSERT_UPDATE MediaContainer;qualifier[unique=true];$medias;$catalogVersion
+;Real Happiness;/1200Wx1200H/Real Happiness1200.jpg,/515Wx515H/Real Happiness515.jpg,/300Wx300H/Real Happiness300.jpg,/96Wx96H/Real Happiness96.jpg,/65Wx65H/Real Happiness65.jpg,/30Wx30H/Real Happiness30.jpg;
+# Update Products with Media and Media Containers
+UPDATE DcxbookmaniaProduct;code[unique=true];$picture;$thumbnail;$detail;$others;$normal;$thumbnails;$galleryImages;$catalogVersion
+;E108;/300Wx300H/Real Happiness300.jpg;/96Wx96H/Real Happiness96.jpg;/1200Wx1200H/Real Happiness1200.jpg;/515Wx515H/Real Happiness515.jpg,/65Wx65H/Real Happiness65.jpg,/30Wx30H/Real Happiness30.jpg;/300Wx300H/Real Happiness300.jpg;/96Wx96H/Real Happiness96.jpg;Real Happiness;
+
+
+
+# Create Media for E109
+INSERT_UPDATE Media;mediaFormat(qualifier);code[unique=true];$media;mime[default='image/jpeg'];$catalogVersion;folder(qualifier)
+;1200Wx1200H;/1200Wx1200H/The Mind Illuminated1200.jpg;$siteResource/images/1200Wx1200H/The Mind Illuminated1200.jpg;;;images
+;515Wx515H;/515Wx515H/The Mind Illuminated515.jpg;$siteResource/images/515Wx515H/The Mind Illuminated515.jpg;;;images
+;300Wx300H;/300Wx300H/The Mind Illuminated300.jpg;$siteResource/images/300Wx300H/The Mind Illuminated300.jpg;;;images
+;96Wx96H;/96Wx96H/The Mind Illuminated96.jpg;$siteResource/images/96Wx96H/The Mind Illuminated96.jpg;;;images
+;65Wx65H;/65Wx65H/The Mind Illuminated65.jpg;$siteResource/images/65Wx65H/The Mind Illuminated65.jpg;;;images
+;30Wx30H;/30Wx30H/The Mind Illuminated30.jpg;$siteResource/images/30Wx30H/The Mind Illuminated30.jpg;;;images
+# Create Media Containers
+INSERT_UPDATE MediaContainer;qualifier[unique=true];$medias;$catalogVersion
+;The Mind Illuminated;/1200Wx1200H/The Mind Illuminated1200.jpg,/515Wx515H/The Mind Illuminated515.jpg,/300Wx300H/The Mind Illuminated300.jpg,/96Wx96H/The Mind Illuminated96.jpg,/65Wx65H/The Mind Illuminated65.jpg,/30Wx30H/The Mind Illuminated30.jpg;
+# Update Products with Media and Media Containers
+UPDATE DcxbookmaniaProduct;code[unique=true];$picture;$thumbnail;$detail;$others;$normal;$thumbnails;$galleryImages;$catalogVersion
+;E109;/300Wx300H/The Mind Illuminated300.jpg;/96Wx96H/The Mind Illuminated96.jpg;/1200Wx1200H/The Mind Illuminated1200.jpg;/515Wx515H/The Mind Illuminated515.jpg,/65Wx65H/The Mind Illuminated65.jpg,/30Wx30H/The Mind Illuminated30.jpg;/300Wx300H/The Mind Illuminated300.jpg;/96Wx96H/The Mind Illuminated96.jpg;The Mind Illuminated;
+
+
+# Create Media for E110
+INSERT_UPDATE Media;mediaFormat(qualifier);code[unique=true];$media;mime[default='image/jpeg'];$catalogVersion;folder(qualifier)
+;1200Wx1200H;/1200Wx1200H/The Book of Awakening1200.jpg;$siteResource/images/1200Wx1200H/The Book of Awakening1200.jpg;;;images
+;515Wx515H;/515Wx515H/The Book of Awakening515.jpg;$siteResource/images/515Wx515H/The Book of Awakening515.jpg;;;images
+;300Wx300H;/300Wx300H/The Book of Awakening300.jpg;$siteResource/images/300Wx300H/The Book of Awakening300.jpg;;;images
+;96Wx96H;/96Wx96H/The Book of Awakening96.jpg;$siteResource/images/96Wx96H/The Book of Awakening96.jpg;;;images
+;65Wx65H;/65Wx65H/The Book of Awakening65.jpg;$siteResource/images/65Wx65H/The Book of Awakening65.jpg;;;images
+;30Wx30H;/30Wx30H/The Book of Awakening30.jpg;$siteResource/images/30Wx30H/The Book of Awakening30.jpg;;;images
+# Create Media Containers
+INSERT_UPDATE MediaContainer;qualifier[unique=true];$medias;$catalogVersion
+;The Book of Awakening;/1200Wx1200H/The Book of Awakening1200.jpg,/515Wx515H/The Book of Awakening515.jpg,/300Wx300H/The Book of Awakening300.jpg,/96Wx96H/The Book of Awakening96.jpg,/65Wx65H/The Book of Awakening65.jpg,/30Wx30H/The Book of Awakening30.jpg;
+# Update Products with Media and Media Containers
+UPDATE DcxbookmaniaProduct;code[unique=true];$picture;$thumbnail;$detail;$others;$normal;$thumbnails;$galleryImages;$catalogVersion
+;E110;/300Wx300H/The Book of Awakening300.jpg;/96Wx96H/The Book of Awakening96.jpg;/1200Wx1200H/The Book of Awakening1200.jpg;/515Wx515H/The Book of Awakening515.jpg,/65Wx65H/The Book of Awakening65.jpg,/30Wx30H/The Book of Awakening30.jpg;/300Wx300H/The Book of Awakening300.jpg;/96Wx96H/The Book of Awakening96.jpg;The Book of Awakening;
+
+# Create Media for E201
+INSERT_UPDATE Media;mediaFormat(qualifier);code[unique=true];$media;mime[default='image/jpeg'];$catalogVersion;folder(qualifier)
+;1200Wx1200H;/1200Wx1200H/Atomic Habits 1200.jpg;$siteResource/images/1200Wx1200H/Atomic Habits 1200.jpg;;;images
+;515Wx515H;/515Wx515H/Atomic Habits 515.jpg;$siteResource/images/515Wx515H/Atomic Habits 515.jpg;;;images
+;300Wx300H;/300Wx300H/Atomic Habits 300.jpg;$siteResource/images/300Wx300H/Atomic Habits 300.jpg;;;images
+;96Wx96H;/96Wx96H/Atomic Habits 96.jpg;$siteResource/images/96Wx96H/Atomic Habits 96.jpg;;;images
+;65Wx65H;/65Wx65H/Atomic Habits 65.jpg;$siteResource/images/65Wx65H/Atomic Habits 65.jpg;;;images
+;30Wx30H;/30Wx30H/Atomic Habits 30.jpg;$siteResource/images/30Wx30H/Atomic Habits 30.jpg;;;images
+# Create Media Containers
+INSERT_UPDATE MediaContainer;qualifier[unique=true];$medias;$catalogVersion
+;Atomic Habits;/1200Wx1200H/Atomic Habits 1200.jpg,/515Wx515H/Atomic Habits 515.jpg,/300Wx300H/Atomic Habits 300.jpg,/96Wx96H/Atomic Habits 96.jpg,/65Wx65H/Atomic Habits 65.jpg,/30Wx30H/Atomic Habits 30.jpg;
+# Update Products with Media and Media Containers
+UPDATE DcxbookmaniaProduct;code[unique=true];$picture;$thumbnail;$detail;$others;$normal;$thumbnails;$galleryImages;$catalogVersion
+;E201;/300Wx300H/Atomic Habits 300.jpg;/96Wx96H/Atomic Habits 96.jpg;/1200Wx1200H/Atomic Habits 1200.jpg;/515Wx515H/Atomic Habits 515.jpg,/65Wx65H/Atomic Habits 65.jpg,/30Wx30H/Atomic Habits 30.jpg;/300Wx300H/Atomic Habits 300.jpg;/96Wx96H/Atomic Habits 96.jpg;Atomic Habits;
+
+# Create Media for E202
+INSERT_UPDATE Media;mediaFormat(qualifier);code[unique=true];$media;mime[default='image/jpeg'];$catalogVersion;folder(qualifier)
+;1200Wx1200H;/1200Wx1200H/The Subtle Art of Not Giving a Fck 1200.jpg;$siteResource/images/1200Wx1200H/The Subtle Art of Not Giving a Fck 1200.jpg;;;images
+;515Wx515H;/515Wx515H/The Subtle Art of Not Giving a Fck 515.jpg;$siteResource/images/515Wx515H/The Subtle Art of Not Giving a Fck 515.jpg;;;images
+;300Wx300H;/300Wx300H/The Subtle Art of Not Giving a Fck 300.jpg;$siteResource/images/300Wx300H/The Subtle Art of Not Giving a Fck 300.jpg;;;images
+;96Wx96H;/96Wx96H/The Subtle Art of Not Giving a Fck 96.jpg;$siteResource/images/96Wx96H/The Subtle Art of Not Giving a Fck 96.jpg;;;images
+;65Wx65H;/65Wx65H/The Subtle Art of Not Giving a Fck 65.jpg;$siteResource/images/65Wx65H/The Subtle Art of Not Giving a Fck 65.jpg;;;images
+;30Wx30H;/30Wx30H/The Subtle Art of Not Giving a Fck 30.jpg;$siteResource/images/30Wx30H/The Subtle Art of Not Giving a Fck 30.jpg;;;images
+# Create Media Containers
+INSERT_UPDATE MediaContainer;qualifier[unique=true];$medias;$catalogVersion
+;The Subtle Art of Not Giving a Fck;/1200Wx1200H/The Subtle Art of Not Giving a Fck 1200.jpg,/515Wx515H/The Subtle Art of Not Giving a Fck 515.jpg,/300Wx300H/The Subtle Art of Not Giving a Fck 300.jpg,/96Wx96H/The Subtle Art of Not Giving a Fck 96.jpg,/65Wx65H/The Subtle Art of Not Giving a Fck 65.jpg,/30Wx30H/The Subtle Art of Not Giving a Fck 30.jpg;
+# Update Products with Media and Media Containers
+UPDATE DcxbookmaniaProduct;code[unique=true];$picture;$thumbnail;$detail;$others;$normal;$thumbnails;$galleryImages;$catalogVersion
+;E202;/300Wx300H/The Subtle Art of Not Giving a Fck 300.jpg;/96Wx96H/The Subtle Art of Not Giving a Fck 96.jpg;/1200Wx1200H/The Subtle Art of Not Giving a Fck 1200.jpg;/515Wx515H/The Subtle Art of Not Giving a Fck 515.jpg,/65Wx65H/The Subtle Art of Not Giving a Fck 65.jpg,/30Wx30H/The Subtle Art of Not Giving a Fck 30.jpg;/300Wx300H/The Subtle Art of Not Giving a Fck 300.jpg;/96Wx96H/The Subtle Art of Not Giving a Fck 96.jpg;The Subtle Art of Not Giving a Fck;
+
+
+
+# Create Media for E203
+INSERT_UPDATE Media;mediaFormat(qualifier);code[unique=true];$media;mime[default='image/jpeg'];$catalogVersion;folder(qualifier)
+;1200Wx1200H;/1200Wx1200H/Becoming 1200.jpg;$siteResource/images/1200Wx1200H/Becoming 1200.jpg;;;images
+;515Wx515H;/515Wx515H/Becoming 515.jpg;$siteResource/images/515Wx515H/Becoming 515.jpg;;;images
+;300Wx300H;/300Wx300H/Becoming 300.jpg;$siteResource/images/300Wx300H/Becoming 300.jpg;;;images
+;96Wx96H;/96Wx96H/Becoming 96.jpg;$siteResource/images/96Wx96H/Becoming 96.jpg;;;images
+;65Wx65H;/65Wx65H/Becoming 65.jpg;$siteResource/images/65Wx65H/Becoming 65.jpg;;;images
+;30Wx30H;/30Wx30H/Becoming 30.jpg;$siteResource/images/30Wx30H/Becoming 30.jpg;;;images
+# Create Media Containers
+INSERT_UPDATE MediaContainer;qualifier[unique=true];$medias;$catalogVersion
+;Becoming;/1200Wx1200H/Becoming 1200.jpg,/515Wx515H/Becoming 515.jpg,/300Wx300H/Becoming 300.jpg,/96Wx96H/Becoming 96.jpg,/65Wx65H/Becoming 65.jpg,/30Wx30H/Becoming 30.jpg;
+# Update Products with Media and Media Containers
+UPDATE DcxbookmaniaProduct;code[unique=true];$picture;$thumbnail;$detail;$others;$normal;$thumbnails;$galleryImages;$catalogVersion
+;E203;/300Wx300H/Becoming 300.jpg;/96Wx96H/Becoming 96.jpg;/1200Wx1200H/Becoming 1200.jpg;/515Wx515H/Becoming 515.jpg,/65Wx65H/Becoming 65.jpg,/30Wx30H/Becoming 30.jpg;/300Wx300H/Becoming 300.jpg;/96Wx96H/Becoming 96.jpg;Becoming;
+
+
+# Create Media for E204
+INSERT_UPDATE Media;mediaFormat(qualifier);code[unique=true];$media;mime[default='image/jpeg'];$catalogVersion;folder(qualifier)
+;1200Wx1200H;/1200Wx1200H/The 7 Habits of Highly Effective People 1200.jpg;$siteResource/images/1200Wx1200H/The 7 Habits of Highly Effective People 1200.jpg;;;images
+;515Wx515H;/515Wx515H/The 7 Habits of Highly Effective People 515.jpg;$siteResource/images/515Wx515H/The 7 Habits of Highly Effective People 515.jpg;;;images
+;300Wx300H;/300Wx300H/The 7 Habits of Highly Effective People 300.jpg;$siteResource/images/300Wx300H/The 7 Habits of Highly Effective People 300.jpg;;;images
+;96Wx96H;/96Wx96H/The 7 Habits of Highly Effective People 96.jpg;$siteResource/images/96Wx96H/The 7 Habits of Highly Effective People 96.jpg;;;images
+;65Wx65H;/65Wx65H/The 7 Habits of Highly Effective People 65.jpg;$siteResource/images/65Wx65H/The 7 Habits of Highly Effective People 65.jpg;;;images
+;30Wx30H;/30Wx30H/The 7 Habits of Highly Effective People 30.jpg;$siteResource/images/30Wx30H/The 7 Habits of Highly Effective People 30.jpg;;;images
+# Create Media Containers
+INSERT_UPDATE MediaContainer;qualifier[unique=true];$medias;$catalogVersion
+;The 7 Habits of Highly Effective People;/1200Wx1200H/The 7 Habits of Highly Effective People 1200.jpg,/515Wx515H/The 7 Habits of Highly Effective People 515.jpg,/300Wx300H/The 7 Habits of Highly Effective People 300.jpg,/96Wx96H/The 7 Habits of Highly Effective People 96.jpg,/65Wx65H/The 7 Habits of Highly Effective People 65.jpg,/30Wx30H/The 7 Habits of Highly Effective People 30.jpg;
+# Update Products with Media and Media Containers
+UPDATE DcxbookmaniaProduct;code[unique=true];$picture;$thumbnail;$detail;$others;$normal;$thumbnails;$galleryImages;$catalogVersion
+;E204;/300Wx300H/The 7 Habits of Highly Effective People 300.jpg;/96Wx96H/The 7 Habits of Highly Effective People 96.jpg;/1200Wx1200H/The 7 Habits of Highly Effective People 1200.jpg;/515Wx515H/The 7 Habits of Highly Effective People 515.jpg,/65Wx65H/The 7 Habits of Highly Effective People 65.jpg,/30Wx30H/The 7 Habits of Highly Effective People 30.jpg;/300Wx300H/The 7 Habits of Highly Effective People 300.jpg;/96Wx96H/The 7 Habits of Highly Effective People 96.jpg;The 7 Habits of Highly Effective People;
+
+# Create Media for E205
+INSERT_UPDATE Media;mediaFormat(qualifier);code[unique=true];$media;mime[default='image/jpeg'];$catalogVersion;folder(qualifier)
+;1200Wx1200H;/1200Wx1200H/Grit The Power of Passion and Perseverance 1200.jpg;$siteResource/images/1200Wx1200H/Grit The Power of Passion and Perseverance 1200.jpg;;;images
+;515Wx515H;/515Wx515H/Grit The Power of Passion and Perseverance 515.jpg;$siteResource/images/515Wx515H/Grit The Power of Passion and Perseverance 515.jpg;;;images
+;300Wx300H;/300Wx300H/Grit The Power of Passion and Perseverance 300.jpg;$siteResource/images/300Wx300H/Grit The Power of Passion and Perseverance 300.jpg;;;images
+;96Wx96H;/96Wx96H/Grit The Power of Passion and Perseverance 96.jpg;$siteResource/images/96Wx96H/Grit The Power of Passion and Perseverance 96.jpg;;;images
+;65Wx65H;/65Wx65H/Grit The Power of Passion and Perseverance 65.jpg;$siteResource/images/65Wx65H/Grit The Power of Passion and Perseverance 65.jpg;;;images
+;30Wx30H;/30Wx30H/Grit The Power of Passion and Perseverance 30.jpg;$siteResource/images/30Wx30H/Grit The Power of Passion and Perseverance 30.jpg;;;images
+# Create Media Containers
+INSERT_UPDATE MediaContainer;qualifier[unique=true];$medias;$catalogVersion
+;Grit The Power of Passion and Perseverance;/1200Wx1200H/Grit The Power of Passion and Perseverance 1200.jpg,/515Wx515H/Grit The Power of Passion and Perseverance 515.jpg,/300Wx300H/Grit The Power of Passion and Perseverance 300.jpg,/96Wx96H/Grit The Power of Passion and Perseverance 96.jpg,/65Wx65H/Grit The Power of Passion and Perseverance 65.jpg,/30Wx30H/Grit The Power of Passion and Perseverance 30.jpg;
+# Update Products with Media and Media Containers
+UPDATE DcxbookmaniaProduct;code[unique=true];$picture;$thumbnail;$detail;$others;$normal;$thumbnails;$galleryImages;$catalogVersion
+;E205;/300Wx300H/Grit The Power of Passion and Perseverance 300.jpg;/96Wx96H/Grit The Power of Passion and Perseverance 96.jpg;/1200Wx1200H/Grit The Power of Passion and Perseverance 1200.jpg;/515Wx515H/Grit The Power of Passion and Perseverance 515.jpg,/65Wx65H/Grit The Power of Passion and Perseverance 65.jpg,/30Wx30H/Grit The Power of Passion and Perseverance 30.jpg;/300Wx300H/Grit The Power of Passion and Perseverance 300.jpg;/96Wx96H/Grit The Power of Passion and Perseverance 96.jpg;Grit The Power of Passion and Perseverance;
+
+# Create Media for E206
+INSERT_UPDATE Media;mediaFormat(qualifier);code[unique=true];$media;mime[default='image/jpeg'];$catalogVersion;folder(qualifier)
+;1200Wx1200H;/1200Wx1200H/Drive The Surprising Truth About What Motivates Us 1200.jpg;$siteResource/images/1200Wx1200H/Drive The Surprising Truth About What Motivates Us 1200.jpg;;;images
+;515Wx515H;/515Wx515H/Drive The Surprising Truth About What Motivates Us 515.jpg;$siteResource/images/515Wx515H/Drive The Surprising Truth About What Motivates Us 515.jpg;;;images
+;300Wx300H;/300Wx300H/Drive The Surprising Truth About What Motivates Us 300.jpg;$siteResource/images/300Wx300H/Drive The Surprising Truth About What Motivates Us 300.jpg;;;images
+;96Wx96H;/96Wx96H/Drive The Surprising Truth About What Motivates Us 96.jpg;$siteResource/images/96Wx96H/Drive The Surprising Truth About What Motivates Us 96.jpg;;;images
+;65Wx65H;/65Wx65H/Drive The Surprising Truth About What Motivates Us 65.jpg;$siteResource/images/65Wx65H/Drive The Surprising Truth About What Motivates Us 65.jpg;;;images
+;30Wx30H;/30Wx30H/Drive The Surprising Truth About What Motivates Us 30.jpg;$siteResource/images/30Wx30H/Drive The Surprising Truth About What Motivates Us 30.jpg;;;images
+# Create Media Containers
+INSERT_UPDATE MediaContainer;qualifier[unique=true];$medias;$catalogVersion
+;Drive The Surprising Truth About What Motivates Us;/1200Wx1200H/Drive The Surprising Truth About What Motivates Us 1200.jpg,/515Wx515H/Drive The Surprising Truth About What Motivates Us 515.jpg,/300Wx300H/Drive The Surprising Truth About What Motivates Us 300.jpg,/96Wx96H/Drive The Surprising Truth About What Motivates Us 96.jpg,/65Wx65H/Drive The Surprising Truth About What Motivates Us 65.jpg,/30Wx30H/Drive The Surprising Truth About What Motivates Us 30.jpg;
+# Update Products with Media and Media Containers
+UPDATE DcxbookmaniaProduct;code[unique=true];$picture;$thumbnail;$detail;$others;$normal;$thumbnails;$galleryImages;$catalogVersion
+;E206;/300Wx300H/Drive The Surprising Truth About What Motivates Us 300.jpg;/96Wx96H/Drive The Surprising Truth About What Motivates Us 96.jpg;/1200Wx1200H/Drive The Surprising Truth About What Motivates Us 1200.jpg;/515Wx515H/Drive The Surprising Truth About What Motivates Us 515.jpg,/65Wx65H/Drive The Surprising Truth About What Motivates Us 65.jpg,/30Wx30H/Drive The Surprising Truth About What Motivates Us 30.jpg;/300Wx300H/Drive The Surprising Truth About What Motivates Us 300.jpg;/96Wx96H/Drive The Surprising Truth About What Motivates Us 96.jpg;Drive The Surprising Truth About What Motivates Us;
+
+
+
+# Create Media for E207
+INSERT_UPDATE Media;mediaFormat(qualifier);code[unique=true];$media;mime[default='image/jpeg'];$catalogVersion;folder(qualifier)
+;1200Wx1200H;/1200Wx1200H/Awaken the Giant Within 1200.jpg;$siteResource/images/1200Wx1200H/Awaken the Giant Within 1200.jpg;;;images
+;515Wx515H;/515Wx515H/Awaken the Giant Within 515.jpg;$siteResource/images/515Wx515H/Awaken the Giant Within 515.jpg;;;images
+;300Wx300H;/300Wx300H/Awaken the Giant Within 300.jpg;$siteResource/images/300Wx300H/Awaken the Giant Within 300.jpg;;;images
+;96Wx96H;/96Wx96H/Awaken the Giant Within 96.jpg;$siteResource/images/96Wx96H/Awaken the Giant Within 96.jpg;;;images
+;65Wx65H;/65Wx65H/Awaken the Giant Within 65.jpg;$siteResource/images/65Wx65H/Awaken the Giant Within 65.jpg;;;images
+;30Wx30H;/30Wx30H/Awaken the Giant Within 30.jpg;$siteResource/images/30Wx30H/Awaken the Giant Within 30.jpg;;;images
+# Create Media Containers
+INSERT_UPDATE MediaContainer;qualifier[unique=true];$medias;$catalogVersion
+;Awaken the Giant Within;/1200Wx1200H/Awaken the Giant Within 1200.jpg,/515Wx515H/Awaken the Giant Within 515.jpg,/300Wx300H/Awaken the Giant Within 300.jpg,/96Wx96H/Awaken the Giant Within 96.jpg,/65Wx65H/Awaken the Giant Within 65.jpg,/30Wx30H/Awaken the Giant Within 30.jpg;
+# Update Products with Media and Media Containers
+UPDATE DcxbookmaniaProduct;code[unique=true];$picture;$thumbnail;$detail;$others;$normal;$thumbnails;$galleryImages;$catalogVersion
+;E207;/300Wx300H/Awaken the Giant Within 300.jpg;/96Wx96H/Awaken the Giant Within 96.jpg;/1200Wx1200H/Awaken the Giant Within 1200.jpg;/515Wx515H/Awaken the Giant Within 515.jpg,/65Wx65H/Awaken the Giant Within 65.jpg,/30Wx30H/Awaken the Giant Within 30.jpg;/300Wx300H/Awaken the Giant Within 300.jpg;/96Wx96H/Awaken the Giant Within 96.jpg;Awaken the Giant Within;
+
+
+# Create Media for E208
+INSERT_UPDATE Media;mediaFormat(qualifier);code[unique=true];$media;mime[default='image/jpeg'];$catalogVersion;folder(qualifier)
+;1200Wx1200H;/1200Wx1200H/Daring Greatly 1200.jpg;$siteResource/images/1200Wx1200H/Daring Greatly 1200.jpg;;;images
+;515Wx515H;/515Wx515H/Daring Greatly 515.jpg;$siteResource/images/515Wx515H/Daring Greatly 515.jpg;;;images
+;300Wx300H;/300Wx300H/Daring Greatly 300.jpg;$siteResource/images/300Wx300H/Daring Greatly 300.jpg;;;images
+;96Wx96H;/96Wx96H/Daring Greatly 96.jpg;$siteResource/images/96Wx96H/Daring Greatly 96.jpg;;;images
+;65Wx65H;/65Wx65H/Daring Greatly 65.jpg;$siteResource/images/65Wx65H/Daring Greatly 65.jpg;;;images
+;30Wx30H;/30Wx30H/Daring Greatly 30.jpg;$siteResource/images/30Wx30H/Daring Greatly 30.jpg;;;images
+# Create Media Containers
+INSERT_UPDATE MediaContainer;qualifier[unique=true];$medias;$catalogVersion
+;Daring Greatly;/1200Wx1200H/Daring Greatly 1200.jpg,/515Wx515H/Daring Greatly 515.jpg,/300Wx300H/Daring Greatly 300.jpg,/96Wx96H/Daring Greatly 96.jpg,/65Wx65H/Daring Greatly 65.jpg,/30Wx30H/Daring Greatly 30.jpg;
+# Update Products with Media and Media Containers
+UPDATE DcxbookmaniaProduct;code[unique=true];$picture;$thumbnail;$detail;$others;$normal;$thumbnails;$galleryImages;$catalogVersion
+;E208;/300Wx300H/Daring Greatly 300.jpg;/96Wx96H/Daring Greatly 96.jpg;/1200Wx1200H/Daring Greatly 1200.jpg;/515Wx515H/Daring Greatly 515.jpg,/65Wx65H/Daring Greatly 65.jpg,/30Wx30H/Daring Greatly 30.jpg;/300Wx300H/Daring Greatly 300.jpg;/96Wx96H/Daring Greatly 96.jpg;Daring Greatly;
+
+
+
+# Create Media for E209
+INSERT_UPDATE Media;mediaFormat(qualifier);code[unique=true];$media;mime[default='image/jpeg'];$catalogVersion;folder(qualifier)
+;1200Wx1200H;/1200Wx1200H/Mindset 1200.jpg;$siteResource/images/1200Wx1200H/Mindset 1200.jpg;;;images
+;515Wx515H;/515Wx515H/Mindset 515.jpg;$siteResource/images/515Wx515H/Mindset 515.jpg;;;images
+;300Wx300H;/300Wx300H/Mindset 300.jpg;$siteResource/images/300Wx300H/Mindset 300.jpg;;;images
+;96Wx96H;/96Wx96H/Mindset 96.jpg;$siteResource/images/96Wx96H/Mindset 96.jpg;;;images
+;65Wx65H;/65Wx65H/Mindset 65.jpg;$siteResource/images/65Wx65H/Mindset 65.jpg;;;images
+;30Wx30H;/30Wx30H/Mindset 30.jpg;$siteResource/images/30Wx30H/Mindset 30.jpg;;;images
+# Create Media Containers
+INSERT_UPDATE MediaContainer;qualifier[unique=true];$medias;$catalogVersion
+;Mindset;/1200Wx1200H/Mindset 1200.jpg,/515Wx515H/Mindset 515.jpg,/300Wx300H/Mindset 300.jpg,/96Wx96H/Mindset 96.jpg,/65Wx65H/Mindset 65.jpg,/30Wx30H/Mindset 30.jpg;
+# Update Products with Media and Media Containers
+UPDATE DcxbookmaniaProduct;code[unique=true];$picture;$thumbnail;$detail;$others;$normal;$thumbnails;$galleryImages;$catalogVersion
+;E209;/300Wx300H/Mindset 300.jpg;/96Wx96H/Mindset 96.jpg;/1200Wx1200H/Mindset 1200.jpg;/515Wx515H/Mindset 515.jpg,/65Wx65H/Mindset 65.jpg,/30Wx30H/Mindset 30.jpg;/300Wx300H/Mindset 300.jpg;/96Wx96H/Mindset 96.jpg;Mindset;
+
+
+# Create Media for E210
+INSERT_UPDATE Media;mediaFormat(qualifier);code[unique=true];$media;mime[default='image/jpeg'];$catalogVersion;folder(qualifier)
+;1200Wx1200H;/1200Wx1200H/You Are a Badass 1200.jpg;$siteResource/images/1200Wx1200H/You Are a Badass 1200.jpg;;;images
+;515Wx515H;/515Wx515H/You Are a Badass 515.jpg;$siteResource/images/515Wx515H/You Are a Badass 515.jpg;;;images
+;300Wx300H;/300Wx300H/You Are a Badass 300.jpg;$siteResource/images/300Wx300H/You Are a Badass 300.jpg;;;images
+;96Wx96H;/96Wx96H/You Are a Badass 96.jpg;$siteResource/images/96Wx96H/You Are a Badass 96.jpg;;;images
+;65Wx65H;/65Wx65H/You Are a Badass 65.jpg;$siteResource/images/65Wx65H/You Are a Badass 65.jpg;;;images
+;30Wx30H;/30Wx30H/You Are a Badass 30.jpg;$siteResource/images/30Wx30H/You Are a Badass 30.jpg;;;images
+# Create Media Containers
+INSERT_UPDATE MediaContainer;qualifier[unique=true];$medias;$catalogVersion
+;You Are a Badass;/1200Wx1200H/You Are a Badass 1200.jpg,/515Wx515H/You Are a Badass 515.jpg,/300Wx300H/You Are a Badass 300.jpg,/96Wx96H/You Are a Badass 96.jpg,/65Wx65H/You Are a Badass 65.jpg,/30Wx30H/You Are a Badass 30.jpg;
+# Update Products with Media and Media Containers
+UPDATE DcxbookmaniaProduct;code[unique=true];$picture;$thumbnail;$detail;$others;$normal;$thumbnails;$galleryImages;$catalogVersion
+;E210;/300Wx300H/You Are a Badass 300.jpg;/96Wx96H/You Are a Badass 96.jpg;/1200Wx1200H/You Are a Badass 1200.jpg;/515Wx515H/You Are a Badass 515.jpg,/65Wx65H/You Are a Badass 65.jpg,/30Wx30H/You Are a Badass 30.jpg;/300Wx300H/You Are a Badass 300.jpg;/96Wx96H/You Are a Badass 96.jpg;You Are a Badass;
