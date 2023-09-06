@@ -13,7 +13,7 @@ $product=product(code, $productCV)
 $category=category(code, $productCV)
 $siteResource=jar:com.dcx.bookmania.initialdata.constants.DcxbookmaniaInitialDataConstants&/dcxbookmaniainitialdata/import/sampledata/contentCatalogs/$contentCatalog
 $productResource=jar:com.dcx.bookmania.initialdata.constants.DcxbookmaniaInitialDataConstants&/dcxbookmaniainitialdata/import/sampledata/productCatalogs/$productCatalog
-$jarResourceCms=jar:com.dcx.bookmania.initialdata.constants.DcxbookmaniaInitialDataConstants&dcxbookmaniainitialdata/import/sampledata/cockpits/cmscockpit
+$jarResourceCms=jar:com.dcx.bookmania.initialdata.constants.DcxbookmaniaInitialDataConstants&/dcxbookmaniainitialdata/import/sampledata/cockpits/cmscockpit
 
  
 # CMS Site Settings
