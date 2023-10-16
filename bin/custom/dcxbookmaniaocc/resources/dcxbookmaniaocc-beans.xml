@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- Copyright (c) 2020 SAP SE or an SAP affiliate company. All rights reserved. -->
+<!-- ATTENTION: This is just an example file. You have to edit it according 
+	to your needs. -->
+
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="beans.xsd">
+
+	<!-- Example Data POJO <bean class="yemptypackage.data.MyPojo"> <property 
+		name="id" type="String"/> <property name="flag" type="boolean"/> </bean> -->
+
+	<bean
+		class="de.hybris.platform.commercefacades.customitem.data.CustomItemData">
+		<property name="uniqueAttribute" type="java.lang.String" />
+		<property name="attribute1" type="java.lang.String" />
+		<property name="attribute2" type="java.lang.String" />
+		<property name="attribute3" type="java.lang.String" />
+		<property name="optionalAttribute1" type="java.lang.String"/>
+		<property name="optionalAttribute2" type="java.lang.String"/>
+	</bean>
+
+
+	<bean
+		class="de.hybris.platform.commercewebservicescommons.dto.customitem.CustomItemWSDTO">
+		<property name="uniqueAttribute" type="java.lang.String" />
+		<property name="attribute1" type="java.lang.String" />
+		<property name="attribute2" type="java.lang.String" />
+		<property name="attribute3" type="java.lang.String" />
+		<property name="optionalAttribute1" type="java.lang.String"/>
+		<property name="optionalAttribute2" type="java.lang.String"/>
+	</bean>
+
+
+	<bean
+		class="de.hybris.platform.commercewebservicescommons.dto.customitem.CustomItemListWSDTO">
+		<property name="customItem"
+			type="java.util.List&lt;de.hybris.platform.commercewebservicescommons.dto.customitem.CustomItemWSDTO>" />
+	</bean>
+
+	<bean class="org.anchor.queues.data.CustomitemDataList">
+		<property name="customItemDataList"
+			type="java.util.List &lt;de.hybris.platform.commercefacades.customitem.data.CustomItemData>" />
+	</bean>
+
+</beans>
