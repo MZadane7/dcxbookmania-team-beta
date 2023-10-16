@@ -1,7 +1,7 @@
 /*
  * Copyright (c) 2020 SAP SE or an SAP affiliate company. All rights reserved.
  */
-package com.dcx.controllers;
+package com.dcx.bookmania.controllers;
 
 import static org.junit.Assert.assertTrue;
 

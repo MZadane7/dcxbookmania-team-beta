@@ -1,0 +1,4 @@
+INSERT_UPDATE CustomItem ; uniqueAttribute[unique=true] ; attribute1      ; attribute2 ; attribute3 ; optionalAttribute1 ; optionalAttribute2
+                         ; A101                         ; Dune            ; 135        ; 207        ; 1ST PUBLISHER      ; 2007              
+                         ; A102                         ; Harry potter    ; 135        ; 207        ; 2ND PUBLISHER      ; 2016              
+                         ; A103                         ; Game of thrones ; 135        ; 207        ; 3RD PUBLISHER      ; 2007              

@@ -54,6 +54,6 @@
 	<extension dir="C:\DCXBOOKMANIA\hybris\bin/custom/dcxbookmania/dcxbookmaniainitialdata"/>
 	<extension dir="C:\DCXBOOKMANIA\hybris\bin/custom/dcxbookmania/dcxbookmaniatest"/>
 	<extension dir="C:\DCXBOOKMANIA\hybris\bin/custom/dcxbookmania/dcxbookmaniastorefront"/>
-	<extension dir="C:\DCXBookmania\hybris\bin/custom/dcxbookmania/dcxbookmaniaocc"/>
+	<extension dir="C:\DCXBookmania\hybris\bin/custom/dcxbookmaniaocc"/>
   </extensions>
 </hybrisconfig>
